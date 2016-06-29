@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		
+		<title>Driver profile</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta property="og:image" content="http://www.blinkautos.in/static/images/blink_fbthumbnail.png" />
+    <meta property="og:title" content="Blink Autos: Radio auto-rickshaw service for pre-booked office commute only." />
+    <meta property="og:description" content="Blink Auto Services Pvt. Ltd. is a radio auto rickshaw service which aims to provide a fast and cheap solution to the urban/sub-urban population. With our use of technology, we aim to organise the unorganised auto-rickshaw sector and utilise it more efficiently for both commuter and drivers. We aim to deliver through a selected community of drivers who are coached to give the hassle free Blink travel experience to our customers." />
+	<link rel="shortcut icon" href="static/images/title.png" />
+	<title>Blink Autos - Radio auto-rickshaw service for office commuters</title>
+	<meta name="author" content="Blink Autos - Blink AUto Services Pvt. Ltd.">
+	<meta name="description" content="Book an auto-rickshaw regular office commuters in Noida and Gurgaon | Blink Autos " />
+	<meta name="keywords" content="Blink, Blink Autos, Blink Auto, Book Auto-rickshaw, Blink Auto-rickshaw Service" />
+	<meta name="keyphrase" content="low cost cab auto-rickshaw rental, auto-rickshaw hire in India, radio-autorickshaw service, book online for regular trips," />
+		
+		
+		<link rel="stylesheet" type="text/css" href="static/styles/default.css" />
+		<link rel="stylesheet" type="text/css" href="static/styles/component.css" />
+		<link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css" media="screen">		
+		<link rel="stylesheet" type="text/css" href="static/styles/bootstrap-theme.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="static/styles/stylen.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="static/styles/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="static/styles/driver_profile_css.css" media="screen">
+		 
+		<script src="static/scripts/jquery-1.11.1.min.js"></script> 
+		<script src="static/scripts/jquery.tabSlideOut.js"></script>
+		<script src="static/scripts/blocksit.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('#dvLoading').hide();
+			//blocksit define
+			$(window).load( function() {
+				$('#container').BlocksIt({
+					numOfCol: 4,
+					offsetX: 4,
+					offsetY: 8
+				});
+			});
+			
+			//window resize
+			var currentWidth = 1200;
+			
+			$(window).resize(function() {
+				var winWidth = $(window).width();
+				var conWidth;
+				if(winWidth < 660) {
+					conWidth = 440;
+					col = 2
+				} else if(winWidth < 880) {
+					conWidth = 660;
+					col = 2
+				} else if(winWidth < 1200) {
+					conWidth = 880;
+					col = 3;
+				} else {
+					conWidth = 1100;
+					col = 4;
+				}
+				
+				if(conWidth != currentWidth) {
+					currentWidth = conWidth;
+					$('#container').width(conWidth);
+					$('#container').BlocksIt({
+						numOfCol: col,
+						offsetX: 4,
+						offsetY: 4
+					});
+				}
+			});
+		});
+		</script>
+		<script type="text/javascript">
+	    $(function(){
+	        $('.slide-out-div').tabSlideOut({
+	            tabHandle: '.handle',                     //class of the element that will become your tab
+	            pathToTabImage: 'static/images/contact_tab.gif', //path to the image for the tab //Optionally can be set using css
+	            imageHeight: '122px',                     //height of tab image           //Optionally can be set using css
+	            imageWidth: '40px',                       //width of tab image            //Optionally can be set using css
+	            tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+	            speed: 300,                               //speed of animation
+	            action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+	            topPos: '200px',                          //position from the top/ use if tabLocation is left or right
+	            leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+	            fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+	        });
+	
+	    });
+	    </script>
+	    <style type="text/css">
+
+		#dvLoading{
+			background:#000 no-repeat center center;
+			background-image: url("static/images/loading.gif");
+			background-color : #1e1e1e;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			z-index: 999999999;
+		   }
+		</style>
+		
+	</head>
+
+<body onload="loadArticle(1)">
+	<div id="dvLoading"></div>
+	<div  style="background-color: #464646; ">
+		<nav class="navbar navbar-custom bookings navbar-custom-60height" style="margin-bottom: 30px;" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					
+				     <!--<a class="navbar-brand bookings" href="book-an-auto.html"><img class="img-responsive" alt="Responsive image" src="static/images/logo2.png" height="100%" width="100px"/></a>
+				     -->
+				     <div class="col-xs-3" style="margin-top: 14px;"><a href="index.html" class="blinkauto1">BLINK AUTOS</a></div>
+				     <div class="col-xs-offset-8 col-xs-1 topalign">
+				<a> <img src="static/images/collapse.png" id="showRightPush" onmouseover="this.src='static/images/collapse-hover.png';"
+						onmouseout="this.src='static/images/collapse.png';" alt="menu" class="img-responsive" width="25px" style="cursor: pointer;" /></a></div>
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+					<h3 style="cursor: pointer;" id="showleftPush">
+					<img src="static/images/ListIcon_Grey.png" id="showRightPush" alt="menu" class="img-responsive" width="50px" />
+					</h3>
+					<a href="index.html" >Home Page</a>
+					<a href="index.html#id_scndpage" class="page-scroll">About Service</a>
+		            <a href="index.html#id_trdpage" class="page-scroll">How it works</a>
+		            <a href="index.html#id_fourthpage" class="page-scroll">Pricing</a>
+		            <a href="index.html#id_fifthpage" class="page-scroll">Benefits</a>
+		            <a href="index.html#id_sixthpage" class="page-scroll">F.A.Q</a>
+		            <a href="booking_adddetails.html" class="page-scroll">Demo Web app</a>
+		            <a href="index.html#id_seventhpage" class="page-scroll">Contact us</a>
+				</nav>
+				    <!--  <button id="changesetup" class="btn btn-top topbar-btn full-widthi" onclick="location.href='booking_adddetails.html'"> BOOK NOW </button> -->
+				     </div>
+			  </div>
+			  </div>
+			</nav>
+		
+	</div>
+		
+
+<!--<div class="center">
+<button class="btn btn-default">Driver Profile</button>
+<button class="btn btn-default">Summery</button>
+</div>
+	
+
+-->
+
+<!-- <div class=" container">
+<div class="row"><div class="col-xs-6">
+<form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+</div> </div>
+</div> -->
+
+<!--
+//driversssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+-->
+<div class="container" >
+<div id="container">
+	<div class="grid">
+		<div class="imgholder view view-first">
+			<img src="static/images/driver_sample_pic.png" />
+		<div class="mask">
+       	 	<h2><a style='color:#fff;' onclick="callDriver('BAN15D1')">Know more</a></h2>
+        </div>
+		</div>
+		<strong>Kailash Kumar</strong>
+		<p>Sec-15, Noida</p>
+		<div class="meta"></div>
+	</div>
+	<!-- 
+	<div class="grid">
+		<div class="imgholder  view view-first">
+			<img src="static/images/driver_sample_pic.png" />
+			<div class="mask">
+           	 	<h2><a style='color:#fff;' onclick="callDriver('BAN18D5')">Know more</a></h2>
+	        </div>
+		</div>
+		
+		<strong>Name</strong>
+		<p>location</p>
+		<div class="meta"></div>
+	</div>
+	
+	<div class="grid">
+		<div class="imgholder  view view-first">
+			<img src="static/images/driver_sample_pic.png" />
+			<div class="mask">
+           	 	<h2><a style='color:#fff;' onclick="popme()">Know more</a></h2>
+	        </div>
+		</div>
+		
+		<strong>Name</strong>
+		<p>location</p>
+		<div class="meta"></div>
+	</div> -->
+	
+</div></div>
+<!-- <button onclick="loadArticle(1)">call next</button> -->
+<a id="inifiniteLoader">loading..</a>
+
+
+<!-- <div class="slide-out-div" >
+<a class="handle">Content</a>
+<ul style="list-style: none; ">
+<li><input type="checkbox" >   Rating </li>
+<li><input type="checkbox" >   Rating</li>
+<li><input type="checkbox" >   Rating</li>
+<li><input type="checkbox" >   Rating</li>
+<li><input type="checkbox" >   Rating</li>
+<li><input type="checkbox" >   Rating</li>
+<li><input type="checkbox" >   Rating</li>
+<li><input type="checkbox" >   Rating</li>
+</ul>
+</div> -->
+
+
+<div id="id_driver_profile" style="height: 510px; width: 800px; ">
+<div></div>
+<iframe src="driver_profile.html" id="id_iframe_driver_profile" style="border: none;" height="495px" width="800px" scrolling="no"></iframe>
+</div>
+
+<input type="hidden" id="id_driver_id" value="BAN15D1">
+<input type="hidden" id="id_offset" value="1">
+
+<script type="text/javascript">
+$("#id_driver_profile").slideUp(10);
+</script>
+
+<!-- bootstrap minjs -->
+<script src="static/scripts/bootstrap.min.js"></script>
+
+<!-- javascript plugin for scroll -->
+<script src="static/scripts/jquery.easing.min.js"></script>
+<script src="static/scripts/jquery.bpopup.min.js"></script>
+
+
+<script type="text/javascript">
+function popme(){
+//	$("#id_driver_profile").css('visibility','visible');
+	$('#id_driver_profile').bPopup({
+    	easing: 'easeOutBack', //uses jQuery easing plugin
+        speed: 450,
+        transition: 'slideDown',
+		position: ['auto', 'auto'],
+		modalColor: '#000000',
+		appending: false
+      });
+}      
+</script>
+<script type="text/javascript" src="static/scripts/jquery.jcarousel.js"></script>
+<script src="static/scripts/ajax_driverprofile.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    var count = 2;
+    var total = 10;
+    $(window).scroll(function(){
+            if  ($(window).scrollTop() == $(document).height() - $(window).height()){
+               		loadArticle();
+               count++;
+            }
+    }); 
+});
+function loadArticle(){ 
+
+	var driverId = document.getElementById('id_driver_id').value;
+    var offset = document.getElementById('id_offset').value;
+    var idata={"driverId": driverId, "offset":offset};
+	//alert(driverId);
+  // $('a#inifiniteLoader').show('fast');
+
+    $.ajax({
+        url: "MeetDriverAPI",
+        type:'POST',
+        data: idata, 
+        success: function(html){
+            var json = $.parseJSON(html);
+            $("#id_driver_id").val(json.driverid);
+            $("#container").append(json.drivers);
+            // This will be the div where our content will be loaded
+            $('#container').BlocksIt({
+				numOfCol: 4,
+				offsetX: 4,
+				offsetY: 4
+			});
+            offset+=10;
+           // alert(json.driverid);
+        },
+    	error: function (html) {
+		   // alert('No more driver found or the internet connection is not available.');
+		}
+    });
+return false;
+}
+
+function  imageLoaded(){
+	 $('#container').BlocksIt({
+			numOfCol: 4,
+			offsetX: 4,
+			offsetY: 4
+		});
+}
+ </script>
+  <script src="static/scripts/classie.js"></script>
+ <script>
+	var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' );
+			showleftPush = document.getElementById( 'showleftPush' );
+			
+			showRightPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+			
+			function disableOther( button ) {
+			    if( button !== 'showRightPush' ) {
+			        classie.toggle( showRightPush, 'disabled' );
+			    }
+			    if( button !== 'showleftPush' ) {
+			        classie.toggle( showleftPush, 'disabled' );
+			    }
+			}
+			showleftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showleftPush' );
+			};
+</script>
+<!-- script for Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55034442-1', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+
+</body>
+</html>

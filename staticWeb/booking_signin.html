@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Test</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css" media="screen">		
+		<link rel="stylesheet" type="text/css" href="static/styles/bootstrap-theme.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="static/styles/stylen.css">
+		<link rel="stylesheet" type="text/css" href="static/styles/style.css">
+	</head>
+
+<body lang="en">
+		<div class="container booking_container" style="background-color: #eaeaea;">
+			   <div id="id_signin">
+			   <form action="Signin" method="post">
+			     	<div class="row marg" style="margin-top: 100px; margin-bottom: 60px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      	<input id="id_username" maxlength="254" placeholder="Email:" class="form-control custominput" name="email" type="email" />
+				      	</div>
+			      	</div>
+			      	<div class="row marg">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      	<input id="id_password" name="password" type="password" class="form-control custominput" placeholder="Password:"/>
+				      	</div>
+			      	</div>
+			      	<div class="row" style="margin-top: 20px; margin-bottom: 40px;">
+			      		<div class="col-lg-8 fontregular" style="font-size: 14px; padding-right: 25px; " align="right">Forgot Password?</div>
+			      	</div>
+			      	<div class="row marg">
+			      		<div class="col-lg-offset-4 col-lg-4 " >
+			      		<input type="checkbox" name="vehicle" value="account" id="id_chk_signin" style="padding-top: 2px; margin-left: 5px;">&nbsp;
+				      	<label class="fontmedium" style="font-size: 14px; ">I don't have an account</label>
+				      	</div>
+			      	</div>	
+			      	<div class="row marg" style="margin-top: 50px; margin-bottom: 80px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<button type="submit" class="btn btn-primary btn-signup full-widthi fontbold" style="font-size: 24px; padding: 5px;">Log In</button>
+				      	</div>
+			      	</div>	
+			      	<!-- onclick="location.href='booking_adddetails.html'"  -->
+			  </form>
+			  </div>
+			      	
+			  <div id="id_new_registeration">
+			  <form action="Registeration" method="post">
+			      	<div class="row marg"  style="margin-top: 50px; margin-bottom: 40px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input id="id_phone" name="phone" type="text" class="form-control custominput" placeholder="Full Name:" />
+				      	</div>
+			      	</div>
+			      	
+			      	<div class="row marg" >
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input id="id_phone" name="phone" type="number" class="form-control custominput" placeholder="Mobile no:" />
+				      	</div>
+			      	</div>
+			      	
+			      	<div class="row marg" style="margin-top: 40px; margin-bottom: 40px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      	<input  id="id_email" name="email" type="email" class="form-control custominput" placeholder="Email:" />
+				      	</div>
+			      	</div>
+			      	
+			      	<div class="row marg" >
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      	<input id="id_password" maxlength="15" name="password" type="password" class="form-control custominput" placeholder="Password:" />
+				      	</div>
+			      	</div>
+			      	<div class="row marg" style="margin-top: 40px; margin-bottom: 20px;">
+				      	<div class="col-lg-offset-4 col-lg-4" >
+					      	<input type="checkbox" name="vehicle" value="account" id="id_chk_reg" style="padding-top: 2px; margin-left: 5px;">&nbsp;
+					      	<label style="	font-weight:normal; font-size: 15px; ">I have an account</label>
+					    </div>
+			      	</div>	
+			      	<div class="row marg" style="margin-bottom: 40px">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<button type="submit" class="btn btn-primary btn-signup full-widthi fontbold" style="font-size: 24px; padding: 5px;">REGISTER</button>
+				      	</div>
+			      	</div>
+		 	  </form>
+	    	  </div>
+				<!--<button  type="button" class="btn btn-primary btn-cust" onclick="location.href='booking_adddetails.html'">next </button>
+				-->
+		</div>
+
+
+
+	
+<!-- <div id="illustration" >
+	<div class="jumbotron illustration" >
+	<a class="cross">Close [X]</a>
+	<iframe src="https://docs.google.com/forms/d/1-62t4PbuCbzHceJZbshaTVVAL4bbOQToExNkUINNQTA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+</div> -->
+
+
+<script src="static/scripts/jquery-1.11.1.min.js"></script>
+
+<script src="static/scripts/jquery.bpopup.min.js"></script>
+<script>$('#illustration').hide();
+
+function illustration(){
+	$('#illustration').bPopup({
+		easing: 'easeOutBack', //uses jQuery easing plugin
+        speed: 450,
+        transition: 'fadeIn',
+		position: [250 ,30],
+		closeClass: 'cross'
+	});
+	
+}
+</script>
+<!-- bootstrap minjs -->
+<script src="static/scripts/bootstrap.min.js"></script>
+
+<!-- javascript plugin for scroll -->
+
+<script src="static/scripts/jquery.easing.min.js"></script>
+<script type="text/javascript">
+
+$('#id_new_registeration').hide();
+$('#id_chk_signin').change(function(){
+    var isChecked = $('#id_chk_signin').is(':checked');
+    if(isChecked){
+      $('#id_signin').slideUp(500,function(){$('#id_new_registeration').slideDown(500);});
+      $('#id_chk_reg').attr('checked', false);
+    }
+  });
+$('#id_chk_reg').change(function(){
+    var isChecked = $('#id_chk_signin').is(':checked');
+    if(isChecked){
+      $('#id_new_registeration').slideUp(500,function(){$('#id_signin').slideDown(500);});
+      $('#id_chk_signin').attr('checked', false);
+    }
+  });
+  
+</script>
+
+
+
+</body>	
+</html>

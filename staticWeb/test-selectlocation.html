@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Google locations</title>
+	<link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css" media="screen">		
+	<link rel="stylesheet" type="text/css" href="static/styles/bootstrap-theme.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="static/styles/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="static/styles/stylen.css" media="screen">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"></script>
+    
+    		
+</head>
+<body>
+<div style="visibility: hidden;">
+
+</div>
+<div id="id_locationrowhider_pas1">
+	
+	<div class="row fontbold" style=" background-color: #63636b;color:#fff;  padding: 8px;">
+		<div class="form-group">
+		<div class="col-xs-3" style="padding-top: 6px;"> Home Location:</div>
+		<div class="col-xs-6">
+		 	<input type="text" class="form-control"  name="home_location" id="us2-address"/>
+		 </div>
+		 <div class="col-xs-3">
+			<button class="home_location btn btn-primary btn-green" id="id_home_done" onclick="home_loc_btn(this,'#id_home_loc_pas1'),DisableInput('#us2-address',this)">Done</button>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="home_loc_pas1" id="id_home_loc_pas1">
+			<div class="row rowbase">
+				<div class="col-xs-9">
+					<div class="form-horizontal">
+					   <div id="us2" style="width: 500px; height: 250px;"></div>
+					   <!--  <div class="clearfix">&nbsp;</div>
+					    <div class="clearfix"></div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row fontbold" style=" background-color: #63636b;color:#fff;  padding: 8px;">
+		<div class="form-group">
+		<div class="col-xs-3" style="padding-top: 6px;"> Office location: </div>
+		<div class="col-xs-6"><input type="text" class="form-control" name="office_location" id="us3-address"/></div>
+		<div class="col-xs-3">
+			<button class="office_location btn btn-primary btn-green" id="id_office_btn_pas1" onclick="findDistance(1);home_loc_btn(this,'#id_office_loc_pas1'),DisableInput('#us3-address',this)">Done</button>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="id_office_loc_pas1" >
+			<div class="row rowbase">
+				<div class="col-xs-9">
+					<div class="form-horizontal">
+					    <div id="us3" style="width: 500px; height: 250px;"></div>
+					   <!--  <div class="clearfix">&nbsp;</div>
+					    <div class="clearfix"></div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--  this if for the second passenger -->
+<div id="id_locationrowhider_pas2">
+<div class="row fontbold" style=" background-color: #63636b;color:#fff;  padding: 8px;">
+
+		<div class="form-group">
+		<div class="col-xs-3" style="padding-top: 6px"> Home Location:</div>
+		<div class="col-xs-6">
+		 <input type="text" class="form-control" name="home_location" id="us4-address"/></div>
+		 <div class="col-xs-3">
+			<button class="home_location btn btn-primary btn-green" id="id_home_done_pas2" onclick="home_loc_btn(this,'#id_home_loc_pas2'),DisableInput('#us4-address',this)">Done</button>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="home_loc_pas2" id="id_home_loc_pas2">
+			<div class="row rowbase">
+				<div class="col-xs-9">
+					<div class="form-horizontal">
+					   <div id="us4" style="width: 500px; height: 250px;"></div>
+					    <div class="clearfix">&nbsp;</div>
+					    <div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="row fontbold" style=" background-color: #63636b;color:#fff;  padding: 8px;">
+		<div class="form-group">
+		<div class="col-xs-3 " style="padding-top: 6px"> Office location: </div><div class="col-xs-6">
+		<input type="text" class="form-control" name="office_location" id="us5-address"/></div>
+		<div class="col-xs-3">
+			<button class="office_location btn btn-primary btn-green" id="id_office_done_pas2" onclick="findDistance(2);home_loc_btn(this,'#id_office_loc_pas2'),DisableInput('#us5-address',this)">Done</button>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="id_office_loc_pas2" >
+			<div class="row rowbase">
+				<div class="col-xs-9">
+					<div class="form-horizontal">
+					    <div id="us5" style="width: 500px; height: 250px;"></div>
+					    <div class="clearfix">&nbsp;</div>
+					    <div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--  this if for the third passenger -->
+<div id="id_locationrowhider_pas3">
+	<div class="row fontbold" style=" background-color: #63636b;color:#fff;  padding: 8px;">
+		<div class="form-group">
+			<div class="col-xs-3" style="padding-top: 6px"> Home Location:</div>
+			<div class="col-xs-6">
+			 <input type="text" class="form-control" name="home_location" id="us6-address"/>
+			</div>
+			 <div class="col-xs-3">
+				<button class="home_location btn btn-primary btn-green" id="id_home_done_pas3" onclick="home_loc_btn(this,'#id_home_loc_pas3'),DisableInput('#us6-address',this)">Done</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="home_loc_pas3" id="id_home_loc_pas3">
+			<div class="row rowbase">
+				<div class="col-xs-9">
+					<div class="form-horizontal">
+					   <div id="us6" style="width: 500px; height: 250px;"></div>
+					    <div class="clearfix">&nbsp;</div>
+					    <div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="row fontbold" style=" background-color: #63636b;color:#fff;  padding: 8px;">
+		<div class="form-group">
+		<div class="col-xs-3 " style="padding-top: 6px"> Office location: </div>
+		<div class="col-xs-6">
+		<input type="text" class="form-control" name="office_location" id="us7-address"/></div>
+		<div class="col-xs-3">
+			<button class="office_location btn btn-primary btn-green" id="id_office_done_pas3" onclick="findDistance(3);home_loc_btn(this,'#id_office_loc_pas3'),DisableInput('#us7-address',this)">Done</button>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="id_office_loc_pas3" >
+			<div class="row rowbase">
+				<div class="col-xs-9">
+					<div class="form-horizontal">
+					    <div id="us7" style="width: 500px; height: 250px;"></div>
+					    <div class="clearfix">&nbsp;</div>
+					    <div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+<div class="utility_loc">
+ <!--  output of first passenger--> 
+	<input type="text" class="form-control" style="visibility: hidden;" id="us2-lat" />
+	<input type="text" class="form-control" style="visibility: hidden; " id="us2-lon"/>
+	<input type="text" class="form-control" style="visibility: hidden;" id="us3-lat" />
+	<input type="text" class="form-control" style="visibility: hidden; " id="us3-lon"/>
+<!--	 output of second passenger -->
+	<input type="text" class="form-control" style="visibility: hidden;" id="us4-lat" />
+	<input type="text" class="form-control" style="visibility: hidden; " id="us4-lon"/>
+	<input type="text" class="form-control" style="visibility: hidden;" id="us5-lat" />
+	<input type="text" class="form-control" style="visibility: hidden; " id="us5-lon"/>
+<!-- output of thisrt passenger -->
+	<input type="text" class="form-control" style="visibility: hidden;" id="us6-lat" />
+	<input type="text" class="form-control" style="visibility: hidden; " id="us6-lon"/>
+	<input type="text" class="form-control" style="visibility: hidden;" id="us7-lat" />
+	<input type="text" class="form-control" style="visibility: hidden; " id="us7-lon"/>
+<!-- output fare and distance -->
+<span id="id_output_totalfare"></span>
+<span id="id_output_fare1"></span>
+<span id="id_output_fare2"></span>
+<span id="id_output_fare3"></span>
+<!-- distance in numbers -->
+<input type="text" id="id_calc_distance1">
+<input type="text" id="id_calc_distance2">
+<input type="text" id="id_calc_distance3">
+<input type="text" id="id_calc_distance4">
+<input type="text" id="id_calc_distance5">
+<!-- Distance with km -->
+<span id="id_output_distance1"></span>
+<span id="id_output_distance2"></span>
+<span id="id_output_distance3"></span>
+<span id="id_output_distance4"></span>
+<span id="id_output_distance5"></span>
+<!-- order -->
+<span id="id_output_o"></span>
+<span id="id_output_d"></span>
+<span id="id_output_num"></span>	
+<input id="pac-input" class="controls" type="text" placeholder="Enter a location">
+		<div id="map-canvas" style="width:70%; height:100% ;"></div>
+		<!--<div id="directionsPanel" style="float:right;width:30%;height 100%">
+		-->
+		<p>Total Distance: <span id="total"></span></p>
+		<p>atob Distance: <span id="atob"></span></p>
+		<p>btoc Distance: <span id="btoc"></span></p>
+		<p>ctod Distance: <span id="ctod"></span></p>
+		<span id='location1'></span>
+</div>
+<script src="static/scripts/jquery-1.11.1.min.js"></script>
+<script src="static/scripts/locationpicker.jquery.js"></script>
+<script src="static/scripts/slideforadddetails.js"></script>
+<script src="static/scripts/java_selectlocation.js"></script>
+<script type="text/javascript">
+$('#id_locationrowhider_pas2').slideUp(5000);
+$('#id_locationrowhider_pas3').slideUp(5000);
+$('.utility_loc').hide();
+</script>
+<!-- For disabling the Input field -->
+<script>
+function DisableInput(inputId,thisId){
+	if(thisId.innerHTML=="Edit"){
+	$(inputId).attr("disabled","disabled");	
+	}else{
+	$(inputId).removeAttr("disabled");
+	}
+}
+</script>
+
+
+
+<script>
+var initpoints=new Array();
+$('#us3').locationpicker({
+    location: {latitude: 28.637099, longitude: 77.36084988298944},
+    radius: 300,
+    inputBinding: {
+        latitudeInput: $('#us3-lat'),
+        longitudeInput: $('#us3-lon'),
+        radiusInput: $('#us3-radius'),
+        locationNameInput: $('#us3-address')
+    },
+    enableAutocomplete: true
+});
+function success(position) {
+	
+	  var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	  var lat=latlng.lat();
+	  var lng=latlng.lng(); 
+	  document.getElementById("us2-lat").value=lat;
+	  document.getElementById("us2-lon").value=lng;
+	  document.getElementById("us4-lat").value=lat;
+	  document.getElementById("us4-lon").value=lng;
+	  
+	$('#us2').locationpicker({
+	    location: {latitude: lat, longitude: lng},
+	    radius: 300,
+	    inputBinding: {
+	        latitudeInput: $('#us2-lat'),
+	        longitudeInput: $('#us2-lon'),
+	        radiusInput: $('#us2-radius'),
+	        locationNameInput: $('#us2-address')
+	    },
+	    enableAutocomplete: true
+	});
+}
+   	
+function error(msg) {
+   	  //document.getElementById('location1').innerHTML=new google.maps.LatLng(28.637040547084208, 77.36084988298944);
+   	  //iska kuch krna pdega..
+   	  $('#us2').locationpicker({
+	    location: {latitude: 28.637040547084208, longitude: 77.36084988298944},
+	    radius: 300,
+	    inputBinding: {
+	        latitudeInput: $('#us2-lat'),
+	        longitudeInput: $('#us2-lon'),
+	        radiusInput: $('#us2-radius'),
+	        locationNameInput: $('#us2-address')
+	    },
+	    enableAutocomplete: true
+	});
+   	  // console.log(arguments);
+}
+
+   	if (navigator.geolocation) {
+   	  navigator.geolocation.getCurrentPosition(success, error);
+   	} else {
+   	  error('not supported');
+   	}
+    	
+   	
+
+$('#us4').locationpicker({
+    location: {latitude: 28.637040547084208, longitude: 77.36084988298944},
+    radius: 300,
+    inputBinding: {
+        latitudeInput: $('#us4-lat'),
+        longitudeInput: $('#us4-lon'),
+        radiusInput: $('#us4-radius'),
+        locationNameInput: $('#us4-address')
+    },
+    enableAutocomplete: true
+});
+
+$('#us5').locationpicker({
+location: {latitude: 28.637040547084208, longitude: 77.36084988298944},
+radius: 300,
+inputBinding: {
+    latitudeInput: $('#us5-lat'),
+    longitudeInput: $('#us5-lon'),
+    radiusInput: $('#us5-radius'),
+    locationNameInput: $('#us5-address')
+},
+enableAutocomplete: true
+});
+
+$('#us6').locationpicker({
+    location: {latitude: 28.637040547084208, longitude: 77.36084988298944},
+    radius: 300,
+    inputBinding: {
+        latitudeInput: $('#us6-lat'),
+        longitudeInput: $('#us6-lon'),
+        radiusInput: $('#us6-radius'),
+        locationNameInput: $('#us6-address')
+    },
+    enableAutocomplete: true
+});
+
+$('#us7').locationpicker({
+location: {latitude: 28.637040547084208, longitude: 77.36084988298944},
+radius: 300,
+inputBinding: {
+    latitudeInput: $('#us7-lat'),
+    longitudeInput: $('#us7-lon'),
+    radiusInput: $('#us7-radius'),
+    locationNameInput: $('#us7-address')
+},
+enableAutocomplete: true
+});
+</script>
+
+<script>	    	
+	var rendererOptions = {
+	  draggable: false
+	};
+	var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+	var directionsService = new google.maps.DirectionsService();
+	var map;
+	
+	
+	var australia = new google.maps.LatLng(28.637040547084208, 77.36084988298944);
+	function initialize() {
+	
+	  var mapOptions = {
+	    zoom: 12,
+	    center: australia
+	  };
+	  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	  directionsDisplay.setMap(map);
+	  directionsDisplay.setPanel(document.getElementById('directionsPanel'));
+	
+	  google.maps.event.addListener(directionsDisplay, 'directions_changed', function() {
+	    computeTotalDistance(directionsDisplay.getDirections());
+	  });
+	  
+	  /** @type {HTMLInputElement} */
+	  var input = (document.getElementById('pac-input'));
+	  
+	  var options = {
+			  types: ['(cities)'],
+			  componentRestrictions: {country: 'in'}
+			};
+	
+	  		map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	
+			var autocomplete = new google.maps.places.Autocomplete(input, options);
+			autocomplete.bindTo('bounds', map);
+			
+			google.maps.event.addListener(autocomplete, 'place_changed', function() {
+			  
+			var place = autocomplete.getPlace();
+			if (!place.geometry) {
+			  return;
+			}
+			
+			// If the place has a geometry, then present it on a map.
+			if (place.geometry.viewport) {
+			  map.fitBounds(place.geometry.viewport);
+			} else {
+			  map.setCenter(place.geometry.location);
+			  map.setZoom(8);  // Why 17? Because it looks good.
+			}
+			//document.getElementById('location1').innerHTML =place.geometry.location;
+	
+			var place_name=place.name;
+			});
+	}
+	
+	
+	
+	function calcRoute() {
+		console.log("calcRoute");
+		var waypts = [];
+		var points=document.getElementById('location1').innerHTML;  
+		points=points.split('),');
+		for (var i = 2; i < points.length; i++) {
+		    waypts.push({
+		       location:points[i],
+		       stopover:true
+		    });
+		    
+		}
+		var request = {
+		    origin: points[0],
+		    destination: points[1],
+		    waypoints: waypts,
+		    optimizeWaypoints: true,
+		    travelMode: google.maps.TravelMode.DRIVING
+		};
+	  directionsService.route(request, function(response, status) {
+	    if (status == google.maps.DirectionsStatus.OK) {
+	      directionsDisplay.setDirections(response);
+	    }
+	  });
+	}
+	
+	function computeTotalDistance(result) {
+	  var total = 0;
+	  var location1st="";
+	  var distance=new Array();
+	  var myroute = result.routes[0];
+	 for (var i = 0; i < myroute.legs.length; i++) {
+	    total += myroute.legs[i].distance.value;
+	    distance[i]=myroute.legs[i].distance.value;
+	    distance[i]=distance[i]/1000.0;
+	    document.getElementById('id_output_distance'+(i+1)).innerHTML=distance[i]+ ' km';
+	    document.getElementById('id_calc_distance'+(i+1)).value=distance[i];
+	    console.log("distance calc is "+distance[i])
+	  }
+	  var location1st =myroute.legs[0].start_location;
+	  total = total / 1000.0;
+	  document.getElementById('total').innerHTML = total + ' km';
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+<!-- -------implimentation search-----------=======================================================================================
+=============================================================================================================================== -->
+<script type="text/javascript" src="static/scripts/selectlocation-distance.js"></script>
+
+</body>
+</html>

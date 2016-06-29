@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Early sign up</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css" media="screen">		
+		<link rel="stylesheet" type="text/css" href="static/styles/bootstrap-theme.min.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="static/styles/stylen.css">
+		<link rel="stylesheet" type="text/css" href="static/styles/style.css">
+	</head>
+
+<body lang="en">
+		<div class="container booking_container" style="background-color: #eaeaea;">
+			   
+			      	
+			  
+			  <form action="EarlySignin" method="post">
+			      	<div class="row marg"  style="margin-top: 50px; margin-bottom: 40px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input id="id_name" name="name" type="text" required class="form-control custominput" placeholder="Full Name:" />
+				      	</div>
+			      	</div>
+			      	
+			      	<div class="row marg" >
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input id="id_phone" name="phone" type="number" required class="form-control custominput" placeholder="Mobile no:" />
+				      	</div>
+			      	</div>
+			      	
+			      	<div class="row marg" style="margin-top: 40px; margin-bottom: 40px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input  id="id_email" name="email" type="email" required class="form-control custominput" placeholder="Email:" />
+				      	</div>
+			      	</div>
+			      	<div class="row marg" style="margin-top: 40px; margin-bottom: 40px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input  id="id_email" name="pickup" type="text" required class="form-control custominput placepicker" placeholder="Pickup Locality" />
+				      	</div>
+			      	</div>
+			      	<div class="row marg" style="margin-top: 40px; margin-bottom: 40px;">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<input  id="id_email" name="drop" type="text" required class="form-control custominput placepicker" placeholder="Drop Locality:" />
+				      	</div>
+			      	</div>
+			      	<!-- <div class="row marg" >
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      	<input id="id_password" maxlength="15" name="password" type="password" class="form-control custominput" placeholder="Password:" />
+				      	</div>
+			      	</div> -->
+			      <!-- 	<div class="row marg" style="margin-top: 40px; margin-bottom: 20px;">
+				      	<div class="col-lg-offset-4 col-lg-4" >
+					      	<input type="checkbox" name="vehicle" value="account" id="id_chk_reg" style="padding-top: 2px; margin-left: 5px;">&nbsp;
+					      	<label style="	font-weight:normal; font-size: 15px; ">I have an account</label>
+					    </div>
+			      	</div>	 -->
+			      	<div class="row marg" style=" margin-bottom: 50px">
+				      	<div class="col-lg-offset-4 col-lg-4">
+				      		<button type="submit" class="btn btn-primary btn-signup full-widthi fontbold" style="font-size: 24px; padding: 5px;">SIGN UP</button>
+				      	</div>
+			      	</div>
+		 	  </form>
+		</div>
+
+
+
+	
+<!-- <div id="illustration" >
+	<div class="jumbotron illustration" >
+	<a class="cross">Close [X]</a>
+	<iframe src="https://docs.google.com/forms/d/1-62t4PbuCbzHceJZbshaTVVAL4bbOQToExNkUINNQTA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	</div>
+
+</div> -->
+
+ <script src="static/scripts/jquery-1.11.1.min.js"></script>
+<!-- The auto complete js -->
+	<script src="static/scripts/jquery.placepicker.js"></script>
+	<!-- google plugin for auto complete -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?language=en&libraries=places"></script>
+	
+
+<script>
+      $(document).ready(function() {
+      $(".placepicker").placepicker();
+       });
+        
+    </script>
+</body>	
+</html>

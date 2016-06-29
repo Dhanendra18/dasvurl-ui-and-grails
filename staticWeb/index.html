@@ -1,0 +1,725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="shortcut icon" href="static/images/title.png" />
+	<title>Blink Autos - Radio auto-rickshaw service for office commuters</title>
+
+	<link rel="stylesheet" type="text/css" href="static/styles/default.css" />
+	<link rel="stylesheet" type="text/css" href="static/styles/component.css" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css" media="screen">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" type="text/css" href="static/styles/bootstrap-theme.min.css" media="screen">
+
+	<link rel="stylesheet" type="text/css" href="static/styles/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="static/styles/stylen.css" media="screen">
+
+	<script type="application/javascript" src="static/scripts/jquery-1.11.1.min.js"></script>
+    <!-- java script plugin for scroll -->
+	<script type="application/javascript" src="static/scripts/jquery.easing.min.js"></script>
+   
+	<!--***************************this is for the maps .... places auto complete **********************-->
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#dvLoading{
+			background:#000 no-repeat center center;
+			background-color : #000000;
+			height: 110%;
+			width: 110%;
+			position: fixed;
+			z-index: 99999999;
+		}
+	</style>
+
+	<!-- scrolling jQuery -->	
+	<script type="application/javascript" src="static/scripts/scrolling.js"></script>
+	<style type="text/css">
+	.placepicker-map {
+	width: 100%;
+	height: 300px;
+	}
+	.pac-container {
+	border-radius: 5px;
+	}
+	</style>
+	<!-- auto complete ends here....................................... -->
+</head>
+<body >
+	<!-- if a browser does not contain/enable java script -->
+	<noscript>
+	<h1>You need java script enabled to view this page correctly.</h1>
+	</noscript>
+	<!-- THE LOADING INSTRUMENT -->
+	<div id="dvLoading"></div>	
+		<!--  scroll main
+		<div class="scrolling-container">
+			<ul id="ul1" class="bullts active1">
+				<li href=".fstpage" class="page-scroll"></li>
+			</ul>
+			<ul id="ul2" class="bullts">
+				<li href=".scrollbtn" class="page-scroll"></li>
+			</ul>
+			<ul id="ul3" class="bullts">
+				<li href=".trdpage" class="page-scroll"></li>
+			</ul>
+			<ul id="ul4" class="bullts">
+				<li href=".fourthpage" class="page-scroll"></li>
+				</ul>
+		</div> -->
+		<header class="bars topbar" >
+			<div class="row" style="margin-top: 10px;">
+				<div class="container">
+					<div class="col-xs-3 "><p href=".fstpage" class="page-scroll blinkauto fontSize24">BLINK AUTOS</p></div>			
+					<div class="col-xs-offset-2 col-xs-2 center fontregular fontSize24">
+						NOIDA 
+					</div>
+ 					<!-- <nav class="navbar navbar-transparent navme"  id="my-button" role="navigation">
+						<div class="container">
+						    Collect the nav links, forms, and other content for toggling
+						    <div  class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+						      <ul class="nav navbar-nav navbar-right ">
+						        <li><a href="#id_fstpage" class="page-scroll">Home</a></li>
+					            <li><a href="#id_scndpage" class="page-scroll">Area of operation</a></li>
+					            <li><a href="#id_trdpage" class="page-scroll">How it works</a></li>
+					            <li><a href="#id_fourthpage" class="page-scroll">Pricing</a></li>
+					            <li><a href="#id_fifthpage" class="page-scroll">Benefits</a></li>
+					            <li><a href="#id_sixthpage" class="page-scroll">contact</a></li>
+						      </ul>
+						    </div>
+							 /.navbar-collapse
+						</div>
+					</nav> -->
+					<div class="col-xs-offset-3 col-xs-1" align="right">
+					</div>
+					
+					<div class="col-xs-1 twitterimg">
+					<!--<a href="#">
+						<img src="static/images/twitter-default.png" onmouseover="this.src='static/images/twitter-active.png';"
+						onmouseout="this.src='static/images/twitter-default.png';" class="img-responsive" height="auto" width="40px"/>
+					</a>
+					-->
+					<div class="nav navbar-nav navbar-right ">
+					
+				<a> <img src="static/images/collapse.png" id="showRightPush" onmouseover="this.src='static/images/collapse-hover.png';"
+						onmouseout="this.src='static/images/collapse.png';" alt="menu" class="img-responsive" width="25px" style="cursor: pointer;" /></a></div>
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+					<h3 style="cursor: pointer;" id="showleftPush">
+					<img src="static/images/ListIcon_Grey.png" id="showRightPush" alt="menu" class="img-responsive" width="50px" />
+					</h3>
+					 <a href=" #id_scndpage" class="page-scroll">About Service</a>
+		            <a href="#id_trdpage" class="page-scroll">How it works</a>
+		            <a href="#id_fourthpage" class="page-scroll">Pricing</a>
+		            <a href="#id_fifthpage" class="page-scroll">Benefits</a>
+		             <a href="#id_sixthpage" class="page-scroll">F.A.Q</a>
+		             <a href="meet-the-driver-profile.html" class="page-scroll">Meet the driver</a>
+		             <a href="booking_adddetails.html" class="page-scroll">Demo Web app</a>
+		            <a href="#id_seventhpage" class="page-scroll">Contact us</a>
+				</nav>
+					 </div>
+					<!-- <ul class="nav navbar-nav navbar-right ">
+				      	<li class="dropdown">
+				          <i class="dropdown-toggle" data-toggle="dropdown" style="padding: 0px;">
+				          <img src="static/images/collapse.png" onmouseover="this.src='static/images/collapse-hover.png';"
+						onmouseout="this.src='static/images/collapse.png';" alt="menu" class="img-responsive" width="25px" /></i>
+				          <ul class="dropdown-menu" role="menu">
+				            <li><a href="#id_scndpage" class="page-scroll">Area of operation</a></li>
+				            <li><a href="#id_trdpage" class="page-scroll">How it works</a></li>
+				            <li><a href="#id_fourthpage" class="page-scroll">Pricing</a></li>
+				            <li><a href="#id_fifthpage" class="page-scroll">Benefits</a></li>
+				            <li><a href="#id_sixthpage" class="page-scroll">Contact us</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#" class="page-scroll">Facebook</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#" class="page-scroll">Log out</a></li>
+				          </ul>
+				        </li>
+				      </ul> -->
+					</div>
+				</div>
+			<nav class="navbar">
+			<div  class="collapse navbar-collapse " id="bs-example-navbar-collapse-1"></div>
+			</nav>
+		</header>
+	
+
+<nav class="navbar  navbar-black navbar-fixed-top navme" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <p href=".fstpage" class="page-scroll blinkauto1 fontSize20" style="margin-top: 10px;">BLINK AUTOS</p>
+    </div>
+	<div>
+		<a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
+	</div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right index-nav">
+        <li id="li1"> <a href="#id_scndpage" class="page-scroll">about service</a></li>
+        <li id="li2"><a href="#id_trdpage" class="page-scroll">how it works</a></li>
+        <li id="li3"><a href="#id_fourthpage" class="page-scroll">pricing</a></li>
+        <li id="li4"><a href="#id_fifthpage" class="page-scroll">benefits</a></li>
+        <li id="li5"><a href="#id_sixthpage" class="page-scroll">faq</a></li>
+        <li id="li6"><a href="#id_seventhpage" class="page-scroll">contact us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		
+<div class="contactElement fontregular">
+	<div> Or Simply call </div><div> 8010 22 33 22</div>
+</div>		
+
+
+<!-- ============================================
+				first page
+================================================-->
+
+<section class="sec1 fstpage" id="id_fstpage"  data-speed="-1" data-type="background"  style="background-image: url('static/images/page1bgpic0.png');
+	 background-position: bottom; ">
+	 <div class="down_wrapper"><a href="#id_scndpage" class="page-scroll"><img src="static/images/DownArrow.png" width="40px" height="18px;"/></a></div>
+		<div class="container">
+		<div style="margin-top: 30px;"></div>
+			<div  class="row" > 
+				<div class="col-xs-offset-3 col-xs-6" align="center">
+			 		<img  src="static/images/blinklogowhite.png" width="148px;" class="img-responsive"/>	
+			 	</div>
+			</div>
+			<div  class="row center">
+				<div id="hight_manager">
+				 	<!-- <p class="tagline">Blink and we have an auto for you</p> -->
+				 	<p class="pg1body fontsami fontSize30">Radio auto-rickshaw service<br>
+					for office commuters</p>
+					<p class="headline fontSize36">
+					AFFORDABLE.&nbsp;&nbsp;CONVENIENT.&nbsp;&nbsp;RELIABLE.</p>
+					<p class="fontregular fontSize24" style=" color:#ffffff;">Travel for as low as INR 5/KM. Starting on Dec. 15th 2014. <br>Sign up today for an early access.</p>
+				</div>
+					
+			</div>
+				
+				
+			<div class="registeration_form">
+				<div class="row nullmargin-right" align="center">
+					<button id="changesetup" class="btn btn-index signup2 fontregular fontSize26" onclick="signup()">Sign Up</button>
+					<button id="changesetup" class="btn btn-index meetthedriver1  fontregular fontSize26" onclick="location.href='meet-the-driver-profile.html'"> Meet The Drivers</button>
+				</div>
+				
+				<div class="row nullmargin-right" style="margin-top:30px;">
+					<!-- <div class="col-xs-offset-2 col-sm-4 col-xs-0"  style="padding-left: 120px; padding-right: 20px;">
+						
+					</div>
+					<div class="col-xs-offset-1 col-sm-4 col-xs-0" style="padding-left: 20px; padding-right: 120px; margin: auto;">
+						<button id="changesetup" class="btn btn-index indexbtn full-widthi" onclick="location.href='meet-the-driver-profile.html'"> MEET THE DRIVERS</button>
+					</div> -->
+				</div><!--row closes here-->
+			</div>
+		</div><!-- container close -->
+		
+</section>	
+
+<!-- ============================
+			page 2 AREA OF OPERATION
+============================= -->
+<section class="sec2a scrollbtn" id="id_scndpage">
+	
+	<div class="container" style="margin-top: 35px;">
+	<div class="down_wrappersec2"><a href="#id_scndpage_1" class="page-scroll"><img src="static/images/downArrowBlack.png" width="40" height="18px"/></a></div>
+		 <!-- <div class="boxcontainer_temp">
+			<img src="static/images/HIW_how_service_works.png" class="img-responsive"/>
+		</div> -->
+		<div class="row fontregular fontSize18" >
+			<div class="col-xs-5" style="line-height: 32px;">
+				<p class="fontbold fontSize20" >What Is This Service?</p>
+				<p>With the use of advanced technology, marketing and driver training, Blink Autos aims to provide an affordable,
+				 covenient and reliable rides to commuters.</p>
+				
+				<p>In phase 1 launch, office commuters can book daily pickup/drop package(15-30 days) with an option to share 
+				ride - travel for as low as 5 INR/KM within noida.</p>
+			</div>
+			<div class="col-xs-5">
+				<p class="fontbold fontSize20" style=" margin-left: 12px;">How It Works?</p>
+				<ol type="1" style="line-height: 40px;">
+					<li>Click Web App for bookings</li>
+					<li>Select Pickup/Drop points - get fare 
+     details upfront</li>
+					<li>Add co-passengers(can be different
+     pickup/drop points) to save more<br>
+     That's it! we'll take care of the rest
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="row fontregular fontSize18" >
+			<div class="col-xs-5">
+				<div class="col-xs-3" style="border-top: solid; border-width: 1px; margin-top: 14px;"></div>
+				<div class="col-xs-6">Reliable and Safe</div>
+				<div class="col-xs-3" style="border-top: solid; border-width: 1px; margin-top: 14px; "></div>
+			</div>
+			<div class="col-xs-5">
+				<div class="col-xs-4" style="border-top: solid; border-width: 1px; margin-top: 14px; "></div>
+				<div class="col-xs-4" align="center">Or Simply</div>
+				<div class="col-xs-2" style="border-top: solid; border-width: 1px; margin-top: 14px; "></div>
+			</div>
+		</div>
+		<div class="row fontregular fontSize18" style=" margin-top: 18px;">
+			<div class="col-xs-5" style="line-height: 32px;">Yes. All our driver's details and document's are available online. They are also trained to serve you better.</div>
+			<div class="col-xs-5" style="margin-left: 70px;"><img alt="call" src="static/images/PhoneIconBlack.png" height="100%" width="32px">
+			<span class="fontSize30" style="font-family: 'Verdana',sans-serif; ">8010 22 33 22</span></div>
+		</div>
+		<div class="row" style="margin-bottom: 100px; margin-top: 50px">
+			<div class="col-xs-offset-4 col-xs-3"><button id="changesetup" class="btn btn-index contactbtn full-widthi fontSize24" onclick="location.href='booking_adddetails.html'">Demo Web App </button></div>
+		</div>
+		<div class="demoBtn">
+			
+		</div>
+	</div>
+</section>
+<!--page2- Section 2 -->
+<section class="sec2b scrollbtn" id="id_scndpage_1">
+	<div class="container">	
+		<div class="down_wrapper1"><a href="#id_trdpage" class="page-scroll"><img src="static/images/DownArrow.png" width="40" height="18px"/></a></div>
+<!--  old codes -->	
+		<div class="row" style="margin-top: 70px;">
+			<div class="col-md-5 marginplus">
+				<p class="placepg1"></p>
+				<img src="static/images/map.png" class="img-responsive">
+			</div>
+			<div class="col-md-2">
+				<div class="row">
+				<div class="col-xs-10 statepg2">Noida</div>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+				<div class="col-xs-1" style="background-color: #fdda2e; height: 15px;" ></div>
+				<div class="col-xs-10 pg2maptilt" >Operational</div>
+				</div>
+				<div class="row" style="margin-top: 20px;">
+				<div class="col-xs-1" style="background-color: #676867; height: 15px;"></div>
+				<div class="col-xs-10 pg2maptilt">Non-operational</div>
+				</div>
+  			</div>
+			<div class="col-md-5" >
+			<div class="col-xs-offset-1 col-xs-10" style="margin-bottom: 15px; margin-top: 65px;">
+			<!-- <img src="static/images/Driver circle.png" class="img-responsive"> -->
+			 <div class="content_1stpg">
+				<p class="no_driver" >50</p>
+				<p class="name_driver" >Drivers</p>			
+				<p class="circlesvg" align="center">
+				<svg  width="100%" height="400px" >
+					<g>
+			         <circle cx="140" cy="140" r="135" style="fill:transparent; stroke-width:3; stroke:rgb(255,255,255); opacity:0.5"> 
+			      	</g>
+			   </svg></p>
+			  </div>
+		   </div>
+			<div class="col-xs-offset-2 col-xs-9">
+				<p class="pg2body" align="center" style="margin-bottom: 100px; padding: 8px; padding-right: 30px;">
+					<button id="changesetup" class="btn btn-index indexbtn full-widthi" onclick="location.href='meet-the-driver-profile.html'"> Meet The Drivers</button>
+				</p>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ============================
+			page 3 how it works
+============================= -->	
+<section class="sec3 trdpage" id="id_trdpage">
+	<div class="container">
+	<div class="down_wrapper1"><a href="#id_fourthpage" class="page-scroll"><img src="static/images/DownArrow.png" width="40" height="18px"/></a></div>
+		<div class="boxcontainer">
+			
+			<div class="serviceworks" id="id_works"><img alt="serviceworks" src="static/images/HIW_how_service_works.png" class="img-responsive"> </div>
+			<div class="servicecharge" id="id_charge"><img alt="serviceworks" src="static/images/HIW_service_charge.png" class="img-responsive"></div>
+			<div class="onboard" id="id_onboard"><img alt="serviceworks" src="static/images/HIW_Driver_onboarding.png" class="img-responsive"></div>
+			
+			<div class="row howitworksbtn" style="margin-top: 5px;">
+			<div class="howdiv" style="padding-right: 30px;  padding-left: 30px;"><button class="btn btn-index howbtn full-widthi" onclick="imgpositon1()">How this service works?</button></div>
+			<div class="howdiv"><button class="btn btn-index howbtn full-widthi" onclick="imgpositon2()">How is service charge estimated?</button></div>
+			<div class="howdiv" style=" padding-left: 30px;"><button class="btn btn-index howbtn full-widthi" onclick="imgpositon3()">How drivers are on-boarded?</button></div>
+			</div>
+		</div>
+		<div class="scrollhelper"></div>
+	</div>
+</section>
+<!-- ============================
+			page 4 pricing
+============================= -->	
+<!-- <div id="id_fourthpage"></div> -->
+<section class="sec4 fourthpage" id="id_fourthpage">
+	<div class="container" style="margin-top: 60px;">
+		<div class="down_wrapper1"><a href="#id_fifthpage" class="page-scroll"><img src="static/images/downArrowBlack.png" width="40" height="18px"/></a></div>
+	
+		<!-- <div class="row">
+			<div class="col-xs-3 textpg4">I want to go from</div>
+			<div class="form-group">
+			<div class="col-xs-2"><input type="text" id="id_from_loc" placeholder="Home location" class="form-control"></div> 
+			<div class="col-xs-1 textpg4" align="center">to</div>
+			<div class="col-xs-2"><input type="text" id="id_to_loc"  placeholder="Office location" class="form-control"></div>
+			<div class="col-xs-offset-1 col-xs-2">
+			<button class="btn btn-primary btn-gray full-widthi" >Check Fare</button></div></div>			
+		</div> -->
+		
+		<div class="row" >
+			<div class="col-xs-6" style="margin-top: 60px;">
+				<p class="simplefarepg4 fontSize30">Simple, transparent fares</p>
+				<ul class="pg4list">
+					<li >Flat fare of INR 10/km</li>
+					<li>Travel for as low as INR 5/km</li>
+				</ul>
+				<p class="notclearpg4 fontSize24">Not Clear?</p>
+				<button class="btn btn-primary btn-gray fontSize" style="margin-top: 30px; margin-left: 20px;" onclick="thankyou()">Check Illustration</button>
+			</div>
+			<div class="col-xs-6" style="margin-top: 40px; margin-bottom: 30px;"><img src="static/images/Pricing.png" class="img-responsive"/></div>
+		</div>
+	</div>
+</section>
+<!-- second part
+<section class="sec4a fourthpage" id="id_fourthpage">
+	<div class="container" style="margin-top: 60px;">
+		<div class="row">
+			<div class="col-xs-3 textpg4">I want to go from</div>
+			<div class="form-group">
+			<div class="col-xs-2" style="padding: 0px;"><input type="text" id="id_from_loc" placeholder="Home location" class="form-control"></div> 
+			<div class="col-xs-1 textpg4" align="center">to</div>
+			<div class="col-xs-2" style="padding: 0px;"><input type="text" id="id_to_loc"  placeholder="Office location" class="form-control"></div>
+			<div class="col-xs-offset-1 col-xs-2">
+			<button class="btn btn-primary btn-gray full-widthi" >Check Fare</button></div></div>			
+		</div>
+	
+		<div class="row" style="margin-top: 70px;">
+			<div class="col-xs-3 fontsemi" align="center"  style="font-size: 48px">1</div>
+			<div class="col-xs-2 fontsemi" align="center" style="font-size: 48px"><img src="static/images/upndown.jpg" usemap="#upndown"/><span >15</span> </div>
+			<div class="col-xs-offset-1 col-xs-3 fontsemi" style="font-size: 24px"><span class="fontsemi">Include return<br>pickup</span> </div>
+			<div class=" col-xs-2 fontsemi" style="font-size: 24px">Need help?<br>8010 22 33 22</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 fontsemi " align="center" style="font-size: 18px">No of passengers</div>
+			<div class="col-xs-2 fontsemi " align="center" style="font-size: 18px">No of trips</div>
+		</div>
+		
+		<div class="row" align="center" style="margin-top: 90px;">
+			<div class="col-xs-2 fontsemi" style="font-size: 24px;">Distance</div>
+			<div class="col-xs-2 fontsemi" style="font-size: 24px;">Fare/trip</div>
+			<div class="col-xs-2 fontsemi" style="font-size: 24px;">No. of trips</div>
+			<div class="col-xs-offset-2 col-xs-4 fontsemi" style="font-size: 24px;">Total Amount</div> 
+		</div>
+		<div class="row" align="center">
+			<div class="col-xs-2 "><span class="fontsemi" style="font-size: 60px;">5.7</span></div>
+			<div class="col-xs-2 "><span class="fontsemi" style="font-size: 60px;">54</span></div>
+			<div class="col-xs-2 "><span class="fontsemi" style="font-size: 60px;">15</span></div>
+			<div class="col-xs-offset-2 col-xs-4 fontsemi" style="font-size: 60px;"><span >810</span> + <span>390</span></div> 
+		</div>
+		<div class="row" align="center">
+			<div class="col-xs-2 fontsemi" style="font-size: 18px;">km</div>
+			<div class="col-xs-2 fontsemi" style="font-size: 18px;">INR</div>
+			<div class="col-xs-2 fontsemi" style="font-size: 18px;">Trips</div>
+			<div class="col-xs-offset-2 col-xs-2 fontsemi" style="font-size: 18px;">fare</div>
+			 <div class="col-xs-2 fontsemi" style="font-size: 18px;">Service charge[?]</div>
+		</div>
+		<div class="row" align="center">
+			<div class="col-xs-offset-8 col-xs-4 fontsemi" style="font-size: 30px; margin-top: 30px;"><span>1200</span> INR/person</div>
+		</div>
+		<div class="row" align="center" style="margin-bottom: 20px; margin-top: 20px;">
+			<button class="btn btn-index indexbtn">BOOK NOW</button>
+		</div>
+		<map name="upndown">
+			<area alt="up" shape="rect" coords="0,0,30,23" onclick="alert('increse me')">
+			<area alt="up" shape="rect" coords="0,23,30,47" onclick="alert('decrese me')">
+		</map>
+	</div>
+</section> -->
+<!-- ============================
+			page 5 Benifits
+============================= -->	
+<section class="sec5 fifthpage" id="id_fifthpage">
+	<div class="container">
+		<div class="down_wrapper1"><a href="#id_sixthpage" class="page-scroll"><img src="static/images/downArrowBlack.png" width="40" height="18px"/></a></div>
+		<div class="row" align="center" style="margin-top: 70px; margin-bottom: 40px;">
+			<div class="col-xs-3"><img src="static/images/benefit_affordable.png" class="img-responsive"></div>
+			<div class="col-xs-3"><img src="static/images/benefit_convenient.png" class="img-responsive"></div>
+			<div class="col-xs-3"><img src="static/images/benefit_reliable.png" class="img-responsive"></div>
+			<div class="col-xs-3"><img src="static/images/benefit_givingback.png" class="img-responsive"></div>	
+		</div>
+		<div class="row fontbold fontSize20"  style=" margin-bottom: 30px;" align="center">
+			<div class="col-xs-3 ">AFFORDABLE</div>
+			<div class="col-xs-3">CONVENIENT</div>
+			<div class="col-xs-3">RELIABLE</div>
+			<div class="col-xs-3">GIVING BACK</div>
+		</div>
+		<div class="row fontregular fontSize18" style=" line-height: 32px;">
+			<div class="col-xs-3 paddingcorrection20">No hassle. No barganing. Book online, travel cashless with a reliable medium.</div>
+			<div class="col-xs-3 paddingcorrection20">Simple, transparent fares. Share rides to save more</div>
+			<div class="col-xs-3 paddingcorrection20">Travel safely with our trained and experienced drivers</div>
+			<div class="col-xs-3 paddingcorrection20">No hassle. No barganing. Book online, travel cashless with a reliable medium.</div>
+		</div>
+		<div class="row fontregular fontSize18" style="margin-top: 10px; margin-bottom: 90px;">
+			<div class="col-xs-3 paddingcorrection20right">
+				<ul class="pg5list ">
+					<li>Easy booking via web app.</li>
+					<li>Get fare details upfront</li>
+					<li>Select your driver and pay online</li>
+					<li>Pay as you go- Buy trips rather tha a monthly package</li>
+				</ul>
+			</div>
+			<div class="col-xs-3 paddingcorrection20right">
+				<ul class="pg5list">
+					<li>Flat fare of INR 10/km</li>
+					<li>Travel for as low as INR 7/km for the distance you share with 2 passengers.</li>
+				</ul>
+			</div>
+			<div class="col-xs-3 paddingcorrection20right">
+				<ul class="pg5list ">
+					<li>Stringent driver selection with an onboarding training program</li>
+					<li>Online profile for each driver along with his necessary document's scan</li>
+				</ul>
+			</div>
+			<div class="col-xs-3 paddingcorrection20right">
+				<ul class="pg5list ">
+					<li> Easy booking via web app.</li>
+					<li>Get fare details upfront</li>
+					<li>Select your driver and pay online</li>
+					<li>Pay as you go- Buy trips rather than a monthly package.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ============================
+			page 6 FAQ
+============================= -->	
+<section class="sec6 sixthpage" id="id_sixthpage">
+	<div class="container">
+	<div class="down_wrapper1"><a href="#id_seventhpage" class="page-scroll"><img src="static/images/DownArrow.png" width="40" height="18px"/></a></div>
+		<div style="margin-top: 70px;">
+			<table style="width: 90%;" class="tablecust table" align="center" >
+			
+				<tr ><th>FAQ 1	<img  class="picture1" align="right" alt="" src="static/images/up_arrow_faq.png" width="20px"></th></tr>
+				
+				<tr class="hide1">
+				<td  colspan="2">this will be toggled<br>this will be toggled<br>this will be toggled<br>this will be toggled<br>this will be toggled</td>	</tr>
+				<tr> <th>FAQ 2	<img  class="picture2" align="right" alt="" src="static/images/down_arrow_faq.png" width="20px"></th></tr>
+				<tr class="hide2"><td colspan="2">this will be toggled</td>	</tr>
+				<tr><th>FAQ 3	<img  class="picture3" align="right" alt="" src="static/images/down_arrow_faq.png" width="20px"></th></tr>
+				<tr class="hide3"><td colspan="2">this will be toggled</td>	</tr>
+				<tr> <th>FAQ 4	<img  class="picture4" align="right" alt="" src="static/images/down_arrow_faq.png" width="20px"></th></tr>
+				<tr class="hide4" ><td colspan="2">this will be toggled</td>	</tr>	
+			</table>
+		</div>
+	</div>
+</section>
+<!-- ====================================================================
+				Page 7	Contact us
+====================================================================== -->
+<section class="sec7 sixthpage" id="id_seventhpage">
+	<div class="container">
+		<div class="row" style="margin-top: 60px;">
+			<div class="col-md-6 fontSize18" align="center"  style=" padding-right:70px; " >
+				<div class="row"><img src="static/images/contactus_logo.png" alt="blink logo" class="img-responsive"></div>
+				<div class="row rowbase" style="margin-top: 60px; margin-bottom: 30px; line-height: 32px">
+					<p class="fontregular"align="left">Blink Auto Services Pvt. Ltd. is a radioauto rickshaw service which aims toprovide a fast and cheap solution 
+					to the urban population. With our use of technology, we aim to organise the unorganised auto-rickshaw sector and 
+					utilise it more efficiently for both commuter and drivers. We aim to deliver through a selected community of drivers 
+					who are coached to give the hassle free Blink travel experience to our customers.</p>
+				</div>
+			
+			</div>
+			
+			<div class="col-md-6">
+					<div class="row"><p class="fontbold fontSize20" style=" margin-bottom: 20px;">Reach us</p></div>
+				<div class="row">
+					<img alt="location" src="static/images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">2nd Floor, G- 123, Sector- 63, Noida- 201301</p>
+					<img alt="contact" src="static/images/contactus_call.png" style="float: left;  margin-bottom: 20px; margin-left: -30px;"><p class="fontregular fontSize18" style="  margin-left: 70px; margin-top: 23px;">8010 22 33 22</p>
+					
+					<img alt="mail" src="static/images/contactus_maill.png" style="float: left;  margin-bottom: 50px; margin-left: -30px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-top: 14px;">reachus@blinkautos.in</p>
+				</div>
+				<div class="row fontbold fontSize20" style=" margin-bottom: 20px;">Follow us on</div>
+				<div class="row" style="margin-bottom: 50px;">
+					<div class="col-xs-offset-2 col-xs-4"><a href="http://facebook.com/blinkautos"><img src="static/images/contactus_fb.png" alt="facebook"></a></div>
+					<div class="col-xs-4"><a href="http://www.twitter.com/blinkautos"><img src="static/images/contactus_twitter.png" alt="Twitter"></a></div>
+					<!-- <div class="col-xs-4"><a href="#"><img src="static/images/contactus_youtube.png" alt="youtube"></a></div> -->
+				</div>
+				<!-- <div class="row fontbold" style="font-size: 24px;">Want to join us?</div>
+				<div class="row" align="center" style="margin-top: 20px; margin-bottom: 30px;">
+					<button class="btn btn-index contactbtn">Apply now</button>
+				</div> -->
+			</div>			
+		</div>
+	</div>
+</section>
+<!-- ============================
+			footer
+============================= -->
+	<div class="footer1">
+		<div class="center">
+			<p >(2014) Blink Auto Servies Pvt. Ltd.</p>
+		</div>
+	</div>
+	
+	<div id="popme">
+		<a class="close">close[x]</a>
+		<div class=""><img alt="illustration"  src="static/images/Pricing_illustration.png" > </div>
+	</div>
+	
+	<div id="signup">
+		<a class="close">close[x]</a>
+		<iframe src="early_signin.html" height="640px" scrolling='no' width="500px"></iframe>
+	</div>
+	
+<!-- ==========================================================================================
+				SCRIPTS
+==================================================================================================== -->
+    
+   <!-- scroll animations took from http://startbootstrap.com/templates/grayscale/ -->
+	<script src="static/scripts/btnscroll.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="static/scripts/bootstrap.min.js"></script>
+	
+	<!--Hide all-->
+	<script>
+   	$("#popme").slideUp(5);
+   	$("#signup").slideUp(5);
+	$('#selectcity').slideUp(10);
+	$(".navme").slideUp(10);
+	</script>
+	
+
+	
+	<script type="text/javascript" src="static/scripts/init.js"></script>
+
+	<script src="static/scripts/jquery.bpopup.min.js"></script>
+<script type="text/javascript">
+	function imgpositon1(){
+		document.getElementById("id_works").style.left='0px';
+		document.getElementById("id_charge").style.left='104%';
+		document.getElementById("id_onboard").style.left='204%';
+	}
+	function imgpositon2(){
+		document.getElementById("id_works").style.left='-104%';
+		document.getElementById("id_charge").style.left='0px';
+		document.getElementById("id_onboard").style.left='104%';
+	}
+	function imgpositon3(){
+		document.getElementById("id_works").style.left='-204%';
+		document.getElementById("id_charge").style.left='-100%';
+		document.getElementById("id_onboard").style.left='0px';
+		
+	}
+</script>
+<!-- nav bar slider -->
+ <script src="static/scripts/classie.js"></script>
+		<script>
+		
+			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				
+				showRightPush = document.getElementById( 'showRightPush' );
+				
+			showleftPush = document.getElementById( 'showleftPush' );
+
+			
+			showRightPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			};
+			
+			function disableOther( button ) {
+			    if( button !== 'showRightPush' ) {
+			        classie.toggle( showRightPush, 'disabled' );
+			    }
+			    if( button !== 'showleftPush' ) {
+			        classie.toggle( showleftPush, 'disabled' );
+			    }
+			}
+			showleftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showleftPush' );
+			};
+			
+		</script>
+
+<!-- For thankyou popup -->
+<script type="text/javascript">
+function thankyou()
+	{
+	$('#popme').bPopup({
+		closeClass: 'close'
+				});
+	//$('#submit').addClass('b-close');
+	}
+function signup(){
+$('#signup').bPopup({
+		 position: [430,10],
+		 closeClass: 'close',
+		 follow :[false,false]
+		 });
+//$('#submit').addClass('b-close');
+}
+	
+</script>
+
+<!-- THIS IS THE LOADING REMOVER -->
+ <script type="text/javascript">
+$(window).load(function(){
+  $('#dvLoading').fadeOut(2000);
+});
+
+$(document).ready(function() {
+	  $("tr.hide2").slideUp();
+	  $("tr.hide3").slideUp();
+	  $("tr.hide4").slideUp();
+
+	  $("img.picture1").click(function() {
+	    $("tr.hide1").slideDown(0);
+	    $("tr.hide2").slideUp(0);
+	    $("tr.hide3").slideUp(0);
+	    $("tr.hide4").slideUp(0);
+	    $("img.picture1").attr('src','static/images/up_arrow_faq.png');
+	    $("img.picture2").attr('src','static/images/down_arrow_faq.png');
+	    $("img.picture3").attr('src','static/images/down_arrow_faq.png');
+	    $("img.picture4").attr('src','static/images/down_arrow_faq.png');
+	  });
+	  $("img.picture2").click(function() {
+		$("tr.hide1").slideUp(0);
+		$("tr.hide2").slideDown(0);
+		$("tr.hide3").slideUp(0);
+		$("tr.hide4").slideUp(0);
+		$("img.picture2").attr('src','static/images/up_arrow_faq.png');
+	    $("img.picture1").attr('src','static/images/down_arrow_faq.png');
+	    $("img.picture3").attr('src','static/images/down_arrow_faq.png');
+	    $("img.picture4").attr('src','static/images/down_arrow_faq.png');
+	  });
+
+	  $("img.picture3").click(function() {
+		$("tr.hide1").slideUp(0);
+		$("tr.hide2").slideUp(0);
+		$("tr.hide3").slideDown(0);
+		$("tr.hide4").slideUp(0);
+		$("img.picture3").attr('src','static/images/up_arrow_faq.png');
+		$("img.picture2").attr('src','static/images/down_arrow_faq.png');
+		$("img.picture1").attr('src','static/images/down_arrow_faq.png');
+		$("img.picture4").attr('src','static/images/down_arrow_faq.png');
+	  });
+
+	  $("img.picture4").click(function() {
+		$("tr.hide1").slideUp(0);
+		$("tr.hide2").slideUp(0);
+		$("tr.hide3").slideUp(0);
+		$("tr.hide4").slideDown(0);
+		$("img.picture4").attr('src','static/images/up_arrow_faq.png');
+		$("img.picture2").attr('src','static/images/down_arrow_faq.png');
+		$("img.picture1").attr('src','static/images/down_arrow_faq.png');
+		$("img.picture3").attr('src','static/images/down_arrow_faq.png');
+	  });
+	});
+</script>
+</body>
+</html>
