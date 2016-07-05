@@ -6,7 +6,7 @@
     $(".signupbtn").hide();
     //alert("second section"+origOffsetY);
     
-    //FIRSTSECTON REFFERENCE
+    /*//FIRSTSECTON REFFERENCE
     var section1=$(".fstpage");
     var origOffset1SecY = section1.offset().top;
     //alert("firstsection "+origOffset1SecY);
@@ -32,7 +32,7 @@
     var secton7c=$("#id_seventhpage");
     var origOffset7SecY = secton7c.offset().top;
     //alert("sevenet section"+origOffset4SecY);
-    
+    */
     //SCROLL BTN
     function scroll() {
         if ($(window).scrollTop() >= origOffsetY) {
@@ -53,32 +53,28 @@
            
         }
  
+/*
 //CHANGE OF SCROLL BAR
-    	 if($(window).scrollTop() >= origOffset4SecY)
-    		 {
-    		 $('.bars').removeClass('topbar');
-    		 $('.bars').addClass('topbar1');
-    		 //alert('message4');
-    		 }
-    	 else
-    		 {
-
-    		 $('.bars').removeClass('topbar1');
-    		 $('.bars').addClass('topbar');    		 
-    		 }
-    	 
-    	 if($(window).scrollTop() >= origOffset1SecY-80 && $(window).scrollTop() < origOffsetY-80)
-			 {
-    		// alert("you are in first section")
-    			 $(".li2").removeClass("hiddenclass");
-    			$(".li1").addClass("hiddenclass");
-    			$(".li3").addClass("hiddenclass");
-    			$("#ul1").addClass("active1");
+		if($(window).scrollTop() >= origOffset4SecY) {
+			$('.bars').removeClass('topbar');
+			$('.bars').addClass('topbar1');
+		}
+		else {
+			$('.bars').removeClass('topbar1');
+			$('.bars').addClass('topbar');
+		}
+		if($(window).scrollTop() >= origOffset1SecY-80 && $(window).scrollTop() < origOffsetY-80)
+		{
+			// alert("you are in first section")
+			$(".li2").removeClass("hiddenclass");
+			$(".li1").addClass("hiddenclass");
+			$(".li3").addClass("hiddenclass");
+			$("#ul1").addClass("active1");
 			 
-			 }
-    	 else{
-    		 $("#ul1").removeClass("active1");
-    	 }	
+		}
+		else{
+			$("#ul1").removeClass("active1");
+		}
     	 
     	 if($(window).scrollTop() >= origOffsetY-80 && $(window).scrollTop() < origOffset3SecY-80)
 		 {
@@ -157,6 +153,7 @@
   			$("#ul7").removeClass("active1");
   			$("#li6").removeClass("active");
      	 }
+*/
 
     }
 

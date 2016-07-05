@@ -43,9 +43,6 @@
     height: 100px;
     margin: 0;
 }
-.navbar-header{
-	float: none;
-}
 .navbar-custom .navbar-nav > li > a {
 	color: #d7d7d7;
 }

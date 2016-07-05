@@ -126,28 +126,15 @@ background-attachment: fixed;
     padding-top: 20%; /* height/width of image */
     display: block;
     height: 0;
-   
-    
 }
+
 .hero #cafe { background-image: url("../images/bgimg.jpg"); }
 
-	
-
-	
-
-
-
-
 #left_section{
-
-	
 height:auto;
 float:left;
-
 /*-background:url(images/top_left_corner.gif) no-repeat top left;*/
-
 }
-
 
 /* codes for feedback icon*/
 .sharing-container {
@@ -162,7 +149,6 @@ overflow: hidden;
 width: 50px;
 cursor: pointer;
 }
-
 
 .scrolling-container {
 position: fixed;
@@ -200,6 +186,7 @@ cursor: pointer;
 .visibleclass{
 	visibility: visible;
 	}
+
 .hiddenclass{
 	visibility: hidden;
 	}
@@ -224,7 +211,6 @@ overflow: hidden;
 cursor: pointer;
 right: 100px;
 }
-
 
  .btn-index {
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cbd95', endColorstr='#4cbd95', GradientType=0);
@@ -469,73 +455,8 @@ margin: 10px;
 .center{ 
  text-align: center;
  }
-	
-	
-/*############over writing of the nev bar inverse#################*/
-/*.navbar-default {
-	background-color: #464646;
-	border-color: #464646;  
-	ffd519
-}
-.navbar-default .navbar-brand {
-	color: #c0c0c0;
-}
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #ffffff;
-}
-.navbar-default .navbar-text {
-	color: #c0c0c0;
-}
-.navbar-default .navbar-nav > li > a {
-	color: #c0c0c0;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: #ffffff;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #ffffff;
-	background-color: #ffd519;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	color: #ffffff;
-	background-color: #ffd519;
-}
-.navbar-default .navbar-toggle {
-	border-color: #ffd519;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #ffd519;
-}
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: #c0c0c0;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-	border-color: #c0c0c0;
-}
-.navbar-default .navbar-link {
-	color: #c0c0c0;
-}
-.navbar-default .navbar-link:hover {
-	color: #ffffff;
-}
 
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #c0c0c0;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ffffff;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ffffff;
-		background-color: #ffd519;
-	}
-}
-
-
-generated button
-*/.topbutton {
+.topbutton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -581,8 +502,6 @@ generated button
 }
 /* This button was generated using CSSButtonGenerator.com */
 
-
-
 /*=====================================================
 	this is for the progress bar
 	=================================================*/
@@ -599,9 +518,6 @@ generated button
 	font-weight: bold;
 	padding: 7.5px;
 	box-shadow: 5px 5px 5px #999999;
-	
-	
-	
 }
 
 .booking-sucess{
@@ -639,19 +555,15 @@ generated button
 	top: 0;
 	z-index: 5;
 	width: 100%;
-	height: 50px	
-	
+	height: 50px
 	}
-	
 
 .topbar{
 	background-color: transparent;
-	
 }
 
 .topbar1{
 	background-color: transparent;
-	
 }
 
 /* .blinkauto1{
