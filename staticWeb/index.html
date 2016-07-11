@@ -9,6 +9,9 @@
 	<!--<link rel="stylesheet" type="text/css" href="static/styles/default.css" />-->
 	<!--<link rel="stylesheet" type="text/css" href="static/styles/component.css" />-->
 
+	<!--Latest css of materialize theme-->
+	<link rel="stylesheet" href="static/styles/materialize/materialize.css"/>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" type="text/css" href="static/styles/bootstrap.min.css" media="screen">
 
@@ -23,7 +26,7 @@
 	<script type="application/javascript" src="static/scripts/jquery.easing.min.js"></script>
    
 	<!--***************************this is for the maps .... places auto complete **********************-->
-	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
 	<style type="text/css">
 		#dvLoading{
 			background:#000 no-repeat center center;
@@ -70,10 +73,11 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#myCarousel">about service</a></li>
-						<li><a href="#id_testimonial">testimonial</a></li>
-						<li><a href="#id_ourServices">our services</a></li>
-						<li><a href="#id_contactUs">contact us</a></li>
+						<li class="active"><a href="#">About us</a></li>
+						<li><a class="page-scroll" href="#myCarousel">about service</a></li>
+						<li><a class="page-scroll" href="#id_testimonial">testimonial</a></li>
+						<li><a class="page-scroll" href="#id_ourServices">our services</a></li>
+						<li><a class="page-scroll" href="#id_contactUs">contact us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -82,7 +86,7 @@
 </div>
 <!--/first nav-->
 <!--Second nav-->
-<nav class="navbar  navbar-black navbar-fixed-top navme" role="navigation">
+<nav class="navbar  navbar-black navbar-fixed-top navme" role="navigation" style="display: none">
 	<div class="container">
 		<div class="navbar-header">
 			<p href=".fstpage" class="page-scroll blinkauto1 fontSize20" style="margin-top: 10px;">Das VURL</p>
@@ -116,14 +120,69 @@
 		<div class="row">
 			<div class="col-xs-6">
 				<div class="jumbotron">
-					<h1>About us</h1>
+					<h2>About us</h2>
 					With the use of advanced technology, marketing and driver training, Das VURL aims to provide an affordable,
 					covenient and reliable rides to commuters.With the use of advanced technology, marketing and driver training, Das VURL aims to provide an affordable,
 					covenient and reliable rides to commuters.
 				</div>
 			</div>
 			<div class="col-xs-6">
-				<div class="jumbotron">This is empty space for reg form</div>
+				<div class="jumbotron hoverable" style="padding: 35px; ">
+					<form action="#" >
+						<div >
+							<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
+								<legend style="width: 30%;">  Register now</legend>
+								<br/>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field">
+										<!--<i class="material-icons prefix"></i>-->
+										<input id="first_name" type="text" class="validate">
+										<label for="first_name">Full Name</label>
+									</div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field">
+										<input name="email" type="text" class="validate">
+										<label for="first_name">Email</label>
+									</div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field">
+										<input  type="text" class="validate">
+										<label for="first_name">Mobile number</label>
+									</div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field">
+										<input name="sex" id="female" value="female" type="radio" class="validate">
+										<label for="female">Female</label>
+										<input name="sex" id="male" value="male" type="radio" class="validate">
+										<label for="male">Male</label>
+										<input name="sex" id="other" value="other" type="radio" class="validate">
+										<label for="other">Other</label>
+									</div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field">
+										<select id="countryOption1" class="">
+											<option value="" disabled selected>Country option1</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+										</select>
+										<label for="countryOption1" >Materialize Select</label>
+									</div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field"></div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-10 input-field"></div>
+								</div>
+							</fieldset>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -190,7 +249,7 @@
 		<h2 align="center" style="text-decoration: underline;"><samp>Testimonial</samp></h2>
 		<div class="row fontregular fontSize18" >
 			<div class="col-md-4" style="line-height: 32px;">
-				<div class="jumbotron">
+				<div class="jumbotron hoverable">
 					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle " src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
 					</div>
 					<div class="row">
@@ -200,7 +259,7 @@
 
 			</div>
 			<div class="col-md-4" style="line-height: 32px;">
-				<div class="jumbotron">
+				<div class="jumbotron hoverable">
 					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
 					</div>
 					<div class="row">
@@ -209,7 +268,7 @@
 				</div>
 			</div>
 			<div class="col-md-4" style="line-height: 32px;">
-				<div class="jumbotron">
+				<div class="jumbotron hoverable">
 					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
 					</div>
 					<div class="row">
@@ -237,7 +296,7 @@
 		</div>-->
 		<div class="row" style="margin-bottom: 100px; margin-top: 50px">
 			<div class="col-xs-offset-4 col-xs-3">
-				<button class="btn btn-index contactbtn full-widthi fontSize24">More </button>
+				<button class="btn-large waves-effect waves-light orange full-widthi fontSize24">More </button>
 			</div>
 		</div>
 		<div class="demoBtn">
@@ -324,17 +383,6 @@
 		<p >(2014) Das VURL Servies Pvt. Ltd.</p>
 	</div>
 </div>
-	
-<div id="popme">
-	<a class="close">close[x]</a>
-	<div class=""><img alt="illustration"  src="static/images/Pricing_illustration.png" > </div>
-</div>
-	
-<div id="signup">
-	<a class="close">close[x]</a>
-	<iframe src="early_signin.html" height="640px" scrolling='no' width="500px"></iframe>
-</div>
-
 <!-- ==========================================================================================
 				SCRIPTS
 ==================================================================================================== -->
@@ -344,115 +392,20 @@
 
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="static/scripts/bootstrap.min.js"></script>
-	
-<!--Hide all-->
-<script>
-	$("#popme").slideUp(5);
-	$("#signup").slideUp(5);
-	$('#selectcity').slideUp(10);
-	$(".navme").slideUp(10);
-</script>
-	
+<script src="static/scripts/bootstrap/bootstrap.min.js"></script>
 
-	
 <script type="text/javascript" src="static/scripts/init.js"></script>
 
-<script src="static/scripts/jquery.bpopup.min.js"></script>
-<script type="text/javascript">
-	function imgpositon1(){
-		document.getElementById("id_works").style.left='0px';
-		document.getElementById("id_charge").style.left='104%';
-		document.getElementById("id_onboard").style.left='204%';
-	}
-	function imgpositon2(){
-		document.getElementById("id_works").style.left='-104%';
-		document.getElementById("id_charge").style.left='0px';
-		document.getElementById("id_onboard").style.left='104%';
-	}
-	function imgpositon3(){
-		document.getElementById("id_works").style.left='-204%';
-		document.getElementById("id_charge").style.left='-100%';
-		document.getElementById("id_onboard").style.left='0px';
-		
-	}
-</script>
+<!--<script src="static/scripts/jquery.bpopup.min.js"></script>-->
 <!-- nav bar slider -->
 <script src="static/scripts/classie.js"></script>
-<!-- For thankyou popup -->
-<script type="text/javascript">
-	function thankyou() {
-		$('#popme').bPopup({
-			closeClass: 'close'
-		});
-		//$('#submit').addClass('b-close');
-	}
-	function signup() {
-		$('#signup').bPopup({
-			position: [430,10],
-			closeClass: 'close',
-			follow :[false,false]
-		});
-//$('#submit').addClass('b-close');
-	}
-
-</script>
-
 <!-- THIS IS THE LOADING REMOVER -->
 <script type="text/javascript">
 	$(window).load(function(){
 		$('#dvLoading').fadeOut(2000);
 	});
-
-	$(document).ready(function() {
-		$("tr.hide2").slideUp();
-		$("tr.hide3").slideUp();
-		$("tr.hide4").slideUp();
-
-		$("img.picture1").click(function() {
-			$("tr.hide1").slideDown(0);
-			$("tr.hide2").slideUp(0);
-			$("tr.hide3").slideUp(0);
-			$("tr.hide4").slideUp(0);
-			$("img.picture1").attr('src','static/images/up_arrow_faq.png');
-			$("img.picture2").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture3").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture4").attr('src','static/images/down_arrow_faq.png');
-		});
-		$("img.picture2").click(function() {
-			$("tr.hide1").slideUp(0);
-			$("tr.hide2").slideDown(0);
-			$("tr.hide3").slideUp(0);
-			$("tr.hide4").slideUp(0);
-			$("img.picture2").attr('src','static/images/up_arrow_faq.png');
-			$("img.picture1").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture3").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture4").attr('src','static/images/down_arrow_faq.png');
-		});
-
-		$("img.picture3").click(function() {
-			$("tr.hide1").slideUp(0);
-			$("tr.hide2").slideUp(0);
-			$("tr.hide3").slideDown(0);
-			$("tr.hide4").slideUp(0);
-			$("img.picture3").attr('src','static/images/up_arrow_faq.png');
-			$("img.picture2").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture1").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture4").attr('src','static/images/down_arrow_faq.png');
-		});
-
-		$("img.picture4").click(function() {
-			$("tr.hide1").slideUp(0);
-			$("tr.hide2").slideUp(0);
-			$("tr.hide3").slideUp(0);
-			$("tr.hide4").slideDown(0);
-			$("img.picture4").attr('src','static/images/up_arrow_faq.png');
-			$("img.picture2").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture1").attr('src','static/images/down_arrow_faq.png');
-			$("img.picture3").attr('src','static/images/down_arrow_faq.png');
-		});
-	});
 </script>
-<script type="application/javascript" src="static/scripts/holder.min.js"></script>
+<!--<script type="application/javascript" src="static/scripts/holder.min.js"></script>-->
+<script type="application/javascript" src="static/scripts/materialize/materialize.min.js"></script>
 </body>
 </html>

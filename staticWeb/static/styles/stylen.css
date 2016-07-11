@@ -28,6 +28,8 @@
 .rowbase{
 	margin-left: 0px;
 	margin-right: 0px;
+	/*fix for materialize row*/
+	margin-bottom: 0px;
 }
 .rowbasesmall{
 	margin-left: 5px;
@@ -427,4 +429,14 @@
 }
 .navbar-custom-85height {
     height: 85px;
+}
+
+/*Fix for materialize nav*/
+nav {
+	line-height: 30px;
+	height: 53px;
+}
+
+nav ul a {
+	font-size: 16px;
 }

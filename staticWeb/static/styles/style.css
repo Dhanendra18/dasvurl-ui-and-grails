@@ -726,7 +726,7 @@ margin: 10px;
     background-color: #fff;
 	padding-top: 30px;
 	color: #1e1e1e;
-	background-image: url("../images/SecondPageBG.jpg");
+	/*background-image: url("../images/SecondPageBG.jpg");*/
 	background-repeat: no-repeat;
 }
 
@@ -821,7 +821,7 @@ margin: 10px;
 }
 
 
-//for the popup element
+/*//for the popup element*/
 #element_to_pop_up { 
     background-color:#fff;
     border-radius:15px;
