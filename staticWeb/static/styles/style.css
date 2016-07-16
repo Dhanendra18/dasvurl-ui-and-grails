@@ -710,7 +710,7 @@ margin: 10px;
 }
 
 .sec1 { 
-    height: 670px;  
+    height: auto;
     margin: 0 auto; 
     width: 100%; 
     position: relative; 
@@ -1287,32 +1287,46 @@ span.dropt:hover span {
 	right:49%;
 	top:90%;
 	height:18px;
-	-webkit-animation: floatBubble 1s infinite;
-    -webkit-animation-direction:alternate;
-    animation: floatBubble 2s infinite  normal ease-out;
-  }
+	-webkit-animation-name: floatBubble;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: floatBubble;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
 
 
 @-webkit-keyframes floatBubble{
- from{
-       top: 600px;
-        -webkit-animation-timing-function: ease-in;
-   }
-to {
-      top: 612px;
-      -webkit-animation-timing-function: ease-out;
-   }
+	0% {
+		top: 740px;
+		-webkit-animation-timing-function: ease-in;
+	}
+
+	50% {
+		top: 752px;
+		-webkit-animation-timing-function: ease-out;
+	}
+
+	100% {
+		top: 740px;
+		-webkit-animation-timing-function: ease-in;
+	}
 }
 @keyframes floatBubble {
-	from{
-       top: 600px;
-        -webkit-animation-timing-function: ease-in;
-   }
+	0% {
+		top: 740px;
+		-webkit-animation-timing-function: ease-in;
+	}
 
-   to {
-      top: 612px;
-      -webkit-animation-timing-function: ease-out;
-   }
+	50% {
+		top: 752px;
+		-webkit-animation-timing-function: ease-out;
+	}
+
+	100% {
+		top: 740px;
+		-webkit-animation-timing-function: ease-in;
+	}
 }
 .down_wrapper1{
 	position: absolute;

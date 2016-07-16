@@ -24,7 +24,7 @@
 	<script type="application/javascript" src="static/scripts/jquery-1.11.1.min.js"></script>
 	<!-- java script plugin for scroll -->
 	<script type="application/javascript" src="static/scripts/jquery.easing.min.js"></script>
-   
+
 	<!--***************************this is for the maps .... places auto complete **********************-->
 	<!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
 	<style type="text/css">
@@ -69,7 +69,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#"><img src="static/images/logo/dasVurlLogo.png" alt="logo" height="130px" width="150px"/></a>
+					<a class="navbar-brand" href="#"><img src="static/images/logo/dasVurlLogo.png" alt="logo" style="margin-top: -102px;" height="130px" width="150px"/></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -113,8 +113,8 @@
 				About us
 ================================================-->
 
-<section class="sec1 fstpage" id="id_aboutUs"  data-speed="-3" data-type="background"  style="background-image: url('static/images/college1.jpg');
-	 background-position: bottom; background-size: 1370px 680px; padding-top: 176px;">
+<section class="sec1 fstpage" id="id_aboutUs"  data-speed="-1" data-type="background"  style="background-image: url('static/images/college1.jpg');
+	 background-position: top; background-size: 1470px 800px; padding-top: 176px;">
 	<div class="down_wrapper"><a href="#myCarousel" class="page-scroll"><img src="static/images/DownArrow.png" width="40px" height="18px;"/></a></div>
 	<div class="container">
 		<div class="row">
@@ -131,10 +131,10 @@
 					<form action="#" >
 						<div >
 							<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
-								<legend style="width: 30%;">  Register now</legend>
+								<legend style="width: 30%; margin-bottom: 0px">  Register now</legend>
 								<br/>
-								<div class="row rowbase">
-									<div class="col-xs-10 input-field">
+								<div class="row rowbase" >
+									<div class="col-xs-10 input-field" style="margin-top: 0px">
 										<!--<i class="material-icons prefix"></i>-->
 										<input id="first_name" type="text" class="validate">
 										<label for="first_name">Full Name</label>
@@ -162,15 +162,61 @@
 										<label for="other">Other</label>
 									</div>
 								</div>
+								<div class="row" style="padding: 5px 15px;">
+									<div class="col-xs-12" style="border-top: solid 1px #9e9e9e;"></div>
+								</div>
+								<div class="row rowbase" style="margin-bottom: 15px">
+									<div class="col-xs-6" style="color: #9e9e9e; text-decoration: underline;">Study preferences:</div>
+								</div>
 								<div class="row rowbase">
-									<div class="col-xs-10 input-field">
-										<select id="countryOption1" class="">
+									<div class="col-xs-4" style="padding-left: 7px;"><label for="countryOption1" style="font-size: 12px; margin-top: 5px">Select Country:</label></div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-4 input-field">
+										<select id="countryOption1" style="display: block">
 											<option value="" disabled selected>Country option1</option>
 											<option value="1">Option 1</option>
 											<option value="2">Option 2</option>
 											<option value="3">Option 3</option>
 										</select>
-										<label for="countryOption1" >Materialize Select</label>
+									</div>
+									<div class="col-xs-4 input-field">
+										<select id="countryOption2" style="display: block">
+											<option value="" disabled selected>Country option1</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+										</select>
+									</div>
+									<div class="col-xs-4 input-field">
+										<select id="countryOption3" style="display: block">
+											<option value="" disabled selected>Country option1</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-6 input-field">
+										<input type="text" id="course"/>
+										<label for="course">Course</label>
+									</div>
+								</div>
+								<div class="row rowbase switch">
+									<div class="col-xs-4 input-field">
+										Intake
+									</div>
+									<div class="col-xs-4 input-field"><label>
+										Spring
+										<input type="checkbox">
+										<span class="lever"></span>
+										Fall
+									</label></div>
+								</div>
+								<div class="row rowbase">
+									<div class="col-xs-offset-1 col-xs-10 input-field">
+										<button class="btn btn-large waves-effect waves-light orange full-widthi fontSize24">Submit</button>
 									</div>
 								</div>
 								<div class="row rowbase">
@@ -344,7 +390,7 @@
 	<div class="container">
 		<div class="row" style="margin-top: 60px;">
 			<div class="col-md-6 fontSize18" align="center"  style=" padding-right:70px; " >
-				<div class="row"><img src="static/images/contactus_logo.png" alt="blink logo" class="img-responsive"></div>
+				<div class="row"><img src="static/images/logo/dasVurlLogo.png" alt="blink logo" class="img-responsive"></div>
 				<div class="row rowbase" style="margin-top: 60px; margin-bottom: 30px; line-height: 32px">
 					<p class="fontregular"align="left">Das VURL Services Pvt. Ltd. is a consulting service which aims toprovide a fast and cheap solution
 						to the urban population. With our use of technology, we aim to organise the unorganised sector and
@@ -396,9 +442,10 @@
 
 <script type="text/javascript" src="static/scripts/init.js"></script>
 
+
 <!--<script src="static/scripts/jquery.bpopup.min.js"></script>-->
 <!-- nav bar slider -->
-<script src="static/scripts/classie.js"></script>
+<!--<script src="static/scripts/classie.js"></script>-->
 <!-- THIS IS THE LOADING REMOVER -->
 <script type="text/javascript">
 	$(window).load(function(){
@@ -406,6 +453,6 @@
 	});
 </script>
 <!--<script type="application/javascript" src="static/scripts/holder.min.js"></script>-->
-<script type="application/javascript" src="static/scripts/materialize/materialize.min.js"></script>
+<script type="text/javascript" src="static/scripts/materialize/materialize.min.js"></script>
 </body>
 </html>
