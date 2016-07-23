@@ -3,11 +3,7 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<link rel="shortcut icon" href="static/images/title.png" />
 	<title>Das VURL</title>
-
-	<!--<link rel="stylesheet" type="text/css" href="static/styles/default.css" />-->
-	<!--<link rel="stylesheet" type="text/css" href="static/styles/component.css" />-->
 
 	<!--Latest css of materialize theme-->
 	<link rel="stylesheet" href="static/styles/materialize/materialize.css"/>
@@ -25,8 +21,6 @@
 	<!-- java script plugin for scroll -->
 	<script type="application/javascript" src="static/scripts/jquery.easing.min.js"></script>
 
-	<!--***************************this is for the maps .... places auto complete **********************-->
-	<!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
 	<style type="text/css">
 		#dvLoading{
 			background:#000 no-repeat center center;
@@ -45,8 +39,78 @@
 			z-index: 20;
 		}
 	</style>
+	<style type="text/css">
+		div.text-container {
+			margin: 0 auto;
+			width: 75%;
+		}
 
-	<!-- scrolling jQuery -->	
+		.text-content {
+			line-height: 1em;
+		}
+
+		.short-text {
+			overflow: hidden;
+			height: 15em;
+		}
+
+		.full-text {
+			height: auto;
+		}
+
+		.show-more {
+			padding: 10px 0;
+			text-align: center;
+		}
+
+		.line-spacing {
+			line-height: 27px;
+		}
+	</style>
+
+	<script type="application/javascript">
+		var showMore = $(".show-more a");
+		showMore.each(function() {
+			var $link = $(this);
+			var $content = $link.parent().prev("div.text-content");
+
+
+			var visibleHeight = $content[0].clientHeight;
+			var actualHide = $content[0].scrollHeight - 1;
+
+			if (actualHide > visibleHeight) {
+				$link.show();
+			} else {
+				$link.hide();
+			}
+		});
+
+
+		showMore.on("click", function() {
+			var $link = $(this);
+			var $content = $link.parent().prev("div.text-content");
+			var linkText = $link.text();
+
+			$content.toggleClass("short-text, full-text");
+
+			$link.text(getShowLinkText(linkText));
+
+			return false;
+		});
+
+		function getShowLinkText(currentText) {
+			var newText = '';
+
+			if (currentText.toUpperCase() === "SHOW MORE") {
+				newText = "Show less";
+			} else {
+				newText = "Show more";
+			}
+
+			return newText;
+		}
+	</script>
+	<!-- scrolling jQuery -->
 	<script type="application/javascript" src="static/scripts/scrolling.js"></script>
 </head>
 <body >
@@ -55,7 +119,7 @@
 	<h1>You need java script enabled to view this page correctly.</h1>
 </noscript>
 <!-- THE LOADING INSTRUMENT -->
-<div id="dvLoading"></div>
+<!--<div id="dvLoading"></div>-->
 <!--First nav-->
 <div class="navbar-wrapper" style="margin-top: 14px;">
 	<div class="container">
@@ -74,7 +138,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">About us</a></li>
-						<li><a class="page-scroll" href="#myCarousel">about service</a></li>
+						<li><a class="page-scroll active1" href="#myCarousel">about service</a></li>
 						<li><a class="page-scroll" href="#id_testimonial">testimonial</a></li>
 						<li><a class="page-scroll" href="#id_ourServices">our services</a></li>
 						<li><a class="page-scroll" href="#id_contactUs">contact us</a></li>
@@ -101,7 +165,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right index-nav">
-				<li ><a href="#myCarousel" class="page-scroll">about service</a></li>
+				<li ><a href="#myCarousel" class="page-scroll">overseas education</a></li>
 				<li ><a href="#id_testimonial" class="page-scroll">testimonial</a></li>
 				<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>
 				<li ><a href="#id_contactUs" class="page-scroll">contact us</a></li>
@@ -246,7 +310,7 @@
 		<div class="item active">
 			<img class="first-slide img-circle" src="static/images/college1.jpg" alt="First slide">
 			<div class="container">
-				<div class="carousel-caption">
+				<div class="carousel-caption ">
 					<h1>Example headline.</h1>
 					<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
 					<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -298,8 +362,22 @@
 				<div class="jumbotron hoverable">
 					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle " src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
 					</div>
-					<div class="row">
+					<div class="row text-content short-text">
 						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+					</div>
+					<div class="show-more">
+						<a href="javascript:void(0);">Show more</a>
 					</div>
 				</div>
 
@@ -359,26 +437,35 @@
 		<!--  old codes -->
 		<h3 class="statepg2" align="center">OUR SERVICES</h3>
 		<div class="row content_1stpg" style="color: #fff">
-			<div class="col-xs-4">
-				<ul style="list-style-type:none; font-size: 18px; line-height: 60px;">
-					<li>Exams & Coaching</li>
-					<li>Career Counselling</li>
-					<li>University Selection</li>
-				</ul>
+			<div class="col-md-6">
+				<div class="row rowbase">
+					<div class="col-xs-7"><h4 class="text-underline fontsemi">OVERSEAS</h4></div>
+				</div>
+				<div class="row rowbase">
+					<div class="col-xs-11">
+						<p class="fontmedium">Some content that will be shown here that is the basic description of this topic with some extra content</p>
+					</div>
+				</div>
+				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
+					<div class="col-xs-offset-3 col-xs-4">
+						<button class="btn full-widthi">More</button>
+					</div>
+				</div>
 			</div>
-			<div class="col-xs-4">
-				<ul style="list-style-type:none; font-size: 18px; line-height: 60px;">
-					<li>Admission Guidance</li>
-					<li>Finance Assistance</li>
-					<li>Travel Assistance</li>
-				</ul>
-			</div>
-			<div class="col-xs-4">
-				<ul style="list-style-type:none; font-size: 18px; line-height: 60px;">
-					<li>Admission Guidance</li>
-					<li>Finance Assistance</li>
-					<li>Travel Assistance</li>
-				</ul>
+			<div class="col-md-6" style="border-left-style: solid; border-left-width: 1px; border-left-color: #fff ">
+				<div class="row rowbase">
+					<div class="col-xs-7"><h4 class="text-underline fontsemi">VISITOR / WORK VISA</h4></div>
+				</div>
+				<div class="row rowbase">
+					<div class="col-xs-11">
+						<p class="fontregular">Some content that will be shown here that is the basic description of this topic with some extra content</p>
+					</div>
+				</div>
+				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
+					<div class="col-xs-offset-3 col-xs-4">
+						<button class="btn full-widthi">More</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -434,24 +521,20 @@
 ==================================================================================================== -->
     
 <!-- scroll animations took from http://startbootstrap.com/templates/grayscale/ -->
-<script src="static/scripts/btnscroll.js"></script>
-
+<script type="application/javascript" src="static/scripts/btnscroll.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="static/scripts/bootstrap/bootstrap.min.js"></script>
+<script type="application/javascript" src="static/scripts/bootstrap/bootstrap.min.js"></script>
 
 <!--parallax query1-->
 <script type="text/javascript" src="static/scripts/init.js"></script>
 
-<!--<script src="static/scripts/jquery.bpopup.min.js"></script>-->
-<!-- nav bar slider -->
-<!--<script src="static/scripts/classie.js"></script>-->
 <!-- THIS IS THE LOADING REMOVER -->
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$(window).load(function(){
 		$('#dvLoading').fadeOut(2000);
 	});
-</script>
+</script>-->
 <!--<script type="application/javascript" src="static/scripts/holder.min.js"></script>-->
 <script type="text/javascript" src="static/scripts/materialize/materialize.min.js"></script>
 </body>

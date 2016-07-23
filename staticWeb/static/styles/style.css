@@ -1424,3 +1424,40 @@ span.dropt:hover span {
 		font-size: 30px;
 	}
 }
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.null-box-shadow {
+	box-shadow: none;
+}
+
+.box-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.hide-on-scroll {
+	visibility: inherit;
+	opacity: 1;
+}
+
+.jumbotron-custom .col-xs-10 p {
+	font-size: 14px;
+	font-family: 'Raleway', san-serif;
+	font-weight:400;
+}
+
+.jumbotron-custom {
+	padding: 10px 10px !important;
+}
+
+@media (min-width: 992px) {
+	.custom-md-4 {
+		width: 32.33333333%;
+	}
+	.custom-offset-md-4 {
+		width: 32.33333333%;
+		margin-left: 1.33333333%;
+	}
+}
