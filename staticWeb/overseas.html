@@ -53,7 +53,7 @@
 <div class="container">
     <div class="marginplus"></div>
     <div class="row rowbase">
-        <div class="col-md-4 col-xs-12 custom-md-4 jumbotron jumbotron-custom hoverable">
+        <div class="col-md-4 col-xs-12 custom-md-4 jumbotron jumbotron-custom hoverable" onclick="thankyou()">
             <div class="col-xs-2"><img src="static/images/contactus_call.png" alt="Flag 1"/></div>
             <div class="col-xs-10">
                 <p>Country name</p>
@@ -159,10 +159,11 @@
 
 </div>
 
-<div class="popup">
+<div class="popup" id="popme" style="display: none;">
     <div class="row rowbase popupbar">
         <div class="col-xs-3">Flag image</div>
-        <div class="col-xs-offset-3 col-xs-6">Name in center</div>
+        <div class="col-xs-offset-1 col-xs-5">Name in center</div>
+        <div class="col-xs-offset-2 col-xs-1"><a class="close">close[x]</a></div>
     </div>
     <div class="row rowbase">
         <div class="jumbotron">
@@ -179,7 +180,7 @@
 </div>
 
 
-
+<script type="application/javascript" src="static/scripts/jquery.bpopup.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script type="application/javascript" src="static/scripts/bootstrap/bootstrap.min.js"></script>
 
@@ -205,6 +206,13 @@
         }
         document.onscroll = scroll;
     });
+
+    function thankyou() {
+        $('#popme').bPopup({
+            closeClass: 'close'
+        });
+        //$('#submit').addClass('b-close');
+    }
 </script>
 
 </body>
