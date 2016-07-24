@@ -1,6 +1,6 @@
 @CHARSET "ISO-8859-1";
 
-.stylebase{
+.stylebase {
 	margin: 15px 0 0 0;
 	padding: 0px;
 	padding-right:0px;
@@ -8,16 +8,16 @@
 	border: 0;
 	font-size: 16px;
 }
-.widthcorrector{
+.widthcorrector {
 	margin: 15px 0 0 0;
 }
-.container .stylebase{
+.container .stylebase {
 	margin: 15px 0 0 0;
 	padding: 0px;
 	font-size: 16px;
 	border-style: none;
 }
-.formbase{
+.formbase {
 	border-right-width: 2px;
 	border-style: solid;
 	border-color: #ffffff;
@@ -25,66 +25,25 @@
 	padding: 0px;
 	margin-top: 3px;
 }
-.rowbase{
+.rowbase {
 	margin-left: 0px;
 	margin-right: 0px;
 	/*fix for materialize row*/
 	margin-bottom: 0px;
 }
-.rowbasesmall{
+.rowbasesmall {
 	margin-left: 5px;
 	margin-right: 5px;
 }
-.rowbtmmargin{
+.rowbtmmargin {
 	margin-bottom: 15px;
-	}
-.navbar-custom {
-    background-color:#464646;
-    color:#ffffff;
-    border-radius:0;
-    height: 100px;
-    margin: 0;
-}
-.navbar-custom .navbar-nav > li > a {
-	color: #d7d7d7;
-}
-.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
-	color: #ffffff;
-	background-color: #757575;
-}
-.navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus {
-	color: #6d6e6e;
-	background-color: #ffd519;
-}
-.navbar-custom .navbar-nav > .open > a, .navbar-custom .navbar-nav > .open > a:hover, .navbar-custom .navbar-nav > .open > a:focus {
-	color: #ffffff;
-	background-color: #ffd519;
-}
-.navbar-custom .navbar-toggle {
-	border-color: #ffd519;
-}
-.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
-	background-color: #ffd519;
-}
-.navbar-custom .navbar-toggle .icon-bar {
-	background-color: #c0c0c0;
-}
-.navbar-custom .navbar-collapse,
-.navbar-custom .navbar-form {
-	border-color: #c0c0c0;
-}
-.navbar-custom .navbar-link {
-	color: #c0c0c0;
-}
-.navbar-custom .navbar-link:hover {
-	color: #ffffff;
 }
 .navbar-transparent {
-    background-color:transparent;
-    color:#ffffff;
-    border-radius:0;
-    height: 100px;
-    margin: 0;
+	background-color:transparent;
+	color:#ffffff;
+	border-radius:0;
+	height: 100px;
+	margin: 0;
 }
 .navbar-transparent .navbar-nav > li > a {
 	color: #d7d7d7;
@@ -121,17 +80,14 @@
 	color: #ffffff;
 }
 .navbar-transparent-50height {
-    height: 50px;
+	height: 50px;
 }
 .navbar-black {
-    background-color: #1e1e1e;
-    color:#ffffff;
-    border-radius:0;
-    height: 50px;
-    margin: 0;
-   /*  border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #000000; */
+	background-color: #1e1e1e;
+	color:#ffffff;
+	border-radius:0;
+	height: 50px;
+	margin: 0;
 }
 .navbar-black .navbar-nav > li > a {
 	color: #d7d7d7;
@@ -168,268 +124,23 @@
 	color: #ffffff;
 }
 .navbar-black-50height {
-    height: 50px;
+	height: 50px;
 }
-.navbar-black .navbar-header{
+.navbar-black .navbar-header {
 	float: left;
 }
-.navbar-custom-85height .navbar-header{
-	float: none;
-}
-.index-nav li{
+.index-nav li {
 	font-family: 'Raleway', san-serif;
 	font-weight: 400;
 	font-size: 16px;
 }
-.firstcontainer{
-	height:550px;
-	background-color: #dadada;
-	margin-bottom: 0;
-}
-.secondcontainer{
-	height:700px;
-	background-color: #CD853F;
-	margin-bottom: 0;
-}
-.thirdcontainer{
-	height:700px;
-	background-color: #F5DEB3;
-	margin-bottom: 0;
-}
-.firstcontainer-booking{
-	height:500px;
-	background-color: #ffffff;
-	margin-bottom: 0;
-	padding: 10px;
-}
 
-.btncust{
-	border-radius: 0px;
-	margin-top: 6px;
-	width: 140px;
-}
-
-.btn-cust{
-	margin-top: 300px;
-	
-	
-	
-	
-}
-
-.btncust-yellow{
-	border-radius: 0px;
-	margin-top: 6px;
-	width: 140px;
-	background-color: #ffd519;
-}
-
-.menu-padding{
-	padding-right: 20px
-}
-
-.fourthcontainer{
-	height:700px;
-	background-color: #6A5ACD;
-	margin-bottom: 0;
-}
-
-
-.booking_container{
-	background-color: #ffffff;
-	}
-
-.sig{
-	height: auto;
-	background-color: #fffde8;
-	padding-top: 5px;
-	margin-top: 20px;
-	border-left-width: 15px;
-	border-right-width: 15px;
-}
-
-.sig1{
-	height: auto;
-	background-color: #ffffff;
-	padding-top: 0px;
-	border:1px;
-	border-style:solid;
-	border-color: #000000;
-	margin: 2px;
-}
-.faresummary{
-	height: auto;
-	background-color: #ffda2d;
-	padding-top: 5px;
-	margin-top: 20px;
-	border-left-width: 15px;
-	border-right-width: 15px;
-}
-.testjumbo{
-	margin: 0px;
-	padding: 0px;
-	border-style:solid;
-	border-width: 1px;
-	font-size: 16px;
-	background-color: red;
-	border-color: black;	
-
-}
-
-
-.contentrow{
-	margin-top: 25px;
-}
-.contentrowip{
-	margin-top: 40px;
-}
-.contentrowmar{
-	margin-top: 70px;
-}
-.full-widthi{
+.full-widthi {
 	width: 100%;
-}
-.col-xs-0{
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.selectbtn {
-   background-color : transparent;
-   border: solid;
-   border-color: yellow;
-   border-top-width:2px;
-   line-height: 1.2;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-   color: #dcdbd4;
-   
-   font-weight: bold;
-    }
-    
-.selectbtn:hover
-	{
-	color: #ffda2d;
-	cursor: pointer;
-	}
-	
-.selectbtn1 {
-   background-color : transparent;
-   border: solid;
-   border-color: yellow;
-   border-top-width:2px;
-   line-height: 1.2;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
-   -webkit-appearance: none;
-   color: #dcdbd4;
-   
-   font-weight: bold;
-    }
-    
-.selectbtn1:hover
-	{
-	color: #ffda2d;
-	cursor: pointer;
-	}
-	
-	
-.filter-container {
-	position: fixed;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	z-index: 5;
-	width: 20%;
-}
-
-      
-.slide-out-div {
-    padding: 20px;
-    width: 250px;
-    background: #ccc;
-    border: 1px solid #29216d;
-    z-index: 111111;
-}      
- 
-
-
-/*==========================
-	code for parallex
-============================*/
-#hie {  
-    height: auto;  
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    padding: 100px 0;
-}
-#hoe { 
-	 
-    height: auto;  
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
-}
-#abe { 
-    background-image: url('images/about.png');
-    height: auto;
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
-    color: #fff;
-}
-
-
-#hiet { 
-    background-image: url('images/intro.png'); 
-    height: auto;  
-    margin: 0; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 20px 0;
-    margin-top: 0px;
-}
-
-
-
-
-#style1{
-	margin-top: -15px;
-		
 }
 
 /* check this http://untame.net/2013/04/how-to-integrate-simple-parallax-with-twitter-bootstrap/ */
 
-
-@media (max-width: 767px) {
-	.navbar-custom .navbar-nav .open .dropdown-menu > li > a {
-		color: #c0c0c0;
-	}
-	.navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ffffff;
-	}
-	.navbar-custom .navbar-nav .open .dropdown-menu > .active > a, .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ffffff;
-		background-color: #ffd519;
-	}
-}
-.navbar-custom-50height {
-    height: 50px;
-}
-.navbar-custom-60height {
-    height: 60px;
-}
-.navbar-custom-85height {
-    height: 85px;
-}
 
 /*Fix for materialize nav*/
 nav {
