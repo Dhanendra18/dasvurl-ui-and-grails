@@ -53,7 +53,7 @@
 <div class="container">
     <div class="marginplus"></div>
     <div class="row rowbase">
-        <div class="col-md-4 col-xs-12 custom-md-4 jumbotron jumbotron-custom hoverable" onclick="thankyou()">
+        <div class="col-md-4 col-xs-12 custom-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(1)">
             <div class="col-xs-2"><img src="static/images/contactus_call.png" alt="Flag 1"/></div>
             <div class="col-xs-10">
                 <p>Country name</p>
@@ -166,18 +166,16 @@
             <!--<img src="" alt="Flag"/>-->
         </div> 
     </div>
-        <div class="col-xs-offset-1 col-xs-5">Name in center</div>
+        <div class=" col-xs-6" align="center"><h3 id="country-name">Name in center</h3></div>
         <div class="col-xs-offset-1 col-xs-2"><a class="close">close[x]</a></div>
     </div>
     <div class="row rowbase">
         <div class="jumbotron " style="width: 600px">
             <h3>About</h3>
-            <p class="fontSize18">About this country and brief description about what is in this country and what will be the benifit of being and studying in this country.</p>
+            <p class="fontSize18" id="country-description">About this country and brief description about what is in this country and what will be the benefits of being and studying in this country.</p>
             <h3>University list</h3>
-            <ul>
-                <li>University 1</li>
-                <li>University 2</li>
-                <li>University 3</li>
+            <ul id="university-list">
+
             </ul>
         </div>
     </div>
@@ -187,6 +185,8 @@
 <script type="application/javascript" src="static/scripts/jquery.bpopup.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script type="application/javascript" src="static/scripts/bootstrap/bootstrap.min.js"></script>
+
+<script type="application/javascript" src="static/scripts/overseas-universities.js"></script>
 
 <!--<script type="application/javascript" src="static/scripts/holder.min.js"></script>-->
 <script type="text/javascript" src="static/scripts/materialize/materialize.min.js"></script>
@@ -210,13 +210,6 @@
         }
         document.onscroll = scroll;
     });
-
-    function thankyou() {
-        $('#popme').bPopup({
-            closeClass: 'close'
-        });
-        //$('#submit').addClass('b-close');
-    }
 </script>
 
 </body>
