@@ -3,6 +3,6 @@
 .project
 *.iml
 grailsw
-grails.bat
+grailsw.bat
 target
-
+dist
