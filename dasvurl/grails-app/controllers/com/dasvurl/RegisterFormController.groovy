@@ -1,10 +1,11 @@
 package com.dasvurl
 
-
+import grails.plugin.springsecurity.annotation.Secured
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
+@Secured(value=["permitAll"])
 @Transactional(readOnly = true)
 class RegisterFormController {
 
@@ -46,10 +47,12 @@ class RegisterFormController {
         }
     }
 
+    @Secured(value=["hasRole('USER')"])
     def edit(RegisterForm registerFormInstance) {
         respond registerFormInstance
     }
 
+    @Secured(value=["hasRole('USER')"])
     @Transactional
     def update(RegisterForm registerFormInstance) {
         if (registerFormInstance == null) {
@@ -73,6 +76,7 @@ class RegisterFormController {
         }
     }
 
+    @Secured(value=["hasRole('USER')"])
     @Transactional
     def delete(RegisterForm registerFormInstance) {
 

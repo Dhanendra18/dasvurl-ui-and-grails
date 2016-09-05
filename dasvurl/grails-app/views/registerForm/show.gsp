@@ -1,5 +1,5 @@
 
-<%@ page import="dasvurl.RegisterForm" %>
+<%@ page import="com.dasvurl.RegisterForm" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,9 +11,12 @@
 		<a href="#show-registerForm" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				<sec:ifAnyGranted roles='user'>
+					<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+					<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+				</sec:ifAnyGranted>
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="list" controller="login"><g:message code="default.login" default="Login"/></g:link></li>
 			</ul>
 		</div>
 		<div id="show-registerForm" class="content scaffold-show" role="main">
@@ -22,7 +25,25 @@
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<ol class="property-list registerForm">
-			
+
+				<g:if test="${registerFormInstance?.toldName}">
+					<li class="fieldcontain">
+						<span id="toldName-label" class="property-label"><g:message code="registerForm.toldName.label" default="Told Name" /></span>
+
+						<span class="property-value" aria-labelledby="toldName-label"><g:fieldValue bean="${registerFormInstance}" field="toldName"/></span>
+
+					</li>
+				</g:if>
+
+				<g:if test="${registerFormInstance?.lastName}">
+					<li class="fieldcontain">
+						<span id="lastName-label" class="property-label"><g:message code="registerForm.lastName.label" default="Last Name" /></span>
+
+						<span class="property-value" aria-labelledby="lastName-label"><g:fieldValue bean="${registerFormInstance}" field="lastName"/></span>
+
+					</li>
+				</g:if>
+
 				<g:if test="${registerFormInstance?.mobileNo}">
 				<li class="fieldcontain">
 					<span id="mobileNo-label" class="property-label"><g:message code="registerForm.mobileNo.label" default="Mobile No" /></span>
@@ -104,15 +125,6 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${registerFormInstance?.lastName}">
-				<li class="fieldcontain">
-					<span id="lastName-label" class="property-label"><g:message code="registerForm.lastName.label" default="Last Name" /></span>
-					
-						<span class="property-value" aria-labelledby="lastName-label"><g:fieldValue bean="${registerFormInstance}" field="lastName"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${registerFormInstance?.passport}">
 				<li class="fieldcontain">
 					<span id="passport-label" class="property-label"><g:message code="registerForm.passport.label" default="Passport" /></span>
@@ -139,16 +151,7 @@
 					
 				</li>
 				</g:if>
-			
-				<g:if test="${registerFormInstance?.toldName}">
-				<li class="fieldcontain">
-					<span id="toldName-label" class="property-label"><g:message code="registerForm.toldName.label" default="Told Name" /></span>
-					
-						<span class="property-value" aria-labelledby="toldName-label"><g:fieldValue bean="${registerFormInstance}" field="toldName"/></span>
-					
-				</li>
-				</g:if>
-			
+
 				<g:if test="${registerFormInstance?.universityName}">
 				<li class="fieldcontain">
 					<span id="universityName-label" class="property-label"><g:message code="registerForm.universityName.label" default="University Name" /></span>
@@ -161,8 +164,11 @@
 			</ol>
 			<g:form url="[resource:registerFormInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
-					<g:link class="edit" action="edit" resource="${registerFormInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+					<sec:ifAnyGranted roles='user'>
+						<g:link class="edit" action="edit" resource="${registerFormInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+						<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+					</sec:ifAnyGranted>
+					<a onclick="window.print()">Print</a>
 				</fieldset>
 			</g:form>
 		</div>

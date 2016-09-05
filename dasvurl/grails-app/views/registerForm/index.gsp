@@ -1,5 +1,5 @@
 
-<%@ page import="dasvurl.RegisterForm" %>
+<%@ page import="com.dasvurl.RegisterForm" %>
 <!DOCTYPE html>
 <html>
 	<head>

@@ -1,4 +1,4 @@
-<%@ page import="dasvurl.RegisterForm" %>
+<%@ page import="com.dasvurl.RegisterForm" %>
 
 
 
