@@ -709,7 +709,7 @@ color: #7f8c8d;
 }
 
 .sec2b {
-	height: 750px;
+	height: auto;
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
@@ -768,7 +768,8 @@ color: #7f8c8d;
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
-	background-color: #f7f5e6;
+	background-color: #e59400;
+	opacity: 0.9;
 	padding-top: 30px;
 	color: #1e1e1e;
 }

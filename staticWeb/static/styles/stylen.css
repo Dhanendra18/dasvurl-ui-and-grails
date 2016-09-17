@@ -169,6 +169,14 @@ nav ul a {
 	top: 15%;
 }
 
+.carousel-inner-item {
+	color: #5a5c5b;
+	background-color: #FFFAA0;
+	line-height: 25px;
+	padding: 10px;
+	border-radius: 25px;
+}
+
 #myCarousel {
 	height: 750px;
 }
