@@ -1462,3 +1462,26 @@ span.dropt:hover span {
 		margin-left: 1.33333333%;
 	}
 }
+
+@media (max-width: 1201px) {
+	.custom-nav-container {
+		margin-top: 0;
+	}
+
+	.custom-nav-logo {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.custom-nav-container {
+		margin-top: 40px;
+	}
+
+	.custom-nav-logo {
+		padding: 0;
+		margin-top: -58px;
+		display: block;
+	}
+}
+
