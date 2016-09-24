@@ -17,8 +17,8 @@ class RegisterForm {
     String schoolName
     String age
     Boolean passport
-
-
+    String interestedInStudying
+    String countryPreference
 
     static constraints = {
         mobileNo maxSize: 12

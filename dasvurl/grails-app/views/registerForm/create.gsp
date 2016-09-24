@@ -9,11 +9,14 @@
 		<a href="#create-registerForm" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
-				<sec:ifAnyGranted roles='user'>
+				<sec:ifAnyGranted roles='USER'>
 					<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
 					<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+					<li><g:link controller="logout">Logout</g:link> </li>
 				</sec:ifAnyGranted>
-				<li><g:link class="list" controller="login"><g:message code="default.login" default="Login"/></g:link></li>
+				<sec:ifNotLoggedIn>
+					<li><g:link class="list" controller="login"><g:message code="default.login" default="Login"/></g:link></li>
+				</sec:ifNotLoggedIn>
 			</ul>
 		</div>
 		<div id="create-registerForm" class="content scaffold-create" role="main">

@@ -1,0 +1,10 @@
+.flag {
+    background-image: url("../images/flags/flags.jpg");
+    height: 35px;
+    widows: 100%;
+}
+
+.flag .usa {
+    /*background-image: url("../images/flags/flags.jpg");*/
+
+}
