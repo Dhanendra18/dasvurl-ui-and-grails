@@ -7,7 +7,7 @@ import grails.transaction.Transactional
 import static org.springframework.http.HttpStatus.NOT_FOUND
 
 @Secured("IS_AUTHENTICATED_ANONYMOUSLY")
-@Transactional(readOnly = true)
+@Transactional
 class WebRegisterController extends RestfulController {
 
     static responseFormats = ['json', 'xml']
