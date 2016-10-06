@@ -5,7 +5,7 @@ import grails.plugin.springsecurity.annotation.Secured
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
-@Secured(value=["USER"])
+@Secured(value=["hasRole('USER')"])
 @Transactional(readOnly = true)
 class RegisterFormController {
 

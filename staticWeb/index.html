@@ -415,7 +415,7 @@
 </div>
 
 <div class="jumbotron hoverable" style="padding: 35px; display: none" id="registration_popup">
-	<form action="#" >
+	<!--<form action="http://localhost:8080/dasvurl/WebRegister/register" >-->
 		<div >
 			<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
 				<legend style="width: 30%; margin-bottom: 0px">  Register now</legend>
@@ -423,7 +423,7 @@
 				<div class="row rowbase" >
 					<div class="col-xs-10 input-field" style="margin-top: 0px">
 						<!--<i class="material-icons prefix"></i>-->
-						<input id="first_name" type="text" class="validate">
+						<input id="first_name" name="fullName" required type="text" class="validate">
 						<label for="first_name">Full Name</label>
 					</div>
 				</div>
@@ -435,17 +435,17 @@
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field">
-						<input  type="text" class="validate">
+						<input  name="phoneNumber" type="text" class="validate">
 						<label for="first_name">Mobile number</label>
 					</div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field">
-						<input name="sex" id="female" value="female" type="radio" class="validate">
+						<input name="gender" id="female" value="female" type="radio" class="validate">
 						<label for="female">Female</label>
-						<input name="sex" id="male" value="male" type="radio" class="validate">
+						<input name="gender" id="male" value="male" type="radio" class="validate">
 						<label for="male">Male</label>
-						<input name="sex" id="other" value="other" type="radio" class="validate">
+						<input name="gender" id="other" value="other" type="radio" class="validate">
 						<label for="other">Other</label>
 					</div>
 				</div>
@@ -460,7 +460,7 @@
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-4 input-field">
-						<select id="countryOption1" style="display: block">
+						<select id="countryOption1" name="country1" style="display: block">
 							<option value="" disabled selected>Country option1</option>
 							<option value="1">Option 1</option>
 							<option value="2">Option 2</option>
@@ -468,7 +468,7 @@
 						</select>
 					</div>
 					<div class="col-xs-4 input-field">
-						<select id="countryOption2" style="display: block">
+						<select id="countryOption2" name="country2" style="display: block">
 							<option value="" disabled selected>Country option1</option>
 							<option value="1">Option 1</option>
 							<option value="2">Option 2</option>
@@ -476,7 +476,7 @@
 						</select>
 					</div>
 					<div class="col-xs-4 input-field">
-						<select id="countryOption3" style="display: block">
+						<select id="countryOption3" name="country3" style="display: block">
 							<option value="" disabled selected>Country option1</option>
 							<option value="1">Option 1</option>
 							<option value="2">Option 2</option>
@@ -486,7 +486,7 @@
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-6 input-field">
-						<input type="text" id="course"/>
+						<input type="text" name="course" id="course"/>
 						<label for="course">Course</label>
 					</div>
 				</div>
@@ -496,14 +496,14 @@
 					</div>
 					<div class="col-xs-4 input-field"><label>
 						Spring
-						<input type="checkbox">
+						<input name="intake" type="checkbox">
 						<span class="lever"></span>
 						Fall
 					</label></div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-offset-1 col-xs-10 input-field">
-						<button class="btn btn-large waves-effect waves-light orange full-widthi fontSize24">Submit</button>
+						<button class="btn btn-large waves-effect waves-light orange full-widthi fontSize24" onclick="sr()">Submit</button>
 					</div>
 				</div>
 				<div class="row rowbase">
@@ -514,7 +514,7 @@
 				</div>
 			</fieldset>
 		</div>
-	</form>
+	<!--</form>-->
 </div>
 <!-- ==========================================================================================
 				SCRIPTS
