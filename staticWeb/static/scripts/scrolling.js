@@ -54,7 +54,7 @@ function sr (){
 		method: "POST",
 		dataType: 'jsonp',
 		data: data,
-		url : "http://localhost:8080/dasvurl/WebRegister/register",
+		url : "http://dasvurl.com:8080/dasvurl/WebRegister/register",
 		statusCode: {
 			200: function() {
 				$("#registration_popup").hide();
