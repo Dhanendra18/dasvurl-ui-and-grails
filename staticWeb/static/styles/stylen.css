@@ -180,3 +180,8 @@ nav ul a {
 #myCarousel {
 	height: 750px;
 }
+
+#country-description {
+	height: 200px;
+	overflow-y: scroll;
+}
