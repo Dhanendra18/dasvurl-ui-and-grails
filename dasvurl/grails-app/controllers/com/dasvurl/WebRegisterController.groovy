@@ -24,8 +24,9 @@ class WebRegisterController extends RestfulController {
     }
 
     def register() {
+        println params
         WebRegister webRegister = new WebRegister(params);
-        webRegister.save(flush: true)
-        respond true
+        webRegister.save(flush: true, failOnError: true)
+        respond webRegister
     }
 }
