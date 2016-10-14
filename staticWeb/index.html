@@ -417,36 +417,39 @@
 <div class="jumbotron hoverable" style="padding: 35px; display: none" id="registration_popup">
 	<!--<form action="http://localhost:8080/dasvurl/WebRegister/register" >-->
 		<div >
+			<div class="close"></div>
 			<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
 				<legend style="width: 30%; margin-bottom: 0px">  Register now</legend>
+				<div id="form-validate-msg" style="color:red; display: none">*Please check if every field is filled</div>
+				<div id="form-error" style="color:red; display: none;">Oops! something went wrong, Why don't you try contact us.</div>
+				<div id="form-success" style="color:green; display: none;">Greetings! You have successfully registered we will return to you shortly</div>
 				<br/>
+
 				<div class="row rowbase" >
 					<div class="col-xs-10 input-field" style="margin-top: 0px">
 						<!--<i class="material-icons prefix"></i>-->
 						<input id="first_name" name="fullName" required type="text" class="validate">
-						<label for="first_name">Full Name</label>
+						<label for="first_name">Full Name*</label>
 					</div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field">
 						<input name="email" type="text" class="validate">
-						<label for="first_name">Email</label>
+						<label for="first_name">Email*</label>
 					</div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field">
 						<input  name="phoneNumber" type="text" class="validate">
-						<label for="first_name">Mobile number</label>
+						<label for="first_name">Mobile number*</label>
 					</div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field">
-						<input name="gender" id="female" value="female" type="radio" class="validate">
-						<label for="female">Female</label>
 						<input name="gender" id="male" value="male" type="radio" class="validate">
 						<label for="male">Male</label>
-						<input name="gender" id="other" value="other" type="radio" class="validate">
-						<label for="other">Other</label>
+						<input name="gender" id="female" value="female" type="radio" class="validate">
+						<label for="female">Female</label>
 					</div>
 				</div>
 				<div class="row" style="padding: 5px 15px;">
@@ -456,7 +459,7 @@
 					<div class="col-xs-6" style="color: #9e9e9e; text-decoration: underline;">Study preferences:</div>
 				</div>
 				<div class="row rowbase">
-					<div class="col-xs-4" style="padding-left: 7px;"><label for="countryOption1" style="font-size: 12px; margin-top: 5px">Select Country:</label></div>
+					<div class="col-xs-4" style="padding-left: 7px;"><label for="countryOption1" style="font-size: 12px; margin-top: 5px">Select Country*:</label></div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-4 input-field">
@@ -487,7 +490,7 @@
 				<div class="row rowbase">
 					<div class="col-xs-6 input-field">
 						<input type="text" name="course" id="course"/>
-						<label for="course">Course</label>
+						<label for="course">Course*</label>
 					</div>
 				</div>
 				<div class="row rowbase switch">

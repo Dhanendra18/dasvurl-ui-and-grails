@@ -1,5 +1,4 @@
 package com.dasvurl
-
 import grails.plugin.springsecurity.annotation.Secured
 import grails.rest.RestfulController
 import grails.transaction.Transactional
@@ -24,9 +23,21 @@ class WebRegisterController extends RestfulController {
     }
 
     def register() {
-        println params
+        println request.localName
+        println "request.localName"
+        println request.remotePort
+        println "request.remotePort"
+        println request.remoteUser
+        println "request.remoteUser"
+        println request.localAddr
+        println "request.localAddr"
+        println request.remoteAddr
+        println "request.remoteAddr"
+//        println "User agent: " + request.getHeader("User-Agent")
+        println request.properties
+
         WebRegister webRegister = new WebRegister(params);
         webRegister.save(flush: true, failOnError: true)
-        respond webRegister
+
     }
 }

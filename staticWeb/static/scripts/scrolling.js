@@ -39,27 +39,47 @@
 });
 
 function sr (){
-	var data = {	gender :$("[name='gender']").val(),
-					fullName:$("[name='fullName']").val(),
-					country1:$("[name='country1']").val(),
-					country3:$("[name='country3']").val(),
-					country2:$("[name='country2']").val(),
-					phoneNumber:$("[name='phoneNumber']").val(),
-					email:$("[name='email']").val(),
-					intake:$("[name='intake']").val(),
-					course:$("[name='course']").val()
+	$("#form-validate-msg").hide();
+	/*todo: apply encryption*/
+	var gender = $("[name='gender']").val();
+	var full = $("[name='fullName']").val();
+	var country2 = $("[name='country2']").val();
+	var country1 = $("[name='country1']").val();
+	var country3 = $("[name='country3']").val();
+	var Number = $("[name='phoneNumber']").val();
+	var email = $("[name='email']").val();
+	var intake = $("[name='intake']").val();
+	var course = $("[name='course']").val();
+
+	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course) {
+		$("#form-validate-msg").show();
+		return;
+	}
+
+	var data = {	gender : gender,
+					fullName: full,
+					country1: country2,
+					country3: country1,
+					country2: country3,
+					phoneNumber: Number,
+					email: email,
+					intake: intake,
+					course: course
 				};
 
 	$.ajax({
 		method: "POST",
 		dataType: 'jsonp',
 		data: data,
+		//url : "http://localhost:8080/dasvurl/WebRegister/register",
 		url : "http://dasvurl.com:8080/WebRegister/register",
 		statusCode: {
 			200: function() {
-				$("#registration_popup").hide();
+				$("#form-success").show();
+				$(".close").trigger("click");
 			},
 			404: function () {
+				$("#form-error").show();
 				console.log("Sorry! Your internet is not working or the site is down, Please try again later")
 			}
 		},
