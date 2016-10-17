@@ -166,15 +166,38 @@ nav ul a {
 }
 
 .carousel-content {
-	top: 15%;
+	bottom: 35%;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+	-webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+	animation-name: example;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-delay: 0s;
+	animation-timing-function: linear;
 }
 
 .carousel-inner-item {
 	color: #5a5c5b;
-	background-color: #FFFAA0;
+	background-color: rgba(255, 250, 160, 0.7);
 	line-height: 25px;
 	padding: 10px;
-	border-radius: 25px;
+	/*border-radius: 25px;*/
+}
+
+.jumboCust {
+	background: rgba(238, 238, 238,0.5)
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+	0%  {opacity: 0;}
+	100%  {opacity: 0.7}
+}
+
+/* Standard syntax */
+@keyframes example {
+	0%  {opacity: 0;}
+	100%  {opacity: 0.7}
 }
 
 #myCarousel {
@@ -184,4 +207,45 @@ nav ul a {
 #country-description {
 	height: 200px;
 	overflow-y: scroll;
+}
+
+.carousel-ca {
+	position:absolute;
+	bottom: 60%;
+	width: 100px;
+	background-color: blue;
+	left:0%;
+	z-index:10;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#fff;
+	text-align:center;
+	text-shadow:0 1px 2px rgba(0,0,0,.6);
+	transform: rotate(-90deg);
+}
+
+.cai {
+	bottom: 80%;
+	background-color: #000000;
+}
+
+.cam {
+	bottom: 72%;
+	width: 20px;
+	margin-left: 40px;
+	background-color: #ffff00;
+}
+
+.cam1 {
+	bottom: 68%;
+	width: 20px;
+	margin-left: 40px;
+	background-color: #ffff00;
+}
+
+.cr-title {
+	background: none;
+	width: 18%;
+	font-weight: bolder;
+	bottom: 67%;
 }
