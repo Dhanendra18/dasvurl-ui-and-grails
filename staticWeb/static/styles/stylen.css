@@ -213,7 +213,7 @@ nav ul a {
 	position:absolute;
 	bottom: 60%;
 	width: 100px;
-	background-color: blue;
+	background-color: #0000cc;
 	left:0%;
 	z-index:10;
 	padding-top:20px;
@@ -231,21 +231,49 @@ nav ul a {
 
 .cam {
 	bottom: 72%;
-	width: 20px;
-	margin-left: 40px;
-	background-color: #ffff00;
+	width: 15px;
+	margin-left: 43px;
+	background-color: #fff;
 }
 
 .cam1 {
 	bottom: 68%;
-	width: 20px;
-	margin-left: 40px;
-	background-color: #ffff00;
+	width: 15px;
+	margin-left: 43px;
+	background-color: #fff;
 }
 
 .cr-title {
 	background: none;
-	width: 18%;
+	width: 30%;
+	margin-left: -6%;
 	font-weight: bolder;
 	bottom: 67%;
+}
+
+@media(max-width: 1250px) {
+	.carousel-content {
+		bottom: 15%;
+	}
+
+	.carousel-ca {
+		bottom: 41%;
+	}
+
+	.cai {
+		bottom: 65%;
+	}
+
+	.cam {
+		bottom: 55%;
+	}
+
+	.cam1 {
+		bottom: 51%;
+	}
+
+	.cr-title {
+		bottom: 50%;
+	}
+
 }
