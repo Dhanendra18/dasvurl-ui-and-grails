@@ -275,5 +275,29 @@ nav ul a {
 	.cr-title {
 		bottom: 50%;
 	}
+}
 
+.cr-red {
+	color: #fff;
+	background-color: rgba(255, 47, 20, 0.7);
+}
+
+.cr-black {
+	color: #fff;
+	background-color: rgba(23, 16, 5, 0.7);
+}
+
+.cr-simBlack {
+	color: #fff;
+	background-color: rgba(90, 72, 63, 0.7);
+}
+
+.cr-simGreen {
+	color: #fff;
+	background-color: rgba(90, 122, 74, 0.7);
+}
+
+.cr-simBlue {
+	color: #fff;
+	background-color: rgba(79, 122, 167, 0.7);
 }
