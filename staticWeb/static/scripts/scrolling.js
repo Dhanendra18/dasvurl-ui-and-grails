@@ -52,7 +52,7 @@ function sr (){
 	var course = $("[name='course']").val();
 	var g_recaptcha_response = $("[name='g-recaptcha-response']").val();
 
-	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course) {
+	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course || !g_recaptcha_response) {
 		$("#form-validate-msg").show();
 		return;
 	}
