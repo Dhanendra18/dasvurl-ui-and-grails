@@ -50,6 +50,7 @@ function sr (){
 	var email = $("[name='email']").val();
 	var intake = $("[name='intake']").val();
 	var course = $("[name='course']").val();
+	var g_recaptcha_response = $("[name='g-recaptcha-response']").val();
 
 	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course) {
 		$("#form-validate-msg").show();
@@ -64,7 +65,8 @@ function sr (){
 					phoneNumber: Number,
 					email: email,
 					intake: intake,
-					course: course
+					course: course,
+					'g-recaptcha-response': g_recaptcha_response
 				};
 
 	$.ajax({

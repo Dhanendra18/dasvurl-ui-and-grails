@@ -1,5 +1,6 @@
 package com.dasvurl
 import grails.plugin.springsecurity.annotation.Secured
+import grails.plugins.rest.client.RestBuilder
 import grails.rest.RestfulController
 import grails.transaction.Transactional
 
@@ -23,21 +24,20 @@ class WebRegisterController extends RestfulController {
     }
 
     def register() {
-        println request.localName
-        println "request.localName"
-        println request.remotePort
-        println "request.remotePort"
-        println request.remoteUser
-        println "request.remoteUser"
-        println request.localAddr
-        println "request.localAddr"
-        println request.remoteAddr
-        println "request.remoteAddr"
-//        println "User agent: " + request.getHeader("User-Agent")
-        println request.properties
+        println params.'g-recaptcha-response'
 
-        WebRegister webRegister = new WebRegister(params);
-        webRegister.save(flush: true, failOnError: true)
+        String response = params.'g-recaptcha-response'
+        String secret = "6LeGwgkUAAAAAH2w2hTx6WPuPBYNaqB-uZDaPXbQ"
 
+        def resp = new RestBuilder().post("https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${response}")
+
+        if(resp.success == true) {
+            WebRegister webRegister = new WebRegister(params);
+            webRegister.save(flush: true, failOnError: true)
+        }
+
+        if (resp.error-codes){
+            println resp.error-codes
+        }
     }
 }

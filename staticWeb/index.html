@@ -172,7 +172,7 @@
 		<li data-target="#myCarousel" data-slide-to="3"></li>
 		<li data-target="#myCarousel" data-slide-to="4"></li>
 		<li data-target="#myCarousel" data-slide-to="5"></li>
-		<!--<li data-target="#myCarousel" data-slide-to="6"></li>-->
+		<li data-target="#myCarousel" data-slide-to="6"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
@@ -221,7 +221,7 @@
 			</div>
 		</div>
 		<div class="item">
-			<img class="fourth-slide" src="static/images/infoGraphics/city-road-street-buildings.jpg" alt="Fourth slide">
+			<img class="fourth-slide" src="static/images/infoGraphics/berlin-Brandenburg-Gate-1112x630.jpg" alt="Fourth slide">
 			<div class="container">
 				<div class="carousel-ca"></div>
 				<div class="carousel-ca cai"></div>
@@ -265,8 +265,8 @@
 				</div>
 			</div>
 		</div>
-		<!--<div class="item">
-			<img class="seventh-slide" src="static/images/infoGraphics/pexels-photo-9816.jpeg" alt="Seventh slide">
+		<div class="item">
+			<img class="seventh-slide" src="static/images/infoGraphics/city-road-street-buildings.jpg" alt="Seventh slide">
 			<div class="container">
 				<div class="carousel-ca"></div>
 				<div class="carousel-ca cai"></div>
@@ -279,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-		</div>-->
+		</div>
 	</div>
 	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -468,7 +468,7 @@
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field">
-						<input  name="phoneNumber" type="text" class="validate">
+						<input  name="phoneNumber" type="number" required class="validate">
 						<label for="first_name">Mobile number*</label>
 					</div>
 				</div>
@@ -517,7 +517,7 @@
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-6 input-field">
-						<input type="text" name="course" id="course"/>
+						<input type="text" required name="course" id="course"/>
 						<label for="course">Course*</label>
 					</div>
 				</div>
@@ -543,6 +543,7 @@
 				<div class="row rowbase">
 					<div class="col-xs-10 input-field"></div>
 				</div>
+				<div class="g-recaptcha" data-sitekey="6LeGwgkUAAAAANHs3-dYFIf3SRKsxYx_uGizS5ZG"></div>
 			</fieldset>
 		</div>
 	<!--</form>-->
@@ -628,5 +629,7 @@
 </script>
 
 <script type="text/javascript" src="static/scripts/materialize/materialize.min.js"></script>
+
+<script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
