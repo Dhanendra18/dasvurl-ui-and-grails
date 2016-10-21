@@ -31,13 +31,9 @@ class WebRegisterController extends RestfulController {
 
         def resp = new RestBuilder().post("https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${response}")
 
-        if(resp.success == true) {
-            WebRegister webRegister = new WebRegister(params);
-            webRegister.save(flush: true, failOnError: true)
-        }
+        println resp
 
-        if (resp.error-codes){
-            println resp.error-codes
-        }
+        WebRegister webRegister = new WebRegister(params);
+        webRegister.save(flush: true, failOnError: true)
     }
 }
