@@ -154,15 +154,18 @@ nav ul a {
 
 
 .background_image {
-	background-position: 50% 100%;
 	opacity: .99;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -2;
-	background-image: url("../images/infoGraphics/pexels-photo-48734.jpeg");
+
+	background-image: url('../images/ui/map.png');
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .carousel-content {
@@ -185,7 +188,7 @@ nav ul a {
 }
 
 .jumboCust {
-	background: rgba(238, 238, 238,0.5)
+	background: rgba(238, 238, 238,0.73)
 }
 
 /* Chrome, Safari, Opera */
@@ -213,7 +216,7 @@ nav ul a {
 	position:absolute;
 	bottom: 60%;
 	width: 100px;
-	background-color: #0000cc;
+	background-color: #1385E5;
 	left:0%;
 	z-index:10;
 	padding-top:20px;
@@ -226,21 +229,21 @@ nav ul a {
 
 .cai {
 	bottom: 80%;
-	background-color: #000000;
+	background-color: #4C4C4D;
 }
 
 .cam {
 	bottom: 72%;
 	width: 15px;
 	margin-left: 43px;
-	background-color: #fff;
+	background-color: #F4F4F4;
 }
 
 .cam1 {
 	bottom: 68%;
 	width: 15px;
 	margin-left: 43px;
-	background-color: #fff;
+	background-color: #F4F4F4;
 }
 
 .cr-title {
@@ -300,4 +303,56 @@ nav ul a {
 .cr-simBlue {
 	color: #fff;
 	background-color: rgba(79, 122, 167, 0.7);
+}
+
+.nav-cust {
+	height: 90px;
+	width: 190px;
+}
+
+
+.nav-cust a:hover {
+	margin-top: -111px;
+	padding: 0;
+}
+
+.nav-cust-i1 {
+	font-style: normal;
+	line-height: inherit;
+	height: 200px;
+	width: 190px;
+	display: none;
+}
+.nav-cust a:hover .nav-cust-i1 {
+	display: block;
+}
+
+.nav-cust a:hover .nav-cust-i2 {
+	background-image: -webkit-linear-gradient(top,#222 0,#282828 100%);
+	background-image: -o-linear-gradient(top,#222 0,#282828 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#222),to(#282828));
+	background-image: linear-gradient(to bottom,#222 0,#282828 100%);
+	height: 130px;
+	padding: 15px;
+}
+
+.nav-cust-i2 {
+	padding: 10px;
+	padding-top: 0px;
+}
+
+.nav-cust-content {
+	font-style: normal;
+	font-size: 12px;
+	line-height: inherit;
+	height: 20px;
+	display: block;
+}
+
+.nav-cust-content-sub {
+	font-size: 15px;
+	line-height: inherit;
+	height: 20px;
+	color: blue;
+	font-style: normal;
 }
