@@ -169,7 +169,7 @@ nav ul a {
 }
 
 .carousel-content {
-	bottom: 35%;
+	bottom: 29%;
 	-webkit-animation-name: example; /* Chrome, Safari, Opera */
 	-webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
 	animation-name: example;
@@ -177,13 +177,15 @@ nav ul a {
 	animation-direction: alternate;
 	animation-delay: 0s;
 	animation-timing-function: linear;
+	right: 0;
+	left: 0;
 }
 
 .carousel-inner-item {
 	color: #5a5c5b;
 	background-color: rgba(255, 250, 160, 0.7);
 	line-height: 25px;
-	padding: 10px;
+	padding: 20px 20%;
 	/*border-radius: 25px;*/
 }
 
@@ -214,8 +216,8 @@ nav ul a {
 
 .carousel-ca {
 	position:absolute;
-	bottom: 60%;
-	width: 100px;
+	bottom: 52%;
+	width: 150px;
 	background-color: #1385E5;
 	left:0%;
 	z-index:10;
@@ -233,16 +235,16 @@ nav ul a {
 }
 
 .cam {
-	bottom: 72%;
+	bottom: 68%;
 	width: 15px;
-	margin-left: 43px;
+	margin-left: 68px;
 	background-color: #F4F4F4;
 }
 
 .cam1 {
-	bottom: 68%;
+	bottom: 64%;
 	width: 15px;
-	margin-left: 43px;
+	margin-left: 68px;
 	background-color: #F4F4F4;
 }
 
@@ -251,7 +253,7 @@ nav ul a {
 	width: 30%;
 	margin-left: -6%;
 	font-weight: bolder;
-	bottom: 67%;
+	bottom: 60%;
 }
 
 @media(max-width: 1250px) {
@@ -308,10 +310,16 @@ nav ul a {
 .nav-cust {
 	height: 90px;
 	width: 190px;
+	margin-top: 0;
 }
 
+.nav-cust a {
+	transition: margin-top 1s;
+	margin-top: 0;
+}
 
 .nav-cust a:hover {
+	transition: margin-top 1s;
 	margin-top: -111px;
 	padding: 0;
 }
@@ -319,12 +327,17 @@ nav ul a {
 .nav-cust-i1 {
 	font-style: normal;
 	line-height: inherit;
-	height: 200px;
+	height: 0;
 	width: 190px;
-	display: none;
+	-webkit-transition: height 1s;/*Safari*/
+	transition:  height 1s, opacity 3s;
+	opacity: 0;
 }
 .nav-cust a:hover .nav-cust-i1 {
-	display: block;
+	visibility: visible;
+	height: 200px;
+	opacity: 1;
+	transition: height 1s,opacity 3s;
 }
 
 .nav-cust a:hover .nav-cust-i2 {
@@ -338,12 +351,15 @@ nav ul a {
 
 .nav-cust-i2 {
 	padding: 10px;
-	padding-top: 0px;
+	padding-top: 15px;
+	-webkit-transition: height 1s; /* Safari */
+	transition: height 1s;
 }
 
 .nav-cust-content {
 	font-style: normal;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: bold;
 	line-height: inherit;
 	height: 20px;
 	display: block;
@@ -355,4 +371,20 @@ nav ul a {
 	height: 20px;
 	color: blue;
 	font-style: normal;
+}
+
+.comp-container {
+	border: solid 1px;
+	margin-right: 2%;
+	width: 23%;
+	padding: 0;
+	overflow: hidden;
+	height: 200px;
+}
+
+.comp-p1 {
+	background-image: url("../images/ui/register.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
