@@ -7,7 +7,8 @@ class UrlMappings {
             }
         }
 
-        "/"(controller: 'registerForm',action: 'create')
+        "/" view: "index"
+//        "/"(controller: 'registerForm',action: 'create')
         "500"(view:'/error')
 	}
 }

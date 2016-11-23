@@ -256,7 +256,7 @@ nav ul a {
 	bottom: 60%;
 }
 
-@media(max-width: 1250px) {
+@media(max-width: 1350px) {
 	.carousel-content {
 		bottom: 15%;
 	}
