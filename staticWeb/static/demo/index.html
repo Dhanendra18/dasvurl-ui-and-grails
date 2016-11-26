@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="../styles/materialize/materialize.css"/>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" media="screen">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" type="text/css" href="../styles/bootstrap-theme.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../styles/bootstrap-theme.css" media="screen">
 
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="stylen.css" media="screen">
@@ -48,7 +48,6 @@
 		}
 
 		.short-text {
-			text-align: center;
 			overflow: hidden;
 			height: 11em;
 		}
@@ -60,30 +59,6 @@
 		.show-more {
 			padding: 10px 0;
 			text-align: center;
-		}
-
-		.cust-btn {
-			background-color: transparent;
-			border: solid;
-			border-width: 1px;
-		}
-
-		.cust-btn:hover {
-			background-color: transparent;
-			border: solid;
-			border-width: 2px;
-			color: #fff;
-		}
-
-		.color-black {
-			background-color: rgba(30, 30, 30, 0.8);
-		}
-		.color-black:focus {
-			background-color: rgba(30, 30, 30, 0.8);
-			color: #fff;
-		}
-		.color-black:hover {
-			background-color: rgba(30, 30, 30, 0.8);
 		}
 
 		.line-spacing {
@@ -100,17 +75,14 @@
 	<h1>You need java script enabled to view this page correctly.</h1>
 </noscript>
 <!-- THE LOADING INSTRUMENT -->
+<!--<div id="dvLoading"></div>-->
+<!--First nav-->
 <div class="navbar-wrapper" style="margin-top: 14px;">
 	<div class="container custom-nav-container">
 		<div class="row">
-			<div class=" custom-nav-logo">
-				<ul class="nav ">
-					<a class="navbar-brand" href="#"><img src="../images/logo/DAS_VURL.png" alt="logo" height="160px" width="180px"/></a>
-				</ul>
-			</div>
-			<div class="col-lg-offset-2 col-lg-10">
-				<nav class="navbar navbar-inverse navbar-static-top" style="border-radius: 5px; margin-top: 72px;">
-					<div class="container nav-width">
+			<div class="col-lg-10">
+				<nav class="navbar navbar-inverse navbar-static-top" style="border-radius: 1px; margin-top: 72px; min-height: 90px;">
+					<div class="container" style="padding: 0">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only">Toggle navigation</span>
@@ -121,22 +93,136 @@
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">ABOUT US</a></li>
-								<li><a class="page-scroll active1" href="#overseas">OVERSEAS EDUCATION</a></li>
-								<li><a class="page-scroll" href="#id_ourServices">OUR SERVICES</a></li>
-								<li><a class="page-scroll" href="#id_contactUs">CONTACT US</a></li>
-								<li ><a class="register_now">REGISTER NOW</a></li>
+								<li class="active nav-cust">
+									<a class="page-scroll" href="#" style="padding: 0">
+										<i class="nav-cust-i1">
+											<img src="../images/dasvurlImg/stock-photo-graduation-cap-over-the-book-with-blackboard-on-background-clipping-path-included-185446949.jpg" width="100%" height="100%" alt="">
+										</i>
+
+										<i class="nav-cust-i2">
+											<i class="nav-cust-content">ABOUT US</i>
+											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
+										</i>
+										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
+									</a>
+								</li>
+								<li class="active nav-cust">
+									<a class="page-scroll" href="#myCarousel" style="padding: 0">
+										<i class="nav-cust-i1">
+											<img src="../images/dasvurlImg/stock-photo-graduates-face-the-morning-sun-176269007.jpg" width="100%" height="100%" alt="">
+										</i>
+
+										<i class="nav-cust-i2">
+											<i class="nav-cust-content">OVERSEAS EDUCATION</i>
+											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
+										</i>
+										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
+									</a>
+								</li>
+								<!--<li><a class="page-scroll " href="#myCarousel">OVERSEAS EDUCATION</a></li>-->
+								<li class="active nav-cust">
+									<a class="page-scroll" href="#id_ourServices" style="padding: 0">
+										<i class="nav-cust-i1">
+											<img src="../images/dasvurlImg/stock-photo-scientific-accessories-on-the-table-education-and-science-concept-285699512.jpg" width="100%" height="100%" alt="">
+										</i>
+
+										<i class="nav-cust-i2">
+											<i class="nav-cust-content">OUR SERVICES</i>
+											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
+										</i>
+										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
+									</a>
+								</li>
+								<li class="active nav-cust">
+									<a class="page-scroll" href="#id_contactUs" style="padding: 0">
+										<i class="nav-cust-i1">
+											<img src="../images/ui/contact-us.jpg" width="100%" height="100%" alt="">
+										</i>
+
+										<i class="nav-cust-i2">
+											<i class="nav-cust-content">CONTACT US</i>
+											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
+										</i>
+										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
+									</a>
+								</li>
+								<li class="active nav-cust">
+									<a class="register_now" style="padding: 0">
+										<i class="nav-cust-i1">
+											<img src="../images/dasvurlImg/stock-photo-close-up-view-of-the-hands-of-a-group-of-people-giving-a-thumbs-up-gesture-of-approval-an-success-154220996.jpg" width="100%" height="100%" alt="">
+										</i>
+
+										<i class="nav-cust-i2">
+											<i class="nav-cust-content">REGISTER NOW</i>
+											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
+										</i>
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</nav>
 			</div>
+			<div class="col-lg-2 custom-nav-logo">
+				<ul class="nav navbar-nav navbar-right">
+					<a class="navbar-brand" href="#"><img src="../images/logo/DAS_VURL.png" alt="logo" height="180px" width="200px"/></a>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
+<!--/first nav-->
+<!--Second nav-->
+<nav class="navbar navbar-black navbar-fixed-top navme" role="navigation" style="display: none">
+	<div class="container">
+		<div class="navbar-header">
+			<p href=".fstpage" class="page-scroll baseHeader fontSize20" style="margin-top: 10px;">Das VURL</p>
+		</div>
+		<div>
+			<a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right index-nav">
+				<li ><a href="#myCarousel" class="page-scroll">overseas education</a></li>
+				<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>
+				<li ><a href="#id_contactUs" class="page-scroll">contact us</a></li>
+				<li ><a class="register_now">register now</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<!-- ============================================
+				About us
+================================================-->
+
+<section class="sec1 fstpage" id="id_aboutUs" style="padding-top: 230px;">
+	<div class="down_wrapper"><a href="#myCarousel" class="page-scroll"><img src="../images/DownArrow.png" width="40px" height="18px;"/></a></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="jumbotron jumboCust fontSize16 fontbold">
+					<h2 style="font-weight: 800;">About us</h2>
+					<strong style="font-size: 26px">D</strong>as Vurl Education is a rapidly flourishing and focused unit in the domain of Global Educational Consultancy services, headquartered at Ghaziabad. With a surging demand to its unique value driven approach to the student community, the company is swiftly expanding its operation and process with its nation-wide expansion plans at Jamshedpur, Ranchi, Chandigarh, Pune, Hyderabad, and Bangalore with a determined vision to take the overseas education to the town level and, thus, looking forward to have a structured team which will can aid in accomplished our desired project.<br/><br/>
+					There is a provision for a wide range of services for different visa types. Our global services are specifically tailored and targeted to assist you in travelling or migrating to various overseas destinations.
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="jumbotron jumboCust no-padding">
+					<img class="responsive-img" src="../images/infoGraphics/DASVURLGIF-big-font.gif" alt=""/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div id="bg-1" class="background_image"></div>-->
+	<div class="background_image" style=""></div>
+</section>
 <!-- Carousel
 ================================================== -->
-
 <section id="myCarousel" class="carousel slide scrollbtn" data-ride="carousel">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
@@ -149,231 +235,351 @@
 		<li data-target="#myCarousel" data-slide-to="6"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img class="second-slide" src="../images/infoGraphics/people-new-york-train-crowd.jpeg" alt="Second slide">
+		<div class="item active" style="height: 100%">
+			<img class="first-slide" src="../images/dasvurlImg/stock-photo-cheerful-friends-are-hanging-out-in-campus-436292677.jpg" alt="First slide">
 			<div class="container">
-
-				<div class="carousel-caption carousel-content">
-					<div class="carousel-inner-item cr-simBlack">
-						<h1>STUDY IN USA</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<img class="first-slide" src="../images/infoGraphics/pexels-photo.jpg" alt="First slide">
-			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN EUROPE</h2></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-black">
-						<h1>STUDY IN EUROPE</h1>
+						<p>The Europe has a climate which varies from subtropical to polar. The Mediterranean climate of the south is dry and warm. The western and northwestern parts have a mild, generally humid climate, influenced by the North Atlantic Drift.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="third-slide" src="../images/infoGraphics/people-coffee-notes-tea.jpg" alt="Third slide">
+			<img class="second-slide" src="../images/dasvurlImg/stock-photo-diversity-teamwork-brainstorming-meeting-university-concept-326855354.jpg" alt="Second slide">
 			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN USA</h2></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlack">
-						<h1>STUDY IN UNITED KINGDOM</h1>
+						<p>America is a melting pot of people from all over the world. One will find most Americans to be very hospitable, friendly, kind, generous and accepting of foreigners. Of course, there are a few exceptions, as in any country, but these are not the norm. In general, the people are funny, gregarious, innovative, and eager to learn. These are traits that many international students adopt and take home with them.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="fourth-slide" src="../images/infoGraphics/city-road-street-buildings.jpg" alt="Fourth slide">
+			<img class="third-slide" src="../images/dasvurlImg/stock-photo-education-concept-happy-girl-in-graduation-cap-with-diploma-and-students-181440068.jpg" alt="Third slide">
 			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN UNITED KINGDOM</h2></div>
+				<div class="carousel-caption carousel-content">
+					<div class="carousel-inner-item cr-simBlack">
+						<p>Poland officially the Republic of Poland is a country in Central Europe bordered by Germany to the West, the Czech Republic and Slovakia to the South, Ukraine and Belarus to the East and the Baltic Sea and Lithuania to the North. It is the 71st largest country in the world and the 9th largest in Europe. With a population of over 38.5 million people, Poland is the 34th most populous country in the world.	</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<img class="fourth-slide" src="../images/dasvurlImg/stock-photo-hall-building-in-college-329767535.jpg" alt="Fourth slide">
+			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN GERMANY</h2></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlue">
-						<h1>STUDY IN GERMANY</h1>
+						<p>Germany officially the Federal Republic of Germany is in Western Europe with Denmark bordering it to the North, Poland and the Czech Republic to the East, Austria to the Southeast, Switzerland to the Southwest, France, Luxembourg and Belgium lie to the West and the Netherlands to the Northwest. It includes 16 constituent states with a largely temperate seasonal climate.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="fifth-slide" src="../images/infoGraphics/hands-people-woman-working.jpg" alt="Fifth slide">
+			<img class="fifth-slide" src="../images/dasvurlImg/stock-photo-large-group-of-friends-together-in-a-park-having-fun-playing-guitar-and-talking-438632287.jpg" alt="Fifth slide">
 			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN POLAND</h2></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simGreen">
-						<h1>STUDY IN POLAND</h1>
+						<p>Poland officially the Republic of Poland is a country in Central Europe bordered by Germany to the West, the Czech Republic and Slovakia to the South, Ukraine and Belarus to the East and the Baltic Sea and Lithuania to the North. It is the 71st largest country in the world and the 9th largest in Europe. With a population of over 38.5 million people, Poland is the 34th most populous country in the world.	</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="sixth-slide" src="../images/infoGraphics/people-eiffel-tower-lights-night.jpg" alt="Sixth slide">
+			<img class="sixth-slide" src="../images/dasvurlImg/stock-photo-pretty-female-university-student-portrait-108794795.jpg" alt="Sixth slide">
 			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN FRANCE</h2></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-red">
-						<h1>STUDY IN FRANCE</h1>
+						<p> France officially the French Republic is a sovereign state comprising territory in western Europe. It has a total population of 67 million and it is a unitary semi-presidential republic with its capital in Paris, the country's largest city and main cultural and commercial centre. The Constitution of France establishes the state as secular and democratic with its sovereignty derived from the people.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="seventh-slide" src="../images/infoGraphics/city-road-street-buildings.jpg" alt="Seventh slide">
+			<img class="seventh-slide" src="../images/dasvurlImg/stock-photo-speaker-giving-a-talk-at-business-meeting-audience-in-the-conference-hall-business-and-261534164.jpg" alt="Seventh slide">
 			<div class="container">
+				<div class="carousel-ca"></div>
+				<div class="carousel-ca cai"></div>
+				<div class="carousel-ca cam"></div>
+				<div class="carousel-ca cam1"></div>
+				<div class="carousel-ca cr-title"><h2>STUDY IN RUSSIA</h2></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item">
-						<h1>STUDY IN RUSSIA</h1>
+						<p> Russia, the world?s largest nation, borders European and Asian countries as well as the Pacific and Arctic oceans. Its landscape ranges from tundra and forests to subtropical beaches. It?s famous for Moscow's Bolshoi and St. Petersburg's Mariinsky ballet companies. St. Petersburg, founded by Russian leader Peter the Great, has the baroque Winter Palace, now housing part of the State Hermitage Museum?s art collection.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
 </section><!-- /.carousel -->
-<!-- ============================================
-				About us
-================================================-->
+<!-- ============================
+			page 3 Testimonial
+============================= -->
+<!--<section class="sec2a " id="id_testimonial">
+	<div class="container" style="margin-top: 35px;">
+		<div class="down_wrappersec2"><a href="#id_ourServices" class="page-scroll"><img src="static/images/downArrowBlack.png" width="40" height="18px"/></a></div>
+		<h2 align="center" style="text-decoration: underline;"><samp>Testimonial</samp></h2>
+		<div class="row fontregular fontSize18" >
+			<div class="col-md-4" style="line-height: 32px;">
+				<div class="jumbotron hoverable">
+					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle " src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					</div>
+					<div class="row text-content short-text">
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+					</div>
+					<div class="show-more">
+						<a href="javascript:void(0);">Show more</a>
+					</div>
+				</div>
 
-<section class="sec1 fstpage" id="id_aboutUs" style="padding-top: 0px;">
-	<!--<div class="down_wrapper"><a href="#myCarousel" class="page-scroll"><img src="static/images/DownArrow.png" width="40px" height="18px;"/></a></div>-->
-	<div class="container">
-		<div class="row jumbotron fontSize16 fontbold" style="margin-top: -10%; background-color: #fafafa">
-			<div class="col-xs-6">
-					<h2 class="fontbold fontSize36" >ABOUT US</h2>
-					<strong style="font-size: 26px">D</strong>as Vurl Education is a rapidly flourishing and focused unit in the domain of Global Educational Consultancy services, headquartered at Ghaziabad. With a surging demand to its unique value driven approach to the student community, the company is swiftly expanding its operation and process with its nation-wide expansion plans at Jamshedpur, Ranchi, Chandigarh, Pune, Hyderabad, and Bangalore with a determined vision to take the overseas education to the town level and, thus, looking forward to have a structured team which will can aid in accomplished our desired project.<br/><br/>
-					There is a provision for a wide range of services for different visa types. Our global services are specifically tailored and targeted to assist you in travelling or migrating to various overseas destinations.
 			</div>
-			<div class="col-xs-6">
-					<img class="responsive-img" src="../images/infoGraphics/DASVURLGIF-big-font.gif" alt=""/>
+			<div class="col-md-4" style="line-height: 32px;">
+				<div class="jumbotron hoverable">
+					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					</div>
+					<div class="row">
+						kjh lkasdhlfk jahd owupqihas dfasdbcqcijnmnmsnijf jsdofisdfqoiwf asdfaf.asdf.asdf as dfasdof iquwh a asdfsdf. ajowro jsq kdito jiuq lajsi. j ioqpinmznb asdfjasdk o nkan.
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4" style="line-height: 32px;">
+				<div class="jumbotron hoverable">
+					<div class="row col-xs-offset-3 rowbtmmargin"><img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+					</div>
+					<div class="row">
+						kjalkfja laksdfla jsdslajsdlf alsdfjk asldkjf lasdfj lasdkjf lasdjkf asd;lkfj; asldkfj asodijf pasodijf asdojf lasdjkfaksdjf asjdfawjifu ansdkjf ansdfufboq eufbkj bb a nwou2hoqwheb ak kjfhb asdfbkjahbdoqwueyf j f bznxbcvqiwuhfo hfb
+					</div>
+				</div>
+
 			</div>
 		</div>
-	</div>
-	<div id="bg-1" class="background_image"></div>
-	<div id="bg-2" class="background_image" style="display: none;background-image: url('../images/infoGraphics/restaurant-village-germany-chairs.jpg');"></div>
-</section>
+		<div class="row" style="margin-bottom: 100px; margin-top: 50px">
+			<div class="col-xs-offset-4 col-xs-3">
+				<button class="btn-large waves-effect waves-light orange full-widthi fontSize24">More </button>
+			</div>
+		</div>
+		<div class="demoBtn">
 
+		</div>
+	</div>
+</section>-->
 <!--=============================================================================
 						page4- OUR SERVICES
 ===================================================================================-->
 <section class="sec2b scrollbtn" id="id_ourServices">
 	<div class="container">
-		<h3 style="margin-left: -3%;" class="statepg2 fontSize36" >OUR SERVICES</h3>
+		<div class="down_wrapper1"><a href="#id_contactUs" class="page-scroll"><img src="../images/DownArrow.png" width="40" height="18px"/></a></div>
+		<!--  old codes -->
+		<h3 class="statepg2" align="center">OUR SERVICES</h3>
 		<div class="row content_1stpg" style="color: #fff">
-			<div class="col-md-5" style="border-style: ridge; background-color: rgba(30, 30, 30, 0.5);">
+			<div class="col-md-6">
 				<div class="row rowbase">
-					<div class="col-xs-11 center ">
-						<img src="../images/contactus_call.png" alt="">
-					</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-11"><h4 class="center fontextra fontSize24">OVERSEAS</h4></div>
+					<div class="col-xs-7"><h4 class="text-underline fontextra fontSize24">OVERSEAS</h4></div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-11" id="overseas_id">
 						<div class="text-content short-text">
-							<p class="fontregular fontSize18">Leading to Work Visa and Permanent residency - Educational Excellence, High Rate of Employment and Good Income Potential with Excellent Work Environment attracts the top students from across the globe. Outstanding academic standing and resources of the Universities in the developed countries make sure that one gets the most from their experience and exposure in an international education institute. We help students get study visa in UK, Australia, US, Canada, New Zealand, Ireland, Switzerland & Singapore.<br><br>
+							<p class="fontmedium fontSize18">Leading to Work Visa and Permanent residency - Educational Excellence, High Rate of Employment and Good Income Potential with Excellent Work Environment attracts the top students from across the globe. Outstanding academic standing and resources of the Universities in the developed countries make sure that one gets the most from their experience and exposure in an international education institute. We help students get study visa in UK, Australia, US, Canada, New Zealand, Ireland, Switzerland & Singapore.<br><br>
 								Today all of the above listed countries prefer individual with international education to settle in their lands. A minimum of one year study is crucial to get a Work Permit which leads to Permanent Residency.<br><br>
 								Being strong and concrete market players for the last 16 years, Das Vurl Education has specialised in sending students, particularly to UK, USA, Australia, Germany, New Zealand and Canada. Catering to the top notch universities, we have experts helping students with the application procedures & study visas for UK, USA, Australia, Germany, France , Sweden ,Spain ,Ireland ,Belgium ,Czech Republic, Denmark Finland , Georgia, Iceland ,Italy ,Netherland ,Poland ,Russia ,Romania ,New Zealand & Canada.<br><br>
 								Considering our massive footfall, we are extending our alliance with other countries for university admissions so that our students can pursue their courses in the best possible environment and exposure
 							</p>
 						</div>
 						<div class="show-more">
-							<a class="btn waves-effect waves-light cust-btn">show more</a>
+							<a >show more</a>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-offset-1 col-md-5" style="border-style: ridge; background-color: rgba(30, 30, 30, 0.5);">
-				<div class="row rowbase">
-					<div class="col-xs-11 center ">
-						<img src="../images/contactus_call.png" alt="">
+				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
+					<div class="col-xs-offset-4 col-xs-4">
+						<button class="btn full-widthi waves-effect waves-light orange" onclick="location.href='../../overseas.html'">More</button>
 					</div>
 				</div>
+			</div>
+			<div class="col-md-6" style="border-left-style: solid; border-left-width: 1px; border-left-color: #fff ">
 				<div class="row rowbase">
-					<div class="col-xs-11"><h4 class="center fontextra fontSize24">VISITOR / WORK VISA</h4></div>
+					<div class="col-xs-7"><h4 class="text-underline fontextra fontSize24">VISITOR / WORK VISA</h4></div>
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-11">
-						<div class="text-content short-text">
-							<p class="fontregular fontSize18">
-								This is for applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
-							</p>
-						</div>
-						<div class="show-more">
-							<a class="btn waves-effect waves-light cust-btn">show more</a>
-						</div>
+						<p class="fontregular fontSize18">
+							This is for applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
+						</p>
+					</div>
+				</div>
+				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
+					<div class="col-xs-offset-4 col-xs-4">
+						<button class="btn full-widthi waves-effect waves-light orange">More</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="sec6 " id="overseas">
-	<div class="container">
-		<h3 style="margin-left: -3%;" class="fontbold fontSize36">OVERSEAS EDUCATION</h3>
-		<div class="row">
-			<div class="col-xs-8">
-				<div class="row">
-					<div class="col-xs-12 fontSize18 fontsemi" style="background-color: rgb(39,55,60); padding: 15px 40px 15px 15px; color: white;">
-						Study In United States
-						<i class="glyphicon glyphicon-chevron-right" style="float: right; font-size: 22px"></i>
-					</div>
+<!--========================================================================
+				New component for
+==========================================================================-->
+<section style=" padding: 0;background-color: #fff700">
+	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;">MEET OUR TEAM</div>
+</section>
+<section>
+	<div class="row rowbase">
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-pretty-young-woman-tourist-takes-selfie-portrait-on-the-red-square-in-moscow-russia-beautiful-506932969.jpg')">
+				<div class="ui-background-content">
+					Our team
 				</div>
-				<div class="row">
-					<div class="col-xs-12 fontSize18 fontsemi" style="background-color: rgb(1, 20, 26); padding: 15px 40px 15px 15px; color: white;">
-						Study In Germany
-						<i class="glyphicon glyphicon-chevron-right" style="float: right; font-size: 22px"></i>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 fontSize18 fontsemi" style="background-color: rgb(1, 20, 26); padding: 15px 40px 15px 15px; color: white;">
-						Study In United Kingdom
-						<i class="glyphicon glyphicon-chevron-right" style="float: right; font-size: 22px"></i>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 fontSize18 fontsemi" style="background-color: rgb(1, 20, 26); padding: 15px 40px 15px 15px; color: white;">
-						Study In Poland
-						<i class="glyphicon glyphicon-chevron-right" style="float: right; font-size: 22px"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<div style="border: solid; height: 280px;">Add image here</div>
 			</div>
 		</div>
-		<div class="row center">
-			<button class="btn waves-effect waves-light cust-btn color-black">View More</button>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-fountain-of-friendship-of-the-people-daily-view-at-vdnh-exhibition-with-blue-sky-and-clouds-in-400839313.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-famous-christian-landmark-in-russia-christ-the-savior-cathedral-at-sunset-golden-sunset-lights-479581948.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-berlin-brandenburg-gate-germany-311061461.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
 		</div>
 	</div>
+	<div class="row rowbase">
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-smiling-young-students-standing-together-at-college-campus-221120629.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-summer-holidays-education-campus-and-teenage-concept-smiling-female-student-in-black-eyeglasses-192753410.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-speaker-at-business-conference-and-presentation-audience-at-the-conference-hall-193539209.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('../images/dasvurlImg/stock-photo-shot-of-graduation-caps-during-commencement-57140308.jpg')">
+				<div class="ui-background-content">
+					Our team
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-</section>
+<!--<section style="height: 317px;">
+	<div class="row rowbase">
+		<div class="col-xs-3 no-padding" style="height: 317px; transform: translateX(0px) translateY(0px); z-index: 10;">
+			<div style="position: absolute" class="photo">
+				<img src="static/images/ui/team_member_chloe.jpg" height="100%" width="100%" alt="sad">
+			</div>
+			<div class="about">
+
+			</div>
+		</div>
+		&lt;!&ndash;<div class="col-xs-3 no-padding">
+			<img src="static/images/ui/team_member_chloe.jpg" width="100%" alt="sad">
+		</div>
+		<div class="col-xs-3 no-padding">
+			<img src="static/images/ui/team_member_chloe.jpg" width="100%" alt="sad">
+		</div>
+		<div class="col-xs-3 no-padding">
+			<img src="static/images/ui/team_member_chloe.jpg" width="100%" alt="sad">
+		</div>&ndash;&gt;
+	</div>
+</section>-->
 <!-- ====================================================================
 				Page 5 Contact us
 ====================================================================== -->
 <section class="sec7 sixthpage" id="id_contactUs">
 	<div class="container">
-		<div style="background-color: rgb(24,37,40);color: #ffffff; padding: 20px;padding-bottom: 10px; margin-bottom: 20px;">
-		<h3 class="center fontbold fontSize36">CONTACT US</h3>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-xs-10" style="padding-left: 30px;">
-						<h3 style="border-bottom: solid; border-width: 1px;padding-bottom: 10px;">Contact Information</h3>
-					</div>
+		<div class="row" style="margin-top: 60px;">
+			<div class="col-md-6 fontSize18" align="center"  style=" padding-right:70px; " >
+				<div class="row"><img src="../images/logo/DAS_VURL.png" alt="blink logo" class="img-responsive"></div>
+				<div class="row rowbase" style="margin-top: 60px; margin-bottom: 30px; line-height: 32px">
+					<p class="fontregular"align="left">Das VURL is responsible for facilitation educational opportunities & aiding students choose the best university for better studies and life ahead.</p>
 				</div>
-				<div class="row"><div class="col-xs-10"><img alt="location" src="../images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">SD-142 Shastri nagar, Ghaziabad, Uttar Pradesh, India- 201001</p></div></div>
-				<div class="row"><div class="col-xs-10"><img alt="location" src="../images/contactus_call.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">+91 120-4230300, +91 95606-26920</p></div></div>
-				<div class="row"><div class="col-xs-10"><img alt="location" src="../images/contactus_maill.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">reachus@dasvurl.com</p></div></div>
-
 			</div>
 			<div class="col-md-6">
+				<div class="row"><p class="fontbold fontSize20" style=" margin-bottom: 20px;">Reach us</p></div>
 				<div class="row">
-					<div class="col-xs-10">
-						<h3 style="border-bottom: solid; border-width: 1px;padding-bottom: 10px;">Leave us a message</h3>
-					</div>
+					<img alt="location" src="../images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">SD-142 Shastri nagar, Ghaziabad, Uttar Pradesh, India- 201001</p>
+					<img alt="contact" src="../images/contactus_call.png" style="float: left;  margin-bottom: 20px; margin-left: -30px;"><p class="fontregular fontSize18" style="  margin-left: 70px; margin-top: 23px;">+91 120-4230300, +91 95606-26920</p>
+					<img alt="mail" src="../images/contactus_maill.png" style="float: left;  margin-bottom: 50px; margin-left: -30px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-top: 14px;">reachus@dasvurl.com</p>
 				</div>
-					<div class="row"><div class="col-xs-11"><input class="full-widthi input-sm" type="abcd" name="Name" placeholder="Name"/></div></div>
-					<div class="row"><div class="col-xs-11"><input class="full-widthi input-sm" type="abcd" name="Name" placeholder="Email"/></div></div>
-					<div class="row"><div class="col-xs-11"><input class="full-widthi input-sm" type="abcd" name="Name" placeholder="Phone"/></div></div>
-					<div class="row"><div class="col-xs-11"><textarea class="full-widthi input-sm" cols="50" rows="8" name="Name" placeholder="Message" style="background-color: white"></textarea></div></div>
-					<div class="row"><div class="col-xs-offset-8 col-xs-3"><button class="full-widthi btn waves-effect waves-light cust-btn color-black" >SUBMIT</button></div></div>
-
+				<div class="row fontbold fontSize20" style=" margin-bottom: 20px;">Follow us on</div>
+				<div class="row" style="margin-bottom: 50px;">
+					<div class="col-xs-offset-2 col-xs-4"><a href="http://facebook.com/"><img src="../images/contactus_fb.png" alt="facebook"></a></div>
+					<div class="col-xs-4"><a href="http://www.twitter.com/"><img src="../images/contactus_twitter.png" alt="Twitter"></a></div>
+				</div>
 			</div>
-		</div>
 		</div>
 	</div>
 </section>
@@ -387,6 +593,7 @@
 </div>
 
 <div class="jumbotron hoverable" style="padding: 35px; display: none" id="registration_popup">
+	<!--<form action="http://localhost:8080/dasvurl/WebRegister/register" >-->
 		<div >
 			<div class="close"></div>
 			<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
@@ -489,6 +696,7 @@
 				<div class="g-recaptcha" data-sitekey="6LeGwgkUAAAAANHs3-dYFIf3SRKsxYx_uGizS5ZG"></div>
 			</fieldset>
 		</div>
+	<!--</form>-->
 </div>
 <!-- ==========================================================================================
 				SCRIPTS
@@ -568,6 +776,16 @@
 		}
 		return countryOptions;
 	}
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-87591536-1', 'auto');
+	ga('send', 'pageview');
+
 </script>
 
 <script type="text/javascript" src="../scripts/materialize/materialize.min.js"></script>

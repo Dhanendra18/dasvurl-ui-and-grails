@@ -154,19 +154,22 @@ nav ul a {
 
 
 .background_image {
-	background-position: 50% 100%;
 	opacity: .99;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 100%;
 	z-index: -2;
-	background-image: url("../images/infoGraphics/pexels-photo-48734.jpeg");
+
+	background-image: url('../images/ui/map.png');
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .carousel-content {
-	top: 25%;
+	bottom: 29%;
 	-webkit-animation-name: example; /* Chrome, Safari, Opera */
 	-webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
 	animation-name: example;
@@ -174,18 +177,20 @@ nav ul a {
 	animation-direction: alternate;
 	animation-delay: 0s;
 	animation-timing-function: linear;
+	right: 0;
+	left: 0;
 }
 
 .carousel-inner-item {
 	color: #5a5c5b;
 	background-color: rgba(255, 250, 160, 0.7);
 	line-height: 25px;
-	padding: 10px;
+	padding: 20px 20%;
 	/*border-radius: 25px;*/
 }
 
 .jumboCust {
-	background: rgba(238, 238, 238,0.5)
+	background: rgba(238, 238, 238,0.73)
 }
 
 /* Chrome, Safari, Opera */
@@ -201,7 +206,7 @@ nav ul a {
 }
 
 #myCarousel {
-	height: 600px;
+	height: 750px;
 }
 
 #country-description {
@@ -211,9 +216,9 @@ nav ul a {
 
 .carousel-ca {
 	position:absolute;
-	bottom: 60%;
-	width: 100px;
-	background-color: #0000cc;
+	bottom: 52%;
+	width: 150px;
+	background-color: #1385E5;
 	left:0%;
 	z-index:10;
 	padding-top:20px;
@@ -226,21 +231,21 @@ nav ul a {
 
 .cai {
 	bottom: 80%;
-	background-color: #000000;
+	background-color: #4C4C4D;
 }
 
 .cam {
-	bottom: 72%;
+	bottom: 68%;
 	width: 15px;
-	margin-left: 43px;
-	background-color: #fff;
+	margin-left: 68px;
+	background-color: #F4F4F4;
 }
 
 .cam1 {
-	bottom: 68%;
+	bottom: 64%;
 	width: 15px;
-	margin-left: 43px;
-	background-color: #fff;
+	margin-left: 68px;
+	background-color: #F4F4F4;
 }
 
 .cr-title {
@@ -248,12 +253,12 @@ nav ul a {
 	width: 30%;
 	margin-left: -6%;
 	font-weight: bolder;
-	bottom: 67%;
+	bottom: 60%;
 }
 
-@media(max-width: 1250px) {
+@media(max-width: 1350px) {
 	.carousel-content {
-		top: 45%;
+		bottom: 15%;
 	}
 
 	.carousel-ca {
@@ -302,7 +307,134 @@ nav ul a {
 	background-color: rgba(79, 122, 167, 0.7);
 }
 
-.carousel-caption {
-	right: 30%;
-	left: 30%;
+.nav-cust {
+	height: 90px;
+	width: 190px;
+	margin-top: 0;
+}
+
+.nav-cust a {
+	transition: margin-top 1s;
+	margin-top: 0;
+}
+
+.nav-cust a:hover {
+	transition: margin-top 1s;
+	margin-top: -111px;
+	padding: 0;
+}
+
+.nav-cust-i1 {
+	font-style: normal;
+	line-height: inherit;
+	height: 0;
+	width: 190px;
+	-webkit-transition: height 1s;/*Safari*/
+	transition:  height 1s, opacity 3s;
+	opacity: 0;
+}
+.nav-cust a:hover .nav-cust-i1 {
+	visibility: visible;
+	height: 200px;
+	opacity: 1;
+	transition: height 1s,opacity 3s;
+}
+
+.nav-cust a:hover .nav-cust-i2 {
+	background-image: -webkit-linear-gradient(top,#222 0,#282828 100%);
+	background-image: -o-linear-gradient(top,#222 0,#282828 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#222),to(#282828));
+	background-image: linear-gradient(to bottom,#222 0,#282828 100%);
+	height: 130px;
+	padding: 25px 10px;
+}
+
+.nav-cust-i2 {
+	padding: 10px;
+	padding-top: 15px;
+	-webkit-transition: height 1s; /* Safari */
+	transition: height 1s;
+}
+
+.nav-cust-content {
+	font-style: normal;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: inherit;
+	height: 20px;
+	display: block;
+}
+
+.nav-cust-content-sub {
+	font-size: 15px;
+	line-height: inherit;
+	height: 20px;
+	color: blue;
+	font-style: normal;
+}
+
+.comp-container {
+	border: solid 1px;
+	margin-right: 2%;
+	width: 23%;
+	padding: 0;
+	overflow: hidden;
+	height: 200px;
+}
+
+.comp-p1 {
+	background-image: url("../images/ui/register.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.mast:before {
+	background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2050%2040%22%20enable-background%3D%22new%200%200%2050%2040%22%3E%3Cg%3E%3Cpath%20fill%3D%22%23A5A035%22%20d%3D%22M34.0864258%2C19.4938965c1.2421875%2C1.1044922%2C1.7480469%2C2.6225586%2C1.7480469%2C4.8305664%20c0%2C6.3032227-4.96875%2C14.0776367-16.8378906%2C14.0776367c-9.5693359%2C0-15.1357422-4.5537109-15.1357422-11.0869141%20c0-6.1191406%2C5.2446289-9.8916016%2C9.8452148-11.2714844c-2.0703125-0.9663086-3.4047852-3.0366211-3.4047852-5.612793%20c0-4.5541992%2C4.2324219-8.8330078%2C10.6274414-8.8330078c5.0600586%2C0%2C7.7749023%2C2.0244141%2C7.7749023%2C5.1064453%20c0%2C1.6103516-1.0585938%2C2.7607422-2.3466797%2C3.1748047H24.793457c0.1376953-0.6904297%2C0.2294922-1.2421875%2C0.2294922-1.8862305%20c0-2.484375-1.4257812-4.5546875-4.8764648-4.5546875c-4.0024414%2C0-6.3486328%2C2.8525391-6.3486328%2C6.1645508%20c0%2C2.7602539%2C1.472168%2C4.5087891%2C4.8764648%2C5.0605469l-0.4140625%2C1.2421875%20c-6.4404297%2C1.1503906-10.5351562%2C4.6928711-12.5351562%2C10.3051758c0%2C5.796875%2C5.1064453%2C9.7070312%2C12.3295898%2C9.7070312%20c10.0288086%2C0%2C13.847168-6.6708984%2C13.847168-11.5473633c0-4.9223633-3.1279297-7.8666992-7.7285156-7.8666992%20c-2.3466797%2C0-4.0024414%2C1.2880859-4.0024414%2C3.1743164c0%2C1.2880859%2C1.0581055%2C2.3461914%2C4.2788086%2C2.3461914v1.012207%20c0%2C1.2421875-1.2880859%2C2.2084961-2.8984375%2C2.2084961c-1.9785156%2C0-3.2666016-1.4262695-3.2666016-4.140625%20c0-2.668457%2C1.9780273-7.3149414%2C7.4072266-7.3149414c5.1064453%2C0%2C8.7402344%2C4.784668%2C12.5585938%2C4.784668%20c2.3466797%2C0%2C4.0029297-1.2880859%2C4.0029297-3.1743164c0-1.2880859-1.0585938-2.3461914-4.2783203-2.3461914v-1.012207%20c0-1.2421875%2C1.2880859-2.2084961%2C2.8984375-2.2084961c1.9775391%2C0%2C3.265625%2C1.4262695%2C3.265625%2C4.140625%20c0%2C2.668457-1.9775391%2C7.3149414-7.0380859%2C7.3149414C37.168457%2C21.2883301%2C35.512207%2C20.4143066%2C34.0864258%2C19.4938965z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+	content: '';
+	display: block;
+	margin: 0 auto 1em;
+	height: 40px;
+	width: 50px;
+}
+
+.ui-background {
+	height: 315px;
+	background-image: url('../images/dasvurlImg/stock-photo-summer-holidays-education-campus-and-teenage-concept-smiling-female-student-in-black-eyeglasses-192753410.jpg');
+	background-position: center;
+	background-size: cover;
+	transition: transform .4s;
+}
+
+.ui-background:hover {
+	transform: scale(1.2);
+}
+
+.ui-background .ui-background-content {
+	display: none;
+}
+
+.ui-background:hover .ui-background-content {
+	background-color: rgba(255,255,0,.5);
+	height: 100%;
+	text-align: center;
+	padding: 40%;
+	display: block;
+}
+
+/*should be removed after out team completes*/
+.about {
+	background: rgba(255,247,0,.65);
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	-moz-transition: opacity .2s ease-out;
+	-o-transition: opacity .2s ease-out;
+	-webkit-transition: opacity .2s ease-out;
+	transition: opacity .2s ease-out;
+	width: 100%;
 }
