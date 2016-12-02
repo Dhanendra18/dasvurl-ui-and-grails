@@ -693,6 +693,16 @@ color: #7f8c8d;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: background-image 4s ease-in-out;
+}
+
+.sec1-backImage1 {
+	background-image: url("../images/shutterstock_292639718.jpg");
+	transition: background-image 4s ease-in-out;
+}
+.sec1-backImage2 {
+	background-image: url("../images/shutterstock_426494686.jpg");
+	transition: background-image 4s ease-in-out;
 }
 
 .sec2a {

@@ -693,6 +693,17 @@
 			});
 		});
 	});
+	$(document).ready(function(){
+		setInterval(function(){
+			$("#id_aboutUs").removeClass("sec1-backImage2");
+			setTimeout(function(){
+				$("#id_aboutUs").addClass("sec1-backImage1");
+			},5000);
+			setTimeout(function(){
+				$("#id_aboutUs").removeClass("sec1-backImage1").addClass("sec1-backImage2");
+			}, 10000);
+		}, 15000);
+	})
 </script>
 <script type="application/javascript">
 	$(document).ready(function(){
