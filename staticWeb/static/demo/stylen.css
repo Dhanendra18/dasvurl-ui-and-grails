@@ -169,7 +169,7 @@ nav ul a {
 }
 
 .carousel-content {
-	bottom: 29%;
+	bottom: 0;
 	-webkit-animation-name: example; /* Chrome, Safari, Opera */
 	-webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
 	animation-name: example;
@@ -253,7 +253,7 @@ nav ul a {
 	width: 30%;
 	margin-left: -6%;
 	font-weight: bolder;
-	bottom: 60%;
+	bottom: 47%;
 }
 
 @media(max-width: 1350px) {
