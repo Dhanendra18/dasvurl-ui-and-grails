@@ -309,8 +309,23 @@ nav ul a {
 
 .nav-cust {
 	height: 90px;
-	width: 190px;
+	width: 19.76%;
 	margin-top: 0;
+}
+
+@media (min-width: 768px) {
+
+	.nav-cust {
+		width: 18.97%;
+	}
+}
+
+
+@media (min-width: 992px) {
+
+	.nav-cust {
+		width: 19.6%;
+	}
 }
 
 .nav-cust a {
@@ -440,5 +455,9 @@ nav ul a {
 }
 
 .carousel-inner>.item {
+	height: 750px;
+}
+
+.carousel-inner>.item>img {
 	height: 750px;
 }
