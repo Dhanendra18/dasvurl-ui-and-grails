@@ -73,7 +73,7 @@ function sr (){
 					phoneNumber: Number,
 					email: email,
 					intake: intake,
-					course: course
+					course: course,
 					'g-recaptcha-response': g_recaptcha_response
 				};
 	$.ajax({
