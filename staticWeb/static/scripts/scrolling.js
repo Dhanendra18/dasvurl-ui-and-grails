@@ -38,6 +38,14 @@
 	document.onscroll = scroll;
 });
 
+var registerPopup;
+
+$(".register_now").click(function(){
+	registerPopup = $("#registration_popup").bPopup({
+		closeClass: 'close'
+	});
+});
+
 function sr (){
 	$("#form-validate-msg").hide();
 	/*todo: apply encryption*/
@@ -50,9 +58,9 @@ function sr (){
 	var email = $("[name='email']").val();
 	var intake = $("[name='intake']").val();
 	var course = $("[name='course']").val();
-	var g_recaptcha_response = $("[name='g-recaptcha-response']").val();
+	//var g_recaptcha_response = $("[name='g-recaptcha-response']").val();
 
-	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course || !g_recaptcha_response) {
+	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course/* || !g_recaptcha_response*/) {
 		$("#form-validate-msg").show();
 		return;
 	}
@@ -65,10 +73,9 @@ function sr (){
 					phoneNumber: Number,
 					email: email,
 					intake: intake,
-					course: course,
+					course: course
 					'g-recaptcha-response': g_recaptcha_response
 				};
-
 	$.ajax({
 		method: "POST",
 		dataType: 'jsonp',
@@ -78,18 +85,21 @@ function sr (){
 		statusCode: {
 			200: function() {
 				$("#form-success").show();
-				$(".close").trigger("click");
+				registerPopup.close();
 			},
 			404: function () {
 				$("#form-error").show();
 				console.log("Sorry! Your internet is not working or the site is down, Please try again later")
+			},
+			401: function () {
+				$("#form-error").show();
+				console.log("Sorry! you are unauthorized")
 			}
 		},
 	 	success : function (result) {
-
+			registerPopup.close();
 		},
 		error: function (result) {
-
 		}
 	})
 }

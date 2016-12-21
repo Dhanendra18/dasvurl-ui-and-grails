@@ -810,7 +810,7 @@ color: #7f8c8d;
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
-	background-color: rgb(255,255,0);
+	background-color: rgb(46, 165, 245);
 	opacity: 0.8;
 	padding-top: 30px;
 	color: #1e1e1e;
@@ -1527,3 +1527,32 @@ span.dropt:hover span {
 	}
 }
 
+
+#slider {
+	list-style:none;
+	padding:0px
+}
+
+.slider-container { 
+	background:#222; 
+	width:100%; 
+	height:105px; 
+	padding:20px; 
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px; 
+}
+
+#slider img { 
+	width:200px; 
+	height:70px; 
+	margin:0px; 
+	display:inline-block;
+	border-radius:2px;
+}
+
+#slider li {
+	width:210px;
+	
+	
+}
