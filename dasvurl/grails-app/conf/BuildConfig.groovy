@@ -52,6 +52,8 @@ grails.project.dependency.resolution = {
         runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
+        // https://mvnrepository.com/artifact/org.springframework/spring-test
+        compile group: 'org.springframework', name: 'spring-test', version: '2.5'
     }
 
     plugins {
@@ -70,6 +72,8 @@ grails.project.dependency.resolution = {
         runtime ":jquery:1.11.1"
         compile ":spring-security-core:2.0-RC5"
         compile "org.grails.plugins:rendering:1.0.0"
+        compile "org.grails.plugins:mail:1.0.7"
+//        compile "org.grails.plugins:asynchronous-mail:1.2"
 
 
         // Uncomment these to enable additional asset-pipeline capabilities

@@ -132,3 +132,36 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/favicon.ico':  ['permitAll']
 ]
 
+//asynchronous.mail.override = true
+grails.mail.default.from = "Jobulo <noreply@jobulo.com>"
+
+grails {
+    mail {
+        host = "email-smtp.eu-west-1.amazonaws.com"
+        port = 465
+        username = "AKIAI4JZ5ORJG4P7IQKQ"
+        password = "AkY0TmLAIZBcEDWL67bOORse/i/O/7L49g7JxUVLsVpV"
+        props = ["mail.smtp.auth": "true",
+                 "mail.smtp.starttls.enable": "true",
+                 "mail.smtp.debug": "true",
+                 "mail.smtp.socketFactory.port": "465",
+                 "mail.smtp.socketFactory.class": "javax.net.ssl.SSLSocketFactory",
+                 "mail.smtp.socketFactory.fallback": "false"]
+
+    }
+}
+
+/*grails {
+    mail {
+        host = "smtp.gmail.com"
+        port = 465
+        username = "youracount@gmail.com"
+        password = "yourpassword"
+        props = ["mail.smtp.auth":"true",
+                 "mail.smtp.starttls.enable": "true",
+                 "mail.smtp.debug": "true",
+                 "mail.smtp.socketFactory.port":"465",
+                 "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+                 "mail.smtp.socketFactory.fallback":"false"]
+    }
+}*/
