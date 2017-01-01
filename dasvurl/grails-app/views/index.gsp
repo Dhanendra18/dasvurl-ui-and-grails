@@ -46,6 +46,7 @@
 			left: 0;
 			z-index: 20;
 		}
+
 		div.text-container {
 			margin: 0 auto;
 			width: 75%;
@@ -67,6 +68,18 @@
 
 		.line-spacing {
 			line-height: 27px;
+		}
+
+		.carousel-caption {
+			padding-bottom: 25px;
+			width:30%;
+		}
+
+		.carousel-inner-item h1{
+			font-family: sans-serif;
+			font-size: 50px;
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 	</style>
 
@@ -132,7 +145,6 @@
 										<i class="nav-cust-i1">
 											<img src="images/nav3.jpg" width="100%" height="100%" alt="">
 										</i>
-
 										<i class="nav-cust-i2">
 											<i class="nav-cust-content">OUR SERVICES</i>
 											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
@@ -236,8 +248,8 @@
 		<li data-target="#myCarousel" data-slide-to="6"></li>
 	</ol>
 	<div class="carousel-inner" role="listbox">
-		<div class="item active" style="height: 750px;">
-			<img class="first-slide" src="images/scroler-1.jpg" height="750px" width="100%" alt="First slide">
+		<div class="item active" style="height: 650px;">
+			<img class="first-slide" src="images/image1.jpg" alt="First slide">
 			<div class="container">
 
 				<!--
@@ -245,76 +257,76 @@
 				<div class="carousel-ca cai"></div>
 				<div class="carousel-ca cam"></div>
 				<div class="carousel-ca cam1"></div>-->
-				<div class="carousel-ca cr-title"><h2>STUDY IN EUROPE</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-black">
-						<p>The Europe has a climate which varies from subtropical to polar. The Mediterranean climate of the south is dry and warm. The western and northwestern parts have a mild, generally humid climate, influenced by the North Atlantic Drift.</p>
+						<h1>STUDY IN EUROPE</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="second-slide" src="images/scroler-2.jpg" height="750px" width="100%" alt="Second slide">
+			<img class="second-slide" src="images/image2.jpg"  alt="Second slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"><h2>STUDY IN USA</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlack">
-						<p>America is a melting pot of people from all over the world. One will find most Americans to be very hospitable, friendly, kind, generous and accepting of foreigners. Of course, there are a few exceptions, as in any country, but these are not the norm. In general, the people are funny, gregarious, innovative, and eager to learn. These are traits that many international students adopt and take home with them.</p>
+						<h1>STUDY IN USA</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="third-slide" src="images/scroler-3.jpg" height="750px" width="100%" alt="Third slide">
+			<img class="third-slide" src="images/image3.jpg" alt="Third slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"><h2>STUDY IN UNITED KINGDOM</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlack">
-						<p>Poland�officially the�Republic of Poland�is a country in�Central Europe bordered�by�Germany�to the West, the�Czech Republic�and�Slovakia�to the South, Ukraine�and�Belarus to the East and the�Baltic Sea and�Lithuania�to the North. It is the�71st largest country�in the world and the 9th largest in Europe. With a population of over 38.5�million people,�Poland is the�34th most populous country�in the world.	</p>
+						<h1>STUDY IN CANADA</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="fourth-slide" src="images/scroler-4.jpg" height="750px" width="100%"  alt="Fourth slide">
+			<img class="fourth-slide" src="images/image4.jpg"   alt="Fourth slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"><h2>STUDY IN GERMANY</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlue">
-						<p>Germany officially the�Federal Republic of Germany is in Western Europe with�Denmark�bordering it to the North, Poland and the�Czech Republic�to the East, Austria to the Southeast, Switzerland to the Southwest, France,�Luxembourg�and Belgium lie to the West and the�Netherlands�to the Northwest. It includes 16�constituent states with a largely temperate seasonal climate.</p>
+						<h1>STUDY IN AUSTRALIA</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="fifth-slide" src="images/scroler-5.jpg" height="750px" width="100%" alt="Fifth slide">
+			<img class="fifth-slide" src="images/image5.jpg"  alt="Fifth slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"><h2>STUDY IN POLAND</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simGreen">
-						<p>Poland�officially the�Republic of Poland�is a country in�Central Europe bordered�by�Germany�to the West, the�Czech Republic�and�Slovakia�to the South, Ukraine�and�Belarus to the East and the�Baltic Sea and�Lithuania�to the North. It is the�71st largest country�in the world and the 9th largest in Europe. With a population of over 38.5�million people,�Poland is the�34th most populous country�in the world.	</p>
+						<h1>STUDY IN RUSSIA</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="sixth-slide" src="images/scroler-6.jpg" height="750px" width="100%" alt="Sixth slide">
+			<img class="sixth-slide" src="images/image6.jpg" alt="Sixth slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"><h2>STUDY IN FRANCE</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-red">
-						<p> France officially the�French Republic is a�sovereign state comprising territory in western�Europe. It has a total population of 67 million and it is a�unitary semi-presidential�republic�with its�capital�in�Paris, the country's largest city and main cultural and commercial centre. The Constitution of France�establishes the state as�secular�and democratic with its sovereignty derived from the people.</p>
+						<h1>STUDY IN NEW ZEALAND</h1>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="item">
-			<img class="seventh-slide" src="images/scroler-7.jpg" height="750px" width="100%" alt="Seventh slide">
+			<img class="seventh-slide" src="images/image7.jpg"  alt="Seventh slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"><h2>STUDY IN RUSSIA</h2></div>
+				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item">
-						<p> Russia, the world?s largest nation, borders European and Asian countries as well as the Pacific and Arctic oceans. Its landscape ranges from tundra and forests to subtropical beaches. It?s famous for Moscow's Bolshoi and St. Petersburg's Mariinsky ballet companies. St. Petersburg, founded by Russian leader Peter the Great, has the baroque Winter Palace, now housing part of the State Hermitage Museum?s art collection.</p>
+						<h1>STUDY IN GERMANY</h1>
 					</div>
 				</div>
 			</div>
@@ -358,7 +370,7 @@
 				</div>
 				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
 					<div class="col-xs-offset-4 col-xs-4">
-						<button class="btn full-widthi waves-effect waves-light orange" onclick="location.href='../../../staticWeb/overseas.html'">More</button>
+						<button class="btn full-widthi waves-effect waves-light orange" onclick="location.href='${g.createLink(controller: "overseas")}'">More</button>
 					</div>
 				</div>
 			</div>
@@ -386,35 +398,35 @@
 				New component for
 ==========================================================================-->
 <section style=" padding: 0;background-color: #fff700">
-	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;">MEET OUR TEAM</div>
+	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;">STUDY DESTINATIONS</div>
 </section>
 <section>
 	<div class="row rowbase">
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-1.jpg')">
 				<div class="ui-background-content">
-					Our team
+					AUSTRALIA
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-2.jpg')">
 				<div class="ui-background-content">
-					Our team
+					CANADA
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-3.jpg')">
 				<div class="ui-background-content">
-					Our team
+					USA
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-4.jpg')">
 				<div class="ui-background-content">
-					Our team
+					GERMANY
 				</div>
 			</div>
 		</div>
@@ -423,28 +435,28 @@
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-5.jpg')">
 				<div class="ui-background-content">
-					Our team
+					FRANCE
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-6.jpg')">
 				<div class="ui-background-content">
-					Our team
+					POLAND
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-7.jpg')">
 				<div class="ui-background-content">
-					Our team
+					IRELAND
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-8.jpg')">
 				<div class="ui-background-content">
-					Our team
+					NEW ZEALAND
 				</div>
 			</div>
 		</div>
@@ -488,113 +500,110 @@
 </div>
 
 <div class="jumbotron hoverable" style="padding: 35px; display: none" id="registration_popup">
-		<div >
-			<div class="close"></div>
-			<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
-				<legend style="width: 30%; margin-bottom: 0px">  Register now</legend>
-				<div id="form-validate-msg" style="color:red; display: none">*Please check if every field is filled</div>
-				<div id="form-error" style="color:red; display: none;">Oops! something went wrong, Why don't you try contact us.</div>
-				<div id="form-success" style="color:green; display: none;">Greetings! You have successfully registered we will return to you shortly</div>
-				<br/>
-
-				<div class="row rowbase" >
-					<div class="col-xs-10 input-field" style="margin-top: 0px">
-						<!--<i class="material-icons prefix"></i>-->
-						<input id="first_name" name="fullName" required type="text" class="validate">
-						<label for="first_name">Full Name*</label>
-					</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-10 input-field">
-						<input name="email" type="email" required class="validate">
-						<label for="first_name">Email*</label>
-					</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-10 input-field">
-						<input  name="phoneNumber" type="number" required class="validate">
-						<label for="first_name">Mobile number*</label>
-					</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-10 input-field">
-						<input name="gender" id="male" value="male" type="radio" class="validate">
-						<label for="male">Male</label>
-						<input name="gender" id="female" value="female" type="radio" class="validate">
-						<label for="female">Female</label>
-					</div>
-				</div>
-				<div class="row" style="padding: 5px 15px;">
-					<div class="col-xs-12" style="border-top: solid 1px #9e9e9e;"></div>
-				</div>
-				<div class="row rowbase" style="margin-bottom: 15px">
-					<div class="col-xs-6" style="color: #9e9e9e; text-decoration: underline;">Study preferences:</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-4" style="padding-left: 7px;"><label for="countryOption1" style="font-size: 12px; margin-top: 5px">Select Country*:</label></div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-4 input-field">
-						<select id="countryOption1" name="country1" style="display: block">
-							<option value="" disabled selected>Country option1</option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-							<option value="3">Option 3</option>
-						</select>
-					</div>
-					<div class="col-xs-4 input-field">
-						<select id="countryOption2" name="country2" style="display: block">
-							<option value="" disabled selected>Country option1</option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-							<option value="3">Option 3</option>
-						</select>
-					</div>
-					<div class="col-xs-4 input-field">
-						<select id="countryOption3" name="country3" style="display: block">
-							<option value="" disabled selected>Country option1</option>
-							<option value="1">Option 1</option>
-							<option value="2">Option 2</option>
-							<option value="3">Option 3</option>
-						</select>
-					</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-6 input-field">
-						<input type="text" required name="course" id="course"/>
-						<label for="course">Course*</label>
-					</div>
-				</div>
-				<div class="row rowbase switch">
-					<div class="col-xs-4 input-field">
-						Intake
-					</div>
-					<div class="col-xs-4 input-field"><label>
-						Spring
-						<input name="intake" type="checkbox">
-						<span class="lever"></span>
-						Fall
-					</label></div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-offset-1 col-xs-10 input-field">
-						<button class="btn btn-large waves-effect waves-light orange full-widthi fontSize24" onclick="sr()">Submit</button>
-					</div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-10 input-field"></div>
-				</div>
-				<div class="row rowbase">
-					<div class="col-xs-10 input-field"></div>
-				</div>
-				<div class="g-recaptcha" data-sitekey="6LeGwgkUAAAAANHs3-dYFIf3SRKsxYx_uGizS5ZG"></div>
-			</fieldset>
+	<div class="close"></div>
+	<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
+		<legend style="width: 30%; margin-bottom: 0px">  Register now</legend>
+		<div id="form-validate-msg" style="color:red; display: none">*Please check if every field is filled</div>
+		<div id="form-error" style="color:red; display: none;">Oops! something went wrong, Why don't you try contact us.</div>
+		<div id="form-success" style="color:green; display: none;">Greetings! You have successfully registered we will return to you shortly</div>
+		<br/>
+		<div class="row rowbase" >
+			<div class="col-xs-10 input-field" style="margin-top: 0px">
+				<!--<i class="material-icons prefix"></i>-->
+				<input id="first_name" name="fullName" required type="text" class="validate">
+				<label for="first_name">Full Name*</label>
+			</div>
 		</div>
+		<div class="row rowbase">
+			<div class="col-xs-10 input-field">
+				<input name="email" type="email" required class="validate">
+				<label for="first_name">Email*</label>
+			</div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-10 input-field">
+				<input  name="phoneNumber" type="number" required class="validate">
+				<label for="first_name">Mobile number*</label>
+			</div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-10 input-field">
+				<input name="gender" id="male" value="male" type="radio" class="validate">
+				<label for="male">Male</label>
+				<input name="gender" id="female" value="female" type="radio" class="validate">
+				<label for="female">Female</label>
+			</div>
+		</div>
+		<div class="row" style="padding: 5px 15px;">
+			<div class="col-xs-12" style="border-top: solid 1px #9e9e9e;"></div>
+		</div>
+		<div class="row rowbase" style="margin-bottom: 15px">
+			<div class="col-xs-6" style="color: #9e9e9e; text-decoration: underline;">Study preferences:</div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-4" style="padding-left: 7px;"><label for="countryOption1" style="font-size: 12px; margin-top: 5px">Select Country*:</label></div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-4 input-field">
+				<select id="countryOption1" name="country1" style="display: block">
+					<option value="" disabled selected>Country option1</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
+			<div class="col-xs-4 input-field">
+				<select id="countryOption2" name="country2" style="display: block">
+					<option value="" disabled selected>Country option1</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
+			<div class="col-xs-4 input-field">
+				<select id="countryOption3" name="country3" style="display: block">
+					<option value="" disabled selected>Country option1</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-6 input-field">
+				<input type="text" required name="course" id="course"/>
+				<label for="course">Course*</label>
+			</div>
+		</div>
+		<div class="row rowbase switch">
+			<div class="col-xs-4 input-field">
+				Intake
+			</div>
+			<div class="col-xs-4 input-field"><label>
+				Spring
+				<input name="intake" type="checkbox">
+				<span class="lever"></span>
+				Fall
+			</label></div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-offset-1 col-xs-10 input-field">
+				<button class="btn btn-large waves-effect waves-light orange full-widthi fontSize24" onclick="sr()">Submit</button>
+			</div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-10 input-field"></div>
+		</div>
+		<div class="row rowbase">
+			<div class="col-xs-10 input-field"></div>
+		</div>
+		<div class="g-recaptcha" data-sitekey="6LeGwgkUAAAAANHs3-dYFIf3SRKsxYx_uGizS5ZG"></div>
+	</fieldset>
 </div>
 <!-- ==========================================================================================
 				SCRIPTS
 ==================================================================================================== -->
-    
+
 <!-- scroll animations took from http://startbootstrap.com/templates/grayscale/ -->
 <g:external dir="js" file="btnscroll.js"/>
 
@@ -621,9 +630,7 @@
 <g:external dir="js" file="scrolling.js"/>
 <script type="application/javascript">
 	$(document).ready(function(){
-
 		var showMore = $(".show-more a");
-		console.log(showMore);
 		showMore.each(function() {
 			var $link = $(this);
 			var $content = $link.parent().prev("div.text-content");

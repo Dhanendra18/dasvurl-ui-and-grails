@@ -88,10 +88,11 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        grails.serverURL = "http://dasvurl.com:8080"
     }
     production {
         grails.logging.jul.usebridge = false
-//        grails.serverURL = "http://www.dasvurl.com:8080/"
+        grails.serverURL = "http://www.dasvurl.com/"
     }
 }
 

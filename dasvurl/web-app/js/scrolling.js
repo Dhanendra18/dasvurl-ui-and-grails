@@ -58,53 +58,49 @@ function sr (){
 	var email = $("[name='email']").val();
 	var intake = $("[name='intake']").val();
 	var course = $("[name='course']").val();
-	//var g_recaptcha_response = $("[name='g-recaptcha-response']").val();
+	var g_recaptcha_response = $("[name='g-recaptcha-response']").val();
 
 	if (!gender || !full || !country2 || !country1 || !country3 || !Number || !email || !intake || !course/* || !g_recaptcha_response*/) {
 		$("#form-validate-msg").show();
 		return;
 	}
 
-	var data = {	gender : gender,
-					fullName: full,
-					country1: country2,
-					country3: country1,
-					country2: country3,
-					phoneNumber: Number,
-					email: email,
-					intake: intake,
-					course: course
-					//'g-recaptcha-response': g_recaptcha_response
-				};
+	var data = {
+			gender : gender,
+			fullName: full,
+			country1: country2,
+			country3: country1,
+			country2: country3,
+			phoneNumber: Number,
+			email: email,
+			intake: intake,
+			course: course,
+			'g-recaptcha-response': g_recaptcha_response
+	};
 	$.ajax({
 		method: "POST",
-		dataType: 'jsonp',
 		data: data,
-		url : "http://localhost:8080/dasvurl/WebRegister/register",
+		url : "http://dasvurl.com/WebRegister/register",
 		//url : "http://dasvurl.com:8080/WebRegister/register",
 		statusCode: {
 			200: function() {
 				$("#form-success").show();
 				registerPopup.close();
-				//$(".close").trigger("click");
 			},
 			404: function () {
 				$("#form-error").show();
-				//registerPopup.close();
-				//$(".close").trigger("click");
 				console.log("Sorry! Your internet is not working or the site is down, Please try again later")
 			},
 			401: function () {
 				$("#form-error").show();
-				//registerPopup.close();
-				//$(".close").trigger("click");
-				console.log("Sorry! error")
 			}
 		},
 	 	success : function (result) {
+			$("#form-success").show();
 			registerPopup.close();
 		},
 		error: function (result) {
+			$("#form-error").show();
 		}
-	})
+	});
 }
