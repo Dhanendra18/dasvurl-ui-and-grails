@@ -39,7 +39,12 @@ class WebRegisterController {
         if (!!result.success) {
             webRegister = new WebRegister(params);
             webRegister.save(flush: true, failOnError: true)
-            utilService.sendRegisterEmail(webRegister)
+            try {
+
+                utilService.sendRegisterEmail(webRegister)
+            } catch (Exception e) {
+                e.printStackTrace()
+            }
         } else {
             println "77777777777777777777777777777777777777777777"
 //            response.setStatus(401);
