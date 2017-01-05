@@ -23,13 +23,10 @@
     <style>
         #preload {
             width:100%;
-            height:650px;
-            object-fit:cover
-        }
-        #image {
-            width:100%;
-            position: absolute;
-            z-index: 1;
+            height:100%;
+            object-fit:cover;
+            position: fixed;
+            z-index: 11111;
         }
         .bg-img {
             background-image: url('../images/shutterstock_183037556.jpg');
@@ -42,6 +39,7 @@
     </style>
 </head>
 <body style="font-family: 'Raleway', san-serif;">
+<img id="preload" src="../images/shutterstock_183037556.jpg" />
 
 <nav class="navbar navbar-black navbar-fixed-top navme null-box-shadow" role="navigation">
     <div class="container">
@@ -60,8 +58,6 @@
             <ul class="nav navbar-nav navbar-right index-nav">
                 <li class="active"><a class=" page-scroll">overseas education</a></li>
                 <li ><a class="page-scroll">testimonial</a></li>
-                <!--<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>-->
-                <!--<li ><a href="#id_contactUs" class="page-scroll">contact us</a></li>-->
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -71,10 +67,6 @@
         <h1 class="hide-on-scroll">Overseas Education</h1>
     </div>
 </div>
-<div id="image">
-    <img id="preload" src="../images/shutterstock_183037556.jpg" />
-</div>
-
 <div class="bg-img">
 <div class="container">
         <div class="marginplus"></div>
@@ -271,9 +263,17 @@
         document.onscroll = scroll;
     });
 
-    $("#image").ready(function(){
-        $("#preload").fadeOut(2000);
-    });
+    var myImage = $('#preload');
+    //check if the image is already on cache
+    if(myImage.prop('complete')) {
+        myImage.delay(3000).fadeOut(2000);
+
+    } else {
+        /* Call the codes/function after the image is loaded */
+        myImage.on('load',function() {
+            myImage.delay(3000).fadeOut(2000);
+        });
+    }
 </script>
 </body>
 </html>

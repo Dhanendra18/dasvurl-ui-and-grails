@@ -8,25 +8,19 @@
 	<title>Das VURL</title>
 
 	<!--Latest css of materialize theme-->
-	<!--<link rel="stylesheet" href="../styles/materialize/materialize.min.css"/>-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
 
 	<!-- Latest compiled and minified CSS -->
-	<!--<link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" media="screen">-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
 
 	<!-- Optional theme -->
-	<!--<link rel="stylesheet" type="text/css" href="../styles/bootstrap-theme.min.css" media="screen">-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" media="screen">
 
-	%{--<link rel="stylesheet" type="text/css" href="css/stylen.css" media="screen">--}%
 	<g:external dir="css" file="style.css"/>
 	<g:external dir="css" file="stylen.css"/>
 
-	<!--<script type="application/javascript" src="../scripts/jquery-1.11.1.min.js"></script>-->
 	<script type="application/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<!-- java script plugin for scroll -->
-	<!--<script type="application/javascript" src="../scripts/jquery.easing.min.js"></script>-->
 	<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 	<style type="text/css">
@@ -204,6 +198,7 @@
 			<ul class="nav navbar-nav navbar-right index-nav">
 				<li ><a href="#myCarousel" class="page-scroll">overseas education</a></li>
 				<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>
+				<li ><a href="#id-studyDestinations" class="page-scroll">study destinations</a></li>
 				<li ><a href="#id_contactUs" class="page-scroll">contact us</a></li>
 				<li ><a class="register_now">register now</a></li>
 			</ul>
@@ -397,7 +392,7 @@
 <!--========================================================================
 				New component for
 ==========================================================================-->
-<section style=" padding: 0;background-color: #fff700">
+<section id="id-studyDestinations" style=" padding: 0;background-color: #fff700">
 	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;">STUDY DESTINATIONS</div>
 </section>
 <section>
@@ -449,14 +444,14 @@
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-7.jpg')">
 				<div class="ui-background-content">
-					IRELAND
+					NEW ZEALAND
 				</div>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-8.jpg')">
 				<div class="ui-background-content">
-					NEW ZEALAND
+					More...
 				</div>
 			</div>
 		</div>
@@ -610,10 +605,12 @@
 <!-- Latest compiled and minified JavaScript -->
 <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.10.0/jquery.bpopup.min.js"></script>
+<g:external dir="js" file="scrolling.js"/>
 
 <script type="application/javascript">
 
 	$(document).ready(function(){
+		//bg img scroll sec-1
 		setInterval(function(){
 			$("#id_aboutUs").removeClass("sec1-backImage2");
 			setTimeout(function(){
@@ -623,13 +620,7 @@
 				$("#id_aboutUs").removeClass("sec1-backImage1").addClass("sec1-backImage2");
 			}, 10000);
 		}, 15000);
-	})
-</script>
-<!-- scrolling jQuery -->
-%{--<script type="application/javascript" src="../../../staticWeb/static/scripts/scrolling.js"></script>--}%
-<g:external dir="js" file="scrolling.js"/>
-<script type="application/javascript">
-	$(document).ready(function(){
+
 		var showMore = $(".show-more a");
 		showMore.each(function() {
 			var $link = $(this);
@@ -676,6 +667,7 @@
 		return countryOptions;
 	}
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 <script type="application/javascript">
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -685,9 +677,6 @@
 	ga('create', 'UA-87591536-1', 'auto');
 	ga('send', 'pageview');
 </script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-<!--<script type="text/javascript" src="../styles/materialize/materialize.min.js"></script>-->
 
 <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
 </body>
