@@ -328,7 +328,7 @@ nav ul a {
 @media (min-width: 992px) {
 
 	.nav-cust {
-		width: 19.6%;
+		width: 20%;
 	}
 }
 
@@ -347,7 +347,7 @@ nav ul a {
 	font-style: normal;
 	line-height: inherit;
 	height: 0;
-	width: 190px;
+	width: 188px;
 	-webkit-transition: height .7s;/*Safari*/
 	transition:  height .7s, opacity 3s;
 	opacity: 0;

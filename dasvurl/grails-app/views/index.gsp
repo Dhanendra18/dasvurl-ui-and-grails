@@ -359,7 +359,7 @@
 							</p>
 						</div>
 						<div class="show-more">
-							<a >show more</a>
+							<a style="cursor: pointer; color: #ff9800;">Read more</a>
 						</div>
 					</div>
 				</div>
@@ -645,10 +645,10 @@
 
 		function getShowLinkText(currentText) {
 			var newText = '';
-			if (currentText.toUpperCase() === "SHOW MORE") {
-				newText = "Show less";
+			if (currentText.toUpperCase() === "READ MORE") {
+				newText = "Read less";
 			} else {
-				newText = "Show more";
+				newText = "Read more";
 			}
 			return newText;
 		}

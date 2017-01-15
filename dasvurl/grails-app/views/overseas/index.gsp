@@ -83,7 +83,7 @@
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>UK</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(3)">
@@ -106,14 +106,14 @@
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Singapore</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(6)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>New Zealand</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
         </div>
@@ -122,21 +122,21 @@
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Switzerland</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(8)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Ireland</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(9)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Germany</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
         </div>
@@ -145,21 +145,21 @@
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Cyprus</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(11)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>France</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(12)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Malaysia</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
         </div>
@@ -168,21 +168,21 @@
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Italy</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(14)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Dubai</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(15)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Sweden</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
         </div>
@@ -191,22 +191,22 @@
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Spain</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(17)">
                 <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
                 <div class="col-xs-10">
                     <p>Lithuania</p>
-                    <p>Description ytubylnjk nbvfvktuyblk nbnvhvtugylk nbv mfvuybl v hvgyuiunj</p>
+                    <p> </p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(17)">
-            <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
-            <div class="col-xs-10">
-                <p>Poland</p>
-                <p>Poland officially the Republic of Poland is a country in Central Europe bordered by Germany to the West, the Czech Republic and Slovakia to the South, Ukraine and Belarus to the East and the Baltic Sea and Lithuania to the North. It is the 71st largest country in the world and the 9th largest in Europe. With a population of over 38.5 million people, Poland is the 34th most populous country in the world. Poland is a unitary state divided into 16 administrative subdivisions. Poland is considered to be a high-income economy. Poland is a peaceful country with a climate which is mostly temperate.</p>
+            <div class="col-md-3 col-xs-12 custom-offset-md-4 jumbotron jumbotron-custom hoverable" onclick="openCountryPopUp(18)">
+                <!--<div class="col-xs-2"><img src="../images/contactus_call.png" alt="Flag 1"/></div>-->
+                <div class="col-xs-10">
+                    <p>Poland</p>
+                    <p>Poland officially the Republic of Poland is a country in Central Europe bordered by Germany to the West, the Czech Republic and Slovakia to the South, Ukraine and Belarus to the East and the Baltic Sea and Lithuania to the North. It is the 71st largest country in the world and the 9th largest in Europe. With a population of over 38.5 million people, Poland is the 34th most populous country in the world. Poland is a unitary state divided into 16 administrative subdivisions. Poland is considered to be a high-income economy. Poland is a peaceful country with a climate which is mostly temperate.</p>
+                </div>
             </div>
         </div>
     </div>
