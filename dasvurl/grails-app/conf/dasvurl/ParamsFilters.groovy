@@ -9,7 +9,7 @@ class ParamsFilters {
             before = {
                 def dataLogger = "RemoteAddr="+request.getRemoteAddr() + " X-Forwarded-For ="+ request.getHeader("X-Forwarded-For") + " Client-IP = " + request.getHeader("Client-IP") + "Params = " +params
                 println dataLogger
-                clickCountService.count(request.getHeader("Client-IP"));
+                clickCountService.count(request.getHeader("X-Forwarded-For"));
             }
             after = { Map model ->
 
