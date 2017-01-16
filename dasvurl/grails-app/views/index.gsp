@@ -375,9 +375,14 @@
 				</div>
 				<div class="row rowbase">
 					<div class="col-xs-11">
-						<p class="fontregular fontSize18">
-							This is for applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
-						</p>
+						<div class="text-content short-text">
+							<p class="fontregular fontSize18">
+								This is for applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
+							</p>
+						</div>
+						<div class="show-more">
+							<a style="cursor: pointer; color: #ff9800;">Read more</a>
+						</div>
 					</div>
 				</div>
 				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
@@ -621,6 +626,7 @@
 			}, 10000);
 		}, 15000);
 
+		//show more less init
 		var showMore = $(".show-more a");
 		showMore.each(function() {
 			var $link = $(this);
