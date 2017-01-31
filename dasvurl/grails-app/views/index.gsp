@@ -477,7 +477,7 @@
 			<div class="col-md-6">
 				<div class="row"><p class="fontbold fontSize20" style=" margin-bottom: 20px;">Reach us</p></div>
 				<div class="row">
-					<img alt="location" src="images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">SD-142 Shastri nagar, Ghaziabad, Uttar Pradesh, India- 201001</p>
+					<img alt="location" src="images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">F-109, Plot No. A-12, Aditya Corporate Hub, RDC, Rajnagar, Ghaziabad, Uttar Pradesh - 201002, India</p>
 					<img alt="contact" src="images/contactus_call.png" style="float: left;  margin-bottom: 20px; margin-left: -30px;"><p class="fontregular fontSize18" style="  margin-left: 70px; margin-top: 23px;">+91 120-4230300, +91 95606-26920</p>
 					<img alt="mail" src="images/contactus_maill.png" style="float: left;  margin-bottom: 50px; margin-left: -30px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-top: 14px;">reachus@dasvurl.com</p>
 				</div>
