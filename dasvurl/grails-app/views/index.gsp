@@ -404,60 +404,76 @@
 	<div class="row rowbase">
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-1.jpg')">
-				<div class="ui-background-content">
-					AUSTRALIA
-				</div>
+				<g:link controller="overseas" action="australia_university">
+					<div class="ui-background-content">
+						AUSTRALIA
+					</div>
+				</g:link>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-2.jpg')">
-				<div class="ui-background-content">
-					CANADA
-				</div>
+				<g:link controller="overseas" action="canada_university">
+					<div class="ui-background-content">
+						CANADA
+					</div>
+				</g:link>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-3.jpg')">
-				<div class="ui-background-content">
-					USA
-				</div>
+				<g:link controller="overseas" action="usa_university">
+					<div class="ui-background-content">
+						USA
+					</div>
+				</g:link>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-4.jpg')">
-				<div class="ui-background-content">
-					GERMANY
-				</div>
+				<g:link controller="overseas" action="singapore_university" name="">
+					<div class="ui-background-content">
+						SINGAPORE
+					</div>
+				</g:link>
 			</div>
 		</div>
 	</div>
 	<div class="row rowbase">
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-5.jpg')">
-				<div class="ui-background-content">
-					FRANCE
-				</div>
+				<g:link controller="overseas" action="france_university" name="">
+					<div class="ui-background-content">
+						FRANCE
+					</div>
+				</g:link>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-6.jpg')">
-				<div class="ui-background-content">
-					POLAND
-				</div>
+				<g:link controller="overseas" action="newzealand_university" name="">
+					<div class="ui-background-content">
+						POLAND
+					</div>
+				</g:link>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-7.jpg')">
-				<div class="ui-background-content">
-					NEW ZEALAND
-				</div>
+				<g:link controller="overseas" action="newzealand_university" name="">
+					<div class="ui-background-content">
+						NEW ZEALAND
+					</div>
+				</g:link>
 			</div>
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-8.jpg')">
-				<div class="ui-background-content">
-					More...
-				</div>
+				<g:link controller="overseas" action="more_university" name="">
+					<div class="ui-background-content">
+						More...
+					</div>
+				</g:link>
 			</div>
 		</div>
 	</div>

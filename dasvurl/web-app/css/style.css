@@ -1554,3 +1554,30 @@ span.dropt:hover span {
 #slider li {
 	width:210px;
 }
+
+.university-bg {
+    background-color: #1e1e1e;
+}
+
+.university-block{
+    margin-bottom:15px;
+}
+
+.university-block p{
+    margin: 0;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.university-block p:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 12px 26px 0 rgba(231, 245, 3, 0.88), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-bg{
+    background: #000;
+    opacity: 0.8;
+}
