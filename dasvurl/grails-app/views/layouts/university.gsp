@@ -36,7 +36,7 @@
 <nav class="navbar navbar-black navbar-fixed-top navme null-box-shadow" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <p onclick="location.href='index.html'" class="page-scroll baseHeader fontSize20" style="margin-top: 10px;">Das VURL</p>
+            <g:link uri="/"><p class="page-scroll baseHeader fontSize20" style="margin-top: 10px;">Das VURL</p></g:link>
         </div>
         <div>
             <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">

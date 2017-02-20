@@ -216,8 +216,7 @@
 			<div class="col-xs-6">
 				<div class="jumbotron jumboCust fontSize16 fontbold">
 					<h2 style="font-weight: 800;">About us</h2>
-					<strong style="font-size: 26px">D</strong>as Vurl Education is a rapidly flourishing and focused unit in the domain of Global Educational Consultancy services, headquartered at Ghaziabad. With a surging demand to its unique value driven approach to the student community, the company is swiftly expanding its operation and process with its nation-wide expansion plans at Jamshedpur, Ranchi, Chandigarh, Pune, Hyderabad, and Bangalore with a determined vision to take the overseas education to the town level and, thus, looking forward to have a structured team which will can aid in accomplished our desired project.<br/><br/>
-					There is a provision for a wide range of services for different visa types. Our global services are specifically tailored and targeted to assist you in travelling or migrating to various overseas destinations.
+					<strong style="font-size: 26px">D</strong>as Vurl established in 2016, is an Indian Based company and provides global education services, in some of the favoured countries such as Australia, Canada, Germany &amp; UK. Das VURL provides professional services in various categories like overseas education , business immigration, work permit, and visitor visa. Das VURL has a highly regarded team of immigration lawyers, paralegals and certified immigration practitioners that commits on working across different cultures.
 				</div>
 			</div>
 			<div class="col-xs-6">
@@ -288,7 +287,7 @@
 				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlue">
-						<h1>STUDY IN AUSTRALIA</h1>
+						<h1>STUDY IN GERMANY</h1>
 					</div>
 				</div>
 			</div>
@@ -321,7 +320,7 @@
 				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item">
-						<h1>STUDY IN GERMANY</h1>
+						<h1>STUDY IN AUSTRALIA</h1>
 					</div>
 				</div>
 			</div>
@@ -352,10 +351,10 @@
 				<div class="row rowbase">
 					<div class="col-xs-11" id="overseas_id">
 						<div class="text-content short-text">
-							<p class="fontmedium fontSize18">Leading to Work Visa and Permanent residency - Educational Excellence, High Rate of Employment and Good Income Potential with Excellent Work Environment attracts the top students from across the globe. Outstanding academic standing and resources of the Universities in the developed countries make sure that one gets the most from their experience and exposure in an international education institute. We help students get study visa in UK, Australia, US, Canada, New Zealand, Ireland, Switzerland & Singapore.<br><br>
+							<p class="fontmedium fontSize18">Work Visa and Permanent residency - Educational Excellence, High Rate of Employment and Good Income Potential with Excellent Work Environment attracts the top students from across the globe. Outstanding academic standing and resources of the Universities in the developed countries makes sure that one gets the most from their experience and exposure in an international education institute. We help students get study visa in <b><u>UK, AUSTRALIA, USA, CANADA, NEW ZEALAND,EUROPE &amp; SINGAPORE</u></b>.<br><br>
 								Today all of the above listed countries prefer individual with international education to settle in their lands. A minimum of one year study is crucial to get a Work Permit which leads to Permanent Residency.<br><br>
-								Being strong and concrete market players for the last 16 years, Das Vurl Education has specialised in sending students, particularly to UK, USA, Australia, Germany, New Zealand and Canada. Catering to the top notch universities, we have experts helping students with the application procedures & study visas for UK, USA, Australia, Germany, France , Sweden ,Spain ,Ireland ,Belgium ,Czech Republic, Denmark Finland , Georgia, Iceland ,Italy ,Netherland ,Poland ,Russia ,Romania ,New Zealand & Canada.<br><br>
-								Considering our massive footfall, we are extending our alliance with other countries for university admissions so that our students can pursue their courses in the best possible environment and exposure
+								Being strong and concrete market players coupled with experienced in-house resource people, Das VURL has specialised in sending students, particularly to UK, USA, Australia, Germany, New Zealand and Canada. We have experts helping students with the application procedures and study visas for UK, USA, Australia, Germany, France, Sweden, Spain, Ireland, Belgium, Czech Republic, Denmark, Finland, Georgia, Iceland, Italy, Netherland, Poland, Russia, Romania, New Zealand &amp; Canada.<br><br>
+								Das VURL endeavours to increase alliance with other countries for university admissions so that our students can pursue their courses in the best possible environment and opportunities.
 							</p>
 						</div>
 						<div class="show-more">
@@ -377,7 +376,7 @@
 					<div class="col-xs-11">
 						<div class="text-content short-text">
 							<p class="fontregular fontSize18">
-								This is for applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
+								There are several steps to apply for a visa and the rules, regulations and documents required for applying for visa varies to some extent for every country. Applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists, education or work must apply for visa well in advance. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
 							</p>
 						</div>
 						<div class="show-more">
