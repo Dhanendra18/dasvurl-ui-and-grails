@@ -511,6 +511,7 @@
 <div class="footer1">
 	<div class="center">
 		<p >(2016) Das VURL</p>
+		<p style="font-style: italic">Designed, Developed and Maintained by Dhanendra<i style="font-size: 18px">©</i></p>
 	</div>
 </div>
 
