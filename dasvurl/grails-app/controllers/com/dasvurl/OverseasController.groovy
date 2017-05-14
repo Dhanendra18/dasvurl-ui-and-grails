@@ -15,7 +15,6 @@ class OverseasController {
     @Secured("IS_AUTHENTICATED_ANONYMOUSLY")
     def index() {}
 
-    @Secured('permitAll')
     def australia_university() {}
 
     def canada_university() {}

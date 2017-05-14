@@ -213,13 +213,13 @@
 	<div class="down_wrapper"><a href="#myCarousel" class="page-scroll"><img src="images/DownArrow.png" width="40px" height="18px;"/></a></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6">
+			<div class="col-md-6">
 				<div class="jumbotron jumboCust fontSize16 fontbold">
 					<h2 style="font-weight: 800;">About us</h2>
 					<strong style="font-size: 26px">D</strong>as Vurl established in 2016, is an Indian Based company and provides global education services, in some of the favoured countries such as Australia, Canada, Germany &amp; UK. Das VURL provides professional services in various categories like overseas education , business immigration, work permit, and visitor visa. Das VURL has a highly regarded team of immigration lawyers, paralegals and certified immigration practitioners that commits on working across different cultures.
 				</div>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-md-6">
 				<div class="jumbotron jumboCust no-padding">
 					<img class="responsive-img" src="images/infoGraphics/DASVURLGIF-big-font.gif" alt=""/>
 				</div>
@@ -251,7 +251,6 @@
 				<div class="carousel-ca cai"></div>
 				<div class="carousel-ca cam"></div>
 				<div class="carousel-ca cam1"></div>-->
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-black">
 						<h1>STUDY IN EUROPE</h1>
@@ -262,7 +261,6 @@
 		<div class="item">
 			<img class="second-slide" src="images/image2.jpg"  alt="Second slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlack">
 						<h1>STUDY IN USA</h1>
@@ -273,7 +271,6 @@
 		<div class="item">
 			<img class="third-slide" src="images/image3.jpg" alt="Third slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlack">
 						<h1>STUDY IN CANADA</h1>
@@ -284,7 +281,6 @@
 		<div class="item">
 			<img class="fourth-slide" src="images/image4.jpg"   alt="Fourth slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simBlue">
 						<h1>STUDY IN GERMANY</h1>
@@ -295,7 +291,6 @@
 		<div class="item">
 			<img class="fifth-slide" src="images/image5.jpg"  alt="Fifth slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-simGreen">
 						<h1>STUDY IN RUSSIA</h1>
@@ -306,7 +301,6 @@
 		<div class="item">
 			<img class="sixth-slide" src="images/image6.jpg" alt="Sixth slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item cr-red">
 						<h1>STUDY IN NEW ZEALAND</h1>
@@ -317,7 +311,6 @@
 		<div class="item">
 			<img class="seventh-slide" src="images/image7.jpg"  alt="Seventh slide">
 			<div class="container">
-				<div class="carousel-ca cr-title"></div>
 				<div class="carousel-caption carousel-content">
 					<div class="carousel-inner-item">
 						<h1>STUDY IN AUSTRALIA</h1>
@@ -368,7 +361,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6" style="border-left-style: solid; border-left-width: 1px; border-left-color: #fff ">
+			<div class="col-md-6 ourServiceCenterDevision" >
 				<div class="row rowbase">
 					<div class="col-xs-7"><h4 class="text-underline fontextra fontSize24">VISITOR / WORK VISA</h4></div>
 				</div>
@@ -511,7 +504,7 @@
 <div class="footer1">
 	<div class="center">
 		<p >(2016) Das VURL</p>
-		<p style="font-style: italic">Designed, Developed and Maintained by Dhanendra<i style="font-size: 18px">©</i></p>
+		<p style="font-style: italic">Designed, Developed <g:link controller="registerForm" action="index" style="color: #fff">and</g:link> Maintained by Dhanendra<i style="font-size: 18px">©</i></p>
 	</div>
 </div>
 

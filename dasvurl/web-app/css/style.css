@@ -1360,6 +1360,12 @@ span.dropt:hover span {
 	background-color: rgba(30,30,30,0.8);
 	font-size: 19px;
 }
+
+
+.ourServiceCenterDevision {
+    border-left-style: none;
+}
+
 @media (max-width: 480px){
 	.fontSize24{
 		font-size: 18px;
@@ -1429,6 +1435,12 @@ span.dropt:hover span {
 	.fontSize30{
 		font-size: 28px;
 	}
+    .ourServiceCenterDevision {
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-left-color: #fff
+    }
+
 }
 @media (min-width: 1200px) {
 	.fontSize36{
@@ -1452,6 +1464,28 @@ span.dropt:hover span {
 	.fontSize30{
 		font-size: 30px;
 	}
+}
+
+.fontSize36{
+    font-size: 36px;
+}
+.fontSize26{
+    font-size: 26px;
+}
+.fontSize24{
+    font-size: 24px;
+}
+.fontSize20{
+    font-size: 20px;
+}
+.fontSize18{
+    font-size: 18px;
+}
+.fontSize16{
+    font-size: 16px;
+}
+.fontSize30{
+    font-size: 30px;
 }
 
 .text-underline {
@@ -1567,3 +1601,4 @@ span.dropt:hover span {
     background: #000;
     opacity: 0.8;
 }
+
