@@ -40,7 +40,7 @@
 
 var registerPopup;
 
-$(".register_now").click(function(){
+$(".register_now").hover(function(){
 	registerPopup = $("#registration_popup").bPopup({
 		closeClass: 'close'
 	});

@@ -55,6 +55,7 @@
 <div class="footer1">
     <div class="center">
         <p >(2016) Das VURL Pvt. Ltd.</p>
+		<p style="font-style: italic">Designed, Developed <g:link controller="registerForm" action="index" style="color: #fff">and</g:link> Maintained by Dhanendra<i style="font-size: 18px">©</i></p>
     </div>
 </div>
 <!-- Latest compiled and minified JavaScript -->

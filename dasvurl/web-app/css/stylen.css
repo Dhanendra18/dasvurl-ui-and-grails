@@ -379,9 +379,16 @@ nav ul a {
 	font-style: normal;
 	font-size: 14px;
 	font-weight: bold;
-	line-height: inherit;
 	height: 20px;
+    line-height: 20px;
+    padding-top: 20px;
 	display: block;
+}
+
+@media (min-width: 768px) {
+    .index-nav:last-child {
+        margin-right: -90px!important;
+    }
 }
 
 .nav-cust-content-sub {

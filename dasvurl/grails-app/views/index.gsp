@@ -200,7 +200,7 @@
 				<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>
 				<li ><a href="#id-studyDestinations" class="page-scroll">study destinations</a></li>
 				<li ><a href="#id_contactUs" class="page-scroll">contact us</a></li>
-				<li ><a class="register_now">register now</a></li>
+				<li style="background-color: #fff700;"><a style="color:#000" class="register_now">register now</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
@@ -475,21 +475,21 @@
 ====================================================================== -->
 <section class="sec7 sixthpage" id="id_contactUs">
 	<div class="container">
-		<div class="row" style="margin-top: 60px;">
-			<div class="col-md-6 fontSize18" align="center"  style=" padding-right:70px; " >
-				<div class="row"><img src="images/logo/DAS_VURL.png" alt="blink logo" class="img-responsive"></div>
-				<div class="row rowbase" style="margin-top: 60px; margin-bottom: 30px; line-height: 32px">
+		<div class="row" style="margin-bottom: 20px">
+			<div class="col-md-4 fontSize18" align="center"  style=" padding-right:70px; " >
+				<div class="row rowbase" style="margin-bottom: 0px; line-height: 25px">
 					<p class="fontregular"align="left">Das VURL is responsible for facilitation educational opportunities & aiding students choose the best university for better studies and life ahead.</p>
 				</div>
+				<div class="row" style="margin-bottom: 0"><img src="images/logo/DAS_VURL.png" alt="blink logo" class="img-responsive"></div>
 			</div>
-			<div class="col-md-6">
-				<div class="row"><p class="fontbold fontSize20" style=" margin-bottom: 20px;">Reach us</p></div>
-				<div class="row">
-					<img alt="location" src="images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">F-109, Plot No. A-12, Aditya Corporate Hub, RDC, Rajnagar, Ghaziabad, Uttar Pradesh - 201002, India</p>
-					<img alt="contact" src="images/contactus_call.png" style="float: left;  margin-bottom: 20px; margin-left: 20px;"><p class="fontregular fontSize18" style="  margin-left: 70px; margin-top: 23px;">+91 120-4230300, +91 95606-26920</p>
-					<img alt="mail" src="images/contactus_maill.png" style="float: left;  margin-bottom: 50px; margin-left: -30px;"><p class="fontregular fontSize18" style=" margin-left: 70px; margin-top: 14px;">reachus@dasvurl.com</p>
+			<div class="col-md-8">
+				<div class="row" style="margin-bottom: 0"><p class="fontbold fontSize20" style=" margin-bottom: 20px;">Reach us</p></div>
+				<div class="row" style="margin-bottom: 0">
+					<img alt="location" src="images/contactus_locationl.png" style="float: left; margin-bottom: 20px; margin-left: 20px;"><p class="fontbold fontSize18" style=" margin-left: 70px; margin-bottom: 20px;">F-109, Plot No. A-12, Aditya Corporate Hub, RDC, Rajnagar, Ghaziabad, Uttar Pradesh - 201002, India</p>
+					<img alt="contact" src="images/contactus_call.png" style="float: left;  margin-bottom: 20px; margin-left: 20px;"><p class="fontbold fontSize18" style="  margin-left: 70px; margin-top: 23px;">+91 120-4230300, +91 95606-26920</p>
+					<img alt="mail" src="images/contactus_maill.png" style="float: left;  margin-bottom: 20px; margin-left: -30px;"><p class="fontbold fontSize18" style=" margin-left: 70px; margin-top: 14px;">reachus@dasvurl.com</p>
 				</div>
-				<div class="row fontbold fontSize20" style=" margin-bottom: 20px;">Follow us on</div>
+				<div class="row fontbold fontSize20" style=" margin-bottom: 0px;">Follow us on</div>
 				<div class="row" style="margin-bottom: 50px;">
 					<div class="col-xs-offset-2 col-xs-4"><a target="_blank" href="https://www.facebook.com/DasVURL/"><img src="images/contactus_fb.png" alt="facebook"></a></div>
 					<div class="col-xs-4"><a target="_blank" href="http://www.twitter.com/DasVURL/"><img src="images/contactus_twitter.png" alt="Twitter"></a></div>
@@ -511,7 +511,7 @@
 <div class="jumbotron hoverable" style="padding: 35px; display: none" id="registration_popup">
 	<div class="close"></div>
 	<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
-		<legend style="width: 30%; margin-bottom: 0px">  Register now</legend>
+		<legend style="width: 44%; padding-left: 4%; margin-bottom: 0px;">  Register now</legend>
 		<div id="form-validate-msg" style="color:red; display: none">*Please check if every field is filled</div>
 		<div id="form-error" style="color:red; display: none;">Oops! something went wrong, Why don't you try contact us.</div>
 		<div id="form-success" style="color:green; display: none;">Greetings! You have successfully registered we will return to you shortly</div>
