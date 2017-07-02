@@ -5,7 +5,7 @@
 	$(".signupbtn").hide();
 
 	//FIRSTSECTON REFFERENCE
-	var section1=$("#myCarousel");
+	var section1=$("#id-studyDestinations");
 	var origOffset1SecY = section1.offset().top;
 	var bg1_flag = true;
 
@@ -46,7 +46,7 @@ $(".register_now").hover(function(){
 	});
 });
 
-function sr (){
+function sr () {
 	$("#form-validate-msg").hide();
 	/*todo: apply encryption*/
 	var gender = $("[name='gender']").val();

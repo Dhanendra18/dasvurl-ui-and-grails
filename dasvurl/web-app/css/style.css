@@ -692,6 +692,10 @@
 	transition-timing-function: cubic-bezier(0.150, 0.160, 0.585, 0.110); /* custom */
 }
 
+.sec1-head {
+    padding-top: 0px;
+}
+
 .sec1-backImage1 {
 	background-image: url("../images/shutterstock_292639718.jpg");
 	/*transition: background-image 4s linear;*/
@@ -1573,10 +1577,6 @@ span.dropt:hover span {
 
 #slider li {
 	width:210px;
-}
-
-.university-bg {
-    background-color: #1e1e1e;
 }
 
 .university-block{

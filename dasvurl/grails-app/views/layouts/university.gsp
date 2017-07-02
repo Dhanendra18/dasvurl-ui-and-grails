@@ -32,20 +32,14 @@
     <g:layoutHead/>
 </head>
 <body>
-
-<nav class="navbar navbar-black navbar-fixed-top navme null-box-shadow" role="navigation">
+<nav class="navbar navbar-black navbar-fixed-top navme null-box-shadow" style=" box-shadow: 0px 3px 10px #000;" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <g:link uri="/"><p class="page-scroll baseHeader fontSize20" style="margin-top: 10px;">Das VURL</p></g:link>
-        </div>
-        <div>
-            <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-        </div>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="fontbold fontSize18" style="margin-top: 10px">Have a question? +9195606-26920, +91120-4230300</li>
+		</ul>
 
     </div><!-- /.container-fluid -->
 </nav>

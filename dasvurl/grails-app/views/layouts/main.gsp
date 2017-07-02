@@ -17,7 +17,7 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="DAS_VURL.png" width="120px"  height="120px" alt="Grails"/></a></div>
+		<div id="grailsLogo" role="banner"><a href="/"><asset:image src="DAS_VURL.png" width="120px"  height="120px" alt="Grails"/></a></div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>

@@ -11,17 +11,20 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" media="screen">
 
 	<g:external dir="css" file="style.css"/>
 	<g:external dir="css" file="stylen.css"/>
+	<g:external dir="css" file="animate.css"/>
 
 	<script type="application/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<!-- java script plugin for scroll -->
 	<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/nivoslider/3.2/nivo-slider.css"/>
+	<link rel="stylesheet" href="http://www.jqueryscript.net/demo/nivo-slider/themes/default/default.css"/>
 
 	<style type="text/css">
 		#dvLoading{
@@ -75,10 +78,30 @@
 			margin-top: 0;
 			margin-bottom: 0;
 		}
+		.nivo-main-image {
+			height: 94vh !important;
+		}
+		.img-fullwidth {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		#slider img {
+			height: 750px !important;
+		}
+
+		.nivo-caption {
+			bottom: 5%;
+			background-color: transparent;
+		}
+
+		.title1 {
+			font-size: 50px;
+		}
 	</style>
 
 </head>
-<body >
+<body class="fontregular">
 <!-- if a browser does not contain/enable java script -->
 <noscript>
 	<h1>You need java script enabled to view this page correctly.</h1>
@@ -86,6 +109,14 @@
 <!-- THE LOADING INSTRUMENT -->
 <!--<div id="dvLoading"></div>-->
 <!--First nav-->
+<div style="width: 100%;background-color: #fff700; top: 0%; z-index: 11111">
+	<div class="container">
+		<div class="row" style="margin-bottom: 0">
+			<div class="col-xs-6"><p class="fontbold fontSize18">Have a question? +9195606-26920, +91120-4230300</p></div>
+			<div class="col-xs-6" align="right"><p class="fontbold fontSize18">Email us at reachus@dasvurl.com</p></div>
+		</div>
+	</div>
+</div>
 <div class="navbar-wrapper" style="margin-top: 14px;">
 	<div class="container custom-nav-container">
 		<div class="row">
@@ -107,7 +138,7 @@
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
-								<li class="active nav-cust">
+								<li class="nav-cust">
 									<a class="page-scroll" href="#" style="padding: 0">
 										<i class="nav-cust-i1">
 											<img src="images/nav1.jpg" width="100%" height="100%" alt="">
@@ -120,7 +151,7 @@
 										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
 									</a>
 								</li>
-								<li class="active nav-cust">
+								<li class="nav-cust">
 									<a class="page-scroll" href="#myCarousel" style="padding: 0">
 										<i class="nav-cust-i1">
 											<img src="images/nav2.jpg" width="100%" height="100%" alt="">
@@ -134,7 +165,7 @@
 									</a>
 								</li>
 								<!--<li><a class="page-scroll " href="#myCarousel">OVERSEAS EDUCATION</a></li>-->
-								<li class="active nav-cust">
+								<li class="nav-cust">
 									<a class="page-scroll" href="#id_ourServices" style="padding: 0">
 										<i class="nav-cust-i1">
 											<img src="images/nav3.jpg" width="100%" height="100%" alt="">
@@ -146,7 +177,7 @@
 										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
 									</a>
 								</li>
-								<li class="active nav-cust">
+								<li class="nav-cust">
 									<a class="page-scroll" href="#id_contactUs" style="padding: 0">
 										<i class="nav-cust-i1">
 											<img src="images/nav4.jpg" width="100%" height="100%" alt="">
@@ -159,7 +190,7 @@
 										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
 									</a>
 								</li>
-								<li class="active nav-cust">
+								<li class="nav-cust">
 									<a class="register_now" style="padding: 0">
 										<i class="nav-cust-i1">
 											<img src="images/nav5.jpg" width="100%" height="100%" alt="">
@@ -208,14 +239,283 @@
 <!-- ============================================
 				About us
 ================================================-->
+<section id="myCarousel" class="sec1-head" >
+	<div class="fluid-container " style="min-height: 100vh; background-color: black; color: white;position: relative;">
+		<div class="theme-default" style="background: #fff700; margin-bottom: 4px;">
+			<div id="slider" class="nivoSlider">
+				<img src="images/image1.jpg" class="img-fullwidth" data-thumb="images/image1.jpg" title="#slider-1-caption1" alt="" />
+				<img src="images/image2.jpg" class="img-fullwidth" data-thumb="images/image2.jpg" title="#slider-1-caption2" alt="" />
+				<img src="images/image3.jpg" class="img-fullwidth" data-thumb="images/image3.jpg" title="#slider-1-caption3" alt="" />
+				<img src="images/image4.jpg" class="img-fullwidth" data-thumb="images/image4.jpg" title="#slider-1-caption4" alt="" />
+				<img src="images/image5.jpg" class="img-fullwidth" data-thumb="images/image5.jpg" title="#slider-1-caption5" alt="" />
+				<img src="images/image6.jpg" class="img-fullwidth" data-thumb="images/image6.jpg" title="#slider-1-caption6" alt="" />
+				<img src="images/image7.jpg" class="img-fullwidth" data-thumb="images/image7.jpg" title="#slider-1-caption7" alt="" />
+			</div>
+			<div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-1">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-black">
+								<div class="text-content-wrapper">
+									<div class="text-content fontregular">
+										<h1 class="title1 wow animated bounceInLeft fontsemi" style="font-variant: small-caps;" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN EUROPE</h1>
+										<p class="sub-title wow fadeInUp hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="2900ms" data-wow-delay=".5s">Europe is home to the highest number of migrants of all global regions at 70.6 million people <br>As a continent, the economy of Europe is currently the largest on Earth and it is the richest region as measured by assets under management with over $32.7 trillion compared to North America's $27.1 trillion in 2008. In 2009 Europe remained the wealthiest region.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider-1-caption2" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-2">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-simBlack">
+								<div class="text-content-wrapper">
+									<div class="text-content slide-2 fontregular">
+										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN USA</h1>
+										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s"> America is a melting pot of people from all over the world. Most Americans are very hospitable, friendly, kind, generous and accepting of foreigners. In general, the people are funny, gregarious, innovative, and eager to learn. These are traits that many international students adopt and take home with them</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider-1-caption3" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-2">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-simBlack">
+								<div class="text-content-wrapper">
+									<div class="text-content slide-2 fontregular">
+										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN CANADA</h1>
+										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Canada is one of the world’s most popular destinations for international students, offering a diverse variety of experiences and opportunities in a country known for its vast expanses, multicultural cities and natural beauty. Every year, 180,000 international students choose to study in Canada, a country fast becoming India’s favourite study hub. Studying in Canada also brings with it many other benefits. Canadian university campuses are upgraded with the latest technology and modern amenities, quality sports facilities, art galleries, and public concert halls. Students will have incredible opportunities to meet like-minded peers and gain valuable international student experience.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider-1-caption4" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-2">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-simBlue">
+								<div class="text-content-wrapper">
+									<div class="text-content slide-2 fontregular">
+										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN GERMANY</h1>
+										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Germany officially the Federal Republic of Germany is in Western Europe with Denmark bordering it to the North, Poland and the Czech Republic to the East, Austria to the Southeast, Switzerland to the Southwest, France, Luxembourg and Belgium lie to the West and the Netherlands to the Northwest<br>Germany has the world's fourth-largest economy. As a global leader in several industrial and technological sectors
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider-1-caption5" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-2">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-simGreen">
+								<div class="text-content-wrapper">
+									<div class="text-content slide-2 fontregular">
+										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN RUSSIA</h1>
+										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Russia has an upper-middle income mixed economy[176] with enormous natural resources, particularly oil and natural gas. It has the 12th largest economy in the world by nominal GDP and the 6th largest by purchasing power parity (PPP). Since the turn of the 21st century, higher domestic consumption <br>
+											Russia has an upper-middle income mixed economy[176] with enormous natural resources, particularly oil and natural gas. It has the 12th largest economy in the world by nominal GDP and the 6th largest by purchasing power parity (PPP). Since the turn of the 21st century, higher domestic consumption</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider-1-caption6" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-2">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-red">
+								<div class="text-content-wrapper">
+									<div class="text-content slide-2 fontregular">
+										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN NEW ZEALAND</h1>
+										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">New Zealand has a high-income economy with a nominal gross domestic product (GDP) per capita of US$36,254. The currency is the New Zealand dollar, informally known as the "Kiwi dollar<br>New Zealand was ranked 13th in the 2016 Human Development Index and third in the 2016 Index of Economic Freedom<br>New Zealand is heavily dependent on international trade, particularly in agricultural products.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="slider-1-caption7" class="nivo-html-caption nivo-caption">
+				<div class="banner-content slider-2">
+					<div class="fluid-container">
+						<div class="row">
+							<div class="col-md-5 cr-simBlack" >
+								<div class="text-content-wrapper">
+									<div class="text-content slide-2 fontregular">
+										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN AUSTRALIA</h1>
+										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">​Australia is an energetic and exciting country providing an unmatched platform to students looking for international education and has the third highest number of foreign students in the world behind only the UK & US. Preferring Australia to study lays out unique and delightful opportunities and experiences, and a whole different outlook of the world, not to mention substantial and progressive world-class education programs.
+										<br>
+											Australia has enabling and enlightened education process with a reputation for brilliance and provides globally-recognized courses and qualifications, a relaxed, enjoyable and secured lifestyle.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div style="position: absolute; top:26%; left: 60.66667%; z-index: 10;">
+				<div style="background-color: white;color: #333;padding: 20px;">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2 style="font-variant: small-caps; text-shadow: -1px 2px 1px #000;"> <b><span class="glyphicon glyphicon-education"  aria-hidden="true"></span> Get Free Counselling</b></h2>
+							<p class="fontSize14 fontregular" style="font-variant: small-caps;">Fill Your Details And Our Expert Will Contact You</p>
+							<div class="row rowbase" >
+								<div class="col-xs-12 input-field">
+									<!--<i class="material-icons prefix"></i>-->
+									<input id="name" name="fullName" required type="text" class="validate ">
+									<label for="name">Full Name*</label>
+								</div>
+							</div>
+							<div class="row rowbase" >
+								<div class="col-xs-12 input-field">
+									<!--<i class="material-icons prefix"></i>-->
+									<input id="email" name="email" required type="text" class="validate">
+									<label for="email">Email*</label>
+								</div>
+							</div>
+							<div class="row rowbase" >
+								<div class="col-xs-12 input-field" >
+									<!--<i class="material-icons prefix"></i>-->
+									<input id="mobile" name="fullName" required type="text" class="validate">
+									<label for="mobile">Mobile Number*</label>
+								</div>
+							</div>
+							<div class="row rowbase" >
+								<div class="col-xs-12 input-field" >
+									<!--<i class="material-icons prefix"></i>-->
+									<input id="courses" name="course" required type="text" class="validate">
+									<label for="courses">Course*</label>
+								</div>
+							</div>
+							<div class="row rowbase" >
+								<div class="col-xs-12 input-field" >
+									<select id="countryOption4" name="country1">
+										<option value="" disabled selected>Country option1</option>
+									</select>
+									<label>Select Your Preferred Country</label>
+								</div>
+							</div>
+							<div class="row rowbase">
+								<div class="col-xs-offset-1 col-xs-10 input-field">
+									<button class="btn waves-effect waves-light color-default full-widthi fontSize16" onclick="sr()">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--========================================================================
+				New component for
+==========================================================================-->
+<section id="id-studyDestinations" class="scrollbtn" style="margin-top: 11%; padding: 0;background-color: #fff700">
+	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;"> STUDY DESTINATIONS</div>
+</section>
+<section>
+	<div class="row rowbase">
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-1.jpg')">
+				<g:link controller="overseas" action="australia_university">
+					<div class="ui-background-content">
+						AUSTRALIA
+					</div>
+				</g:link>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-2.jpg')">
+				<g:link controller="overseas" action="canada_university">
+					<div class="ui-background-content">
+						CANADA
+					</div>
+				</g:link>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-3.jpg')">
+				<g:link controller="overseas" action="usa_university">
+					<div class="ui-background-content">
+						USA
+					</div>
+				</g:link>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-4.jpg')">
+				<g:link controller="overseas" action="singapore_university" name="">
+					<div class="ui-background-content">
+						SINGAPORE
+					</div>
+				</g:link>
+			</div>
+		</div>
+	</div>
+	<div class="row rowbase">
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-5.jpg')">
+				<g:link controller="overseas" action="france_university" name="">
+					<div class="ui-background-content">
+						FRANCE
+					</div>
+				</g:link>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-6.jpg')">
+				<g:link controller="overseas" action="newzealand_university" name="">
+					<div class="ui-background-content">
+						POLAND
+					</div>
+				</g:link>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-7.jpg')">
+				<g:link controller="overseas" action="newzealand_university" name="">
+					<div class="ui-background-content">
+						NEW ZEALAND
+					</div>
+				</g:link>
+			</div>
+		</div>
+		<div class="col-xs-3" style="padding: 0; overflow: hidden">
+			<div class="ui-background" style="background-image: url('images/block-8.jpg')">
+				<g:link controller="overseas" action="more_university" name="">
+					<div class="ui-background-content">
+						More...
+					</div>
+				</g:link>
+			</div>
+		</div>
+	</div>
+</section>
 
-<section class="sec1 fstpage" id="id_aboutUs" style="padding-top: 230px;">
+%{--<section class="sec1 fstpage" id="id_aboutUs" style="padding-top: 70px;">
 	<div class="down_wrapper"><a href="#myCarousel" class="page-scroll"><img src="images/DownArrow.png" width="40px" height="18px;"/></a></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="jumbotron jumboCust fontSize16 fontbold">
-					<h2 style="font-weight: 800;">About us</h2>
+					<h2 style="font-weight: 800;" class="animated bounceInLeft">About us</h2>
 					<strong style="font-size: 26px">D</strong>as Vurl established in 2016, is an Indian Based company and provides global education services, in some of the favoured countries such as Australia, Canada, Germany &amp; UK. Das VURL provides professional services in various categories like overseas education , business immigration, work permit, and visitor visa. Das VURL has a highly regarded team of immigration lawyers, paralegals and certified immigration practitioners that commits on working across different cultures.
 				</div>
 			</div>
@@ -226,11 +526,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="background_image" style=""></div>
-</section>
+</section>--}%
+<div class="background_image" style=""></div>
 <!-- Carousel
 ================================================== -->
-<section id="myCarousel" class="carousel slide scrollbtn" data-ride="carousel">
+%{--<section id="myCarousel" class="carousel slide scrollbtn" data-ride="carousel">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -327,11 +627,11 @@
 		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
-</section><!-- /.carousel -->
+</section>--}%<!-- /.carousel -->
 <!--=============================================================================
 						page4- OUR SERVICES
 ===================================================================================-->
-<section class="sec2b scrollbtn" id="id_ourServices">
+<section class="sec2b " id="id_ourServices">
 	<div class="container">
 		<div class="down_wrapper1"><a href="#id_contactUs" class="page-scroll"><img src="images/DownArrow.png" width="40" height="18px"/></a></div>
 		<!--  old codes -->
@@ -351,13 +651,13 @@
 							</p>
 						</div>
 						<div class="show-more">
-							<a style="cursor: pointer; color: #ff9800;">Read more</a>
+							<a style="cursor: pointer; color: #fff700;">Read more</a>
 						</div>
 					</div>
 				</div>
 				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
 					<div class="col-xs-offset-4 col-xs-4">
-						<button class="btn full-widthi waves-effect waves-light orange" onclick="location.href='${g.createLink(controller: "overseas")}'">More</button>
+						<button class="btn full-widthi waves-effect waves-light color-default" style="border-radius: 0" onclick="location.href='${g.createLink(controller: "overseas")}'">More</button>
 					</div>
 				</div>
 			</div>
@@ -373,103 +673,20 @@
 							</p>
 						</div>
 						<div class="show-more">
-							<a style="cursor: pointer; color: #ff9800;">Read more</a>
+							<a style="cursor: pointer; color: #fff700;">Read more</a>
 						</div>
 					</div>
 				</div>
 				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
 					<div class="col-xs-offset-4 col-xs-4">
-						<button class="btn full-widthi waves-effect waves-light orange">More</button>
+						<button class="btn full-widthi waves-effect waves-light color-default" style="border-radius: 0">More</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--========================================================================
-				New component for
-==========================================================================-->
-<section id="id-studyDestinations" style=" padding: 0;background-color: #fff700">
-	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;">STUDY DESTINATIONS</div>
-</section>
-<section>
-	<div class="row rowbase">
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-1.jpg')">
-				<g:link controller="overseas" action="australia_university">
-					<div class="ui-background-content">
-						AUSTRALIA
-					</div>
-				</g:link>
-			</div>
-		</div>
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-2.jpg')">
-				<g:link controller="overseas" action="canada_university">
-					<div class="ui-background-content">
-						CANADA
-					</div>
-				</g:link>
-			</div>
-		</div>
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-3.jpg')">
-				<g:link controller="overseas" action="usa_university">
-					<div class="ui-background-content">
-						USA
-					</div>
-				</g:link>
-			</div>
-		</div>
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-4.jpg')">
-				<g:link controller="overseas" action="singapore_university" name="">
-					<div class="ui-background-content">
-						SINGAPORE
-					</div>
-				</g:link>
-			</div>
-		</div>
-	</div>
-	<div class="row rowbase">
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-5.jpg')">
-				<g:link controller="overseas" action="france_university" name="">
-					<div class="ui-background-content">
-						FRANCE
-					</div>
-				</g:link>
-			</div>
-		</div>
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-6.jpg')">
-				<g:link controller="overseas" action="newzealand_university" name="">
-					<div class="ui-background-content">
-						POLAND
-					</div>
-				</g:link>
-			</div>
-		</div>
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-7.jpg')">
-				<g:link controller="overseas" action="newzealand_university" name="">
-					<div class="ui-background-content">
-						NEW ZEALAND
-					</div>
-				</g:link>
-			</div>
-		</div>
-		<div class="col-xs-3" style="padding: 0; overflow: hidden">
-			<div class="ui-background" style="background-image: url('images/block-8.jpg')">
-				<g:link controller="overseas" action="more_university" name="">
-					<div class="ui-background-content">
-						More...
-					</div>
-				</g:link>
-			</div>
-		</div>
-	</div>
-</section>
+
 <!-- ====================================================================
 				Page 5 Contact us
 ====================================================================== -->
@@ -503,14 +720,14 @@
 ============================= -->
 <div class="footer1">
 	<div class="center">
-		<p >(2016) Das VURL</p>
+		<p >Copyright(2017) Das VURL</p>
 		<p style="font-style: italic">Designed, Developed <g:link controller="registerForm" action="index" style="color: #fff">and</g:link> Maintained by Dhanendra<i style="font-size: 18px">©</i></p>
 	</div>
 </div>
 
-<div class="jumbotron hoverable" style="padding: 35px; display: none" id="registration_popup">
+<div class="hoverable" style="display: none" id="registration_popup">
 	<div class="close"></div>
-	<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
+	%{--<fieldset style="border: 1px solid #9e9e9e; padding: 18px">
 		<legend style="width: 44%; padding-left: 4%; margin-bottom: 0px;">  Register now</legend>
 		<div id="form-validate-msg" style="color:red; display: none">*Please check if every field is filled</div>
 		<div id="form-error" style="color:red; display: none;">Oops! something went wrong, Why don't you try contact us.</div>
@@ -607,7 +824,56 @@
 			<div class="col-xs-10 input-field"></div>
 		</div>
 		<div class="g-recaptcha" data-sitekey="6LeGwgkUAAAAANHs3-dYFIf3SRKsxYx_uGizS5ZG"></div>
-	</fieldset>
+	</fieldset>--}%
+	<div style="background-color: white;color: #333;padding: 20px;">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 style="font-variant: small-caps; text-shadow: -1px 2px 1px #000;"> <b><span class="glyphicon glyphicon-education"  aria-hidden="true"></span> Get Free Counselling</b></h2>
+				<p class="fontSize14 fontregular" style="font-variant: small-caps;">Fill Your Details And Our Expert Will Contact You</p>
+				<div class="row rowbase" >
+					<div class="col-xs-12 input-field">
+						<!--<i class="material-icons prefix"></i>-->
+						<input id="name1" name="fullName" required type="text" class="validate ">
+						<label for="name1">Full Name*</label>
+					</div>
+				</div>
+				<div class="row rowbase" >
+					<div class="col-xs-12 input-field">
+						<!--<i class="material-icons prefix"></i>-->
+						<input id="email1" name="email" required type="text" class="validate">
+						<label for="email1">Email*</label>
+					</div>
+				</div>
+				<div class="row rowbase" >
+					<div class="col-xs-12 input-field" >
+						<!--<i class="material-icons prefix"></i>-->
+						<input id="mobile1" name="fullName" required type="text" class="validate">
+						<label for="mobile1">Mobile Number*</label>
+					</div>
+				</div>
+				<div class="row rowbase" >
+					<div class="col-xs-12 input-field" >
+						<!--<i class="material-icons prefix"></i>-->
+						<input id="courses1" name="course" required type="text" class="validate">
+						<label for="courses1">Course*</label>
+					</div>
+				</div>
+				<div class="row rowbase" >
+					<div class="col-xs-12 input-field" >
+						<select id="countryOption1" name="country1">
+							<option value="" disabled selected>Country option1</option>
+						</select>
+						<label for="countryOption1">Select Your Preferred Country</label>
+					</div>
+				</div>
+				<div class="row rowbase">
+					<div class="col-xs-offset-1 col-xs-10 input-field">
+						<button class="btn waves-effect waves-light color-default full-widthi fontSize16" onclick="sr()">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- ==========================================================================================
 				SCRIPTS
@@ -617,9 +883,10 @@
 <g:external dir="js" file="btnscroll.js"/>
 
 <!-- Latest compiled and minified JavaScript -->
-<script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.10.0/jquery.bpopup.min.js"></script>
 <g:external dir="js" file="scrolling.js"/>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="application/javascript">
 
@@ -673,6 +940,8 @@
 		$("#countryOption2").html(getCountryOptions(countryOptions));
 		countryOptions = '<option value="" disabled selected>Option 3</option>';
 		$("#countryOption3").html(getCountryOptions(countryOptions));
+		countryOptions = '';
+		$("#countryOption4").html(getCountryOptions(countryOptions));
 	});
 	function getCountryOptions (countryOptions) {
 		var countryName = ["USA","UK","Australia","Canada","Germany","Poland","France","Switzerland","Singapore","New Zealand","Ireland","Cyprus","Malaysia","Italy","Dubai","Sweden","Spain","Lithuani"];
@@ -683,6 +952,17 @@
 	}
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/nivoslider/3.2/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#slider').nivoSlider({
+			animSpeed: 200,
+			pauseTime: 5000
+		});
+		$('#countryOption4').material_select();
+	});
+</script>
 <script type="application/javascript">
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
