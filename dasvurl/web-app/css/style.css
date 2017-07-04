@@ -1440,11 +1440,12 @@ span.dropt:hover span {
 		font-size: 28px;
 	}
     .ourServiceCenterDevision {
-        border-left-style: solid;
-        border-left-width: 1px;
-        border-left-color: #fff
+        position: absolute;
+        top: 0%;
+        right: 50.4333%;
+        min-height: 16em;
+        border: solid 2px #fff;
     }
-
 }
 @media (min-width: 1200px) {
 	.fontSize36{

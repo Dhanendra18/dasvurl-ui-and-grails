@@ -141,6 +141,13 @@
 			line-height: 26px;
 			word-spacing: 4px;
 		}
+
+		.university-bg-img {
+			background-image: url('../images/image6.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
 	</style>
 </head>
 

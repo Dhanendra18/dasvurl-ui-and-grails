@@ -152,13 +152,13 @@
 									</a>
 								</li>
 								<li class="nav-cust">
-									<a class="page-scroll" href="#myCarousel" style="padding: 0">
+									<a class="page-scroll" href="#id-studyDestinations" style="padding: 0">
 										<i class="nav-cust-i1">
 											<img src="images/nav2.jpg" width="100%" height="100%" alt="">
 										</i>
 
 										<i class="nav-cust-i2">
-											<i class="nav-cust-content">OVERSEAS EDUCATION</i>
+											<i class="nav-cust-content">STUDY DESTINATIONS</i>
 											<!--<i class="nav-cust-content-sub">WHO ARE WE</i>-->
 										</i>
 										<!--<i  style="font-style: normal; line-height: inherit; height: 20px;">OVERSEAS EDUCATION</i>-->
@@ -228,8 +228,8 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right index-nav">
 				<li ><a href="#myCarousel" class="page-scroll">overseas education</a></li>
-				<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>
 				<li ><a href="#id-studyDestinations" class="page-scroll">study destinations</a></li>
+				<li ><a href="#id_ourServices" class="page-scroll">our services</a></li>
 				<li ><a href="#id_contactUs" class="page-scroll">contact us</a></li>
 				<li style="background-color: #fff700;"><a style="color:#000" class="register_now">register now</a></li>
 			</ul>
@@ -427,10 +427,10 @@
 <!--========================================================================
 				New component for
 ==========================================================================-->
-<section id="id-studyDestinations" class="scrollbtn" style="margin-top: 11%; padding: 0;background-color: #fff700">
-	<div class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;"> STUDY DESTINATIONS</div>
+<section  class="scrollbtn" style="margin-top: 11%; padding: 0;background-color: #fff700">
+	<div id="id-studyDestinations" class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;"> STUDY DESTINATIONS</div>
 </section>
-<section>
+<section >
 	<div class="row rowbase">
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-1.jpg')">
@@ -481,9 +481,9 @@
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-6.jpg')">
-				<g:link controller="overseas" action="newzealand_university" name="">
+				<g:link controller="overseas" action="uk_university" name="">
 					<div class="ui-background-content">
-						POLAND
+						UK
 					</div>
 				</g:link>
 			</div>
@@ -650,18 +650,19 @@
 								Das VURL endeavours to increase alliance with other countries for university admissions so that our students can pursue their courses in the best possible environment and opportunities.
 							</p>
 						</div>
-						<div class="show-more">
-							<a style="cursor: pointer; color: #fff700;">Read more</a>
+						<div class="show-more" style="margin-top: 10px;margin-bottom: 20px">
+							<a class="btn full-widthi waves-effect waves-light color-default" style="width: 40%; border-radius: 0">Read more</a>
 						</div>
 					</div>
 				</div>
-				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
+				%{--<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
 					<div class="col-xs-offset-4 col-xs-4">
-						<button class="btn full-widthi waves-effect waves-light color-default" style="border-radius: 0" onclick="location.href='${g.createLink(controller: "overseas")}'">More</button>
+						<button class="btn full-widthi waves-effect waves-light color-default" onclick="location.href='${g.createLink(controller: "overseas")}'">More</button>
 					</div>
-				</div>
+				</div>--}%
 			</div>
-			<div class="col-md-6 ourServiceCenterDevision" >
+			<div class="ourServiceCenterDevision"></div>
+			<div class="col-md-6 " >
 				<div class="row rowbase">
 					<div class="col-xs-7"><h4 class="text-underline fontextra fontSize24">VISITOR / WORK VISA</h4></div>
 				</div>
@@ -672,16 +673,16 @@
 								There are several steps to apply for a visa and the rules, regulations and documents required for applying for visa varies to some extent for every country. Applicants who intend to travel to Canada, Australia, Europe, UK, New Zealand or anywhere across the world as tourists, education or work must apply for visa well in advance. The visitor visa or Temporary Resident Permit (TRV) is country specific and may be for single entry, multiple entry or transit purposes. Generally, visitor visas may be granted for a renewable period of 6 months.
 							</p>
 						</div>
-						<div class="show-more">
-							<a style="cursor: pointer; color: #fff700;">Read more</a>
+						<div class="show-more" style="margin-top: 10px;margin-bottom: 20px">
+							<a class="btn full-widthi waves-effect waves-light color-default" style="width: 40%; border-radius: 0">Read more</a>
 						</div>
 					</div>
 				</div>
-				<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
+				%{--<div class="row rowbase" style="margin-top: 10px;margin-bottom: 20px">
 					<div class="col-xs-offset-4 col-xs-4">
 						<button class="btn full-widthi waves-effect waves-light color-default" style="border-radius: 0">More</button>
 					</div>
-				</div>
+				</div>--}%
 			</div>
 		</div>
 	</div>
