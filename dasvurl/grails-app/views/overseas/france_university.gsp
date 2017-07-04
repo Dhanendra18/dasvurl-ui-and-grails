@@ -18,7 +18,7 @@
 	<div class="overlay"></div>
 	<div class="content">
 		<div class="container">
-			<h1 class="animated fadeInDown fontbold">Canadian Universities<br>And <br>Colleges</h1>
+			<h1 class="animated fadeInDown fontbold">France Universities<br>And <br>Colleges</h1>
 			<div class="row">
 				<div class="col-xs-offset-6 col-xs-1" style="padding-top: 10vh">
 					<div class="mouse">
