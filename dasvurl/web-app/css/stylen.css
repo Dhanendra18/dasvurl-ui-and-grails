@@ -202,10 +202,6 @@ nav ul a {
 	100%  {opacity: 0.7}
 }
 
-#myCarousel {
-	height: 650px;
-}
-
 #country-description {
 	height: 200px;
 	overflow-y: scroll;
@@ -298,17 +294,17 @@ nav ul a {
 
 .cr-simBlack {
 	color: #fff;
-	background-color: rgba(90, 72, 63, 0.9);
+	background-color: rgba(90, 72, 63, 1);
 }
 
 .cr-simGreen {
 	color: #fff;
-	background-color: rgba(90, 122, 74, 0.7);
+	background-color: rgba(90, 122, 74, 1);
 }
 
 .cr-simBlue {
 	color: #fff;
-	background-color: rgba(79, 122, 167, 0.9);
+	background-color: rgba(79, 122, 167, 1);
 }
 
 .nav-cust {
@@ -510,11 +506,4 @@ input[type=text]:focus:not([readonly])+label {
 
 .dropdown-content li>a, .dropdown-content li>span {
     color: rgba(23, 16, 5, 0.7);
-}
-
-.university-bg-img {
-    background-image: url('../images/image7.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }

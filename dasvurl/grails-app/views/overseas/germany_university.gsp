@@ -6,7 +6,7 @@
 	<title></title>
 	<style>
 	.university-bg-img {
-		background-image: url('../images/image4.jpg');
+		background-image: url('../images/shutterstock_311061461.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -18,7 +18,7 @@
 	<div class="overlay"></div>
 	<div class="content">
 		<div class="container">
-			<h1 class="animated fadeInDown fontbold">Singapore Universities<br>And <br>Colleges</h1>
+			<h1 class="animated fadeInDown fontbold">Germany Universities<br>And <br>Colleges</h1>
 			<div class="row">
 				<div class="col-xs-offset-6 col-xs-1" style="padding-top: 10vh">
 					<div class="mouse">
@@ -34,13 +34,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 heading">
-				<h1>About <span> Singapore</span></h1>
+				<h1>About <span> Germany</span></h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<p class="fontSize16">
-					The French Republic (France) continues to remain a great power significant cultural, economic, military, and political influence. The country is a sovereign state comprising territory in Western Europe. It has a total population of 67 million and it is a founder member of the United Nations and leading member state of the European Union (EU). The capital city, Paris is the country's largest city and main cultural and commercial centre. The Constitution of France establishes the state as secular and democratic with its sovereignty derived from the people. It hosts Europe's third-largest number of cultural UNESCO World Heritage Sites (after Italy and Spain) and receives around 83 million foreign tourists annually, the most of any country in the world. 
+					The Germany Republic continues to remain a great power significant cultural, economic, military, and political influence. The country is a sovereign state comprising territory in Western Europe. It has a total population of 67 million and it is a founder member of the United Nations and leading member state of the European Union (EU). The capital city, Paris is the country's largest city and main cultural and commercial centre. The Constitution of France establishes the state as secular and democratic with its sovereignty derived from the people. It hosts Europe's third-largest number of cultural UNESCO World Heritage Sites (after Italy and Spain) and receives around 83 million foreign tourists annually, the most of any country in the world. 
 				</p>
 			</div>
 		</div>

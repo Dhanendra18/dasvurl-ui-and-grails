@@ -25,7 +25,7 @@
 					<div class="mouse">
 						<span></span>
 					</div>
-					<a href="#main" class="page-scroll arrow"> <img src="../images/down-arrow.png" alt=""> </a>
+					<a href="#main" class="page-scroll arrow"> <img src="../images/downArrowWhite.png" width="100px" height="100px" alt=""> </a>
 				</div>
 			</div>
 		</div>

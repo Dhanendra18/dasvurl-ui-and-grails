@@ -6,7 +6,7 @@
 	<title></title>
 	<style>
 	.university-bg-img {
-		background-image: url('../images/image4.jpg');
+		background-image: url('../images/shutterstock_221120626.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -24,7 +24,7 @@
 					<div class="mouse">
 						<span></span>
 					</div>
-					<a href="#main" class="page-scroll arrow"> <img src="../images/down-arrow.png" alt=""> </a>
+					<a href="#main" class="page-scroll arrow"> <img src="../images/downArrowWhite.png" width="100px" height="100px" alt=""> </a>
 				</div>
 			</div>
 		</div>
@@ -78,42 +78,46 @@
 		<div class="row" id="custom-gen">
 			<div class="col-xs-6">
 				<ul>
-					<li>IDCE </li>
+					<li>IDCE</li>
 					<li>ISUGA</li>
 					<li>ESLSCA</li>
 					<li>EPITA</li>
 					<li>EM Nantes</li>
 					<li>ISEP</li>
 					<li>ESC Rennes</li>
-					<li>ESC La Rochelle </li>
-					<li>ISC Paris </li>
-					<li>ESC Dijon </li>
+					<li>ESC La Rochelle</li>
+					<li>ISC Paris</li>
+					<li>ESC Dijon</li>
 					<li>IPAG</li>
 					<li>SKEMA</li>
 					<li>France Business School</li>
-					<li>ESC Troyes </li>
+					<li>ESC Troyes</li>
 					<li>VATEL</li>
 					<li>Kedge</li>
+					<li>INSEEC</li>
+					<li>EMLYON</li>
 				</ul>
 			</div>
 			<div class="col-xs-6">
 				<ul>
-					<li>INSEEC </li>
-					<li>EMLYON </li>
-					<li>MOD Art </li>
+					<li>MOD Art</li>
 					<li>ESC Grenoble</li>
-					<li>Negocia </li>
+					<li>Negocia</li>
 					<li>EM Normandie</li>
 					<li>EM Strasbourge</li>
 					<li>ESC La Rochelle</li>
 					<li>ESC Troyes</li>
+					<li>EICAR</li>
 					<li>ESC Toulouse</li>
-					<li>Neoma </li>
+					<li>Neoma</li>
 					<li>EM Normandie</li>
 					<li>Audencia Nantes</li>
 					<li>Eisti</li>
 					<li>INSEEC</li>
 					<li>Le Cordon Bleu</li>
+					<li>Neoma Bussiness school</li>
+					<li>TOULOUSE Business School</li>
+					<li>La Rochelle Business School </li>
 				</ul>
 			</div>
 		</div>

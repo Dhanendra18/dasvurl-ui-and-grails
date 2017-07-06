@@ -6,7 +6,7 @@
 	<title></title>
 	<style>
 	.university-bg-img {
-		background-image: url('../images/image7.jpg');
+		background-image: url('../images/shutterstock_292639718.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -24,7 +24,7 @@
 					<div class="mouse">
 						<span></span>
 					</div>
-					<a href="#main" class="page-scroll arrow"> <img src="../images/down-arrow.png" alt=""> </a>
+					<a href="#main" class="page-scroll arrow"> <img src="../images/downArrowWhite.png" width="100px" height="100px" alt=""> </a>
 				</div>
 			</div>
 		</div>
@@ -78,34 +78,41 @@
 		<div class="row" id="custom-gen">
 			<div class="col-xs-6">
 				<ul>
-					<li>University of Canterbury, Christchurch </li>
-					<li>Lincoln University, Lincoln, Canterbury</li>
-					<li>UNITEC Institute of Technology, Auckland</li>
-					<li>Manukau Institute of Technology, Auckland</li>
-					<li>Christchurch Polytechnic Institute of Technology</li>
-					<li>Whitireia New Zealand, Wellington, Auckland</li>
-					<li>Waikato Institute of Technology (WINTEC), Hamilton</li>
-					<li>Wellington Institute of Technology (WelTec), Wellington </li>
-					<li>Southern Institute of Technology, Invercargill </li>
-					<li>Otago Polytechnic, Dunedin & Auckland </li>
-					<li>Western Institute of Technology at Taranaki (WITT), New Plymouth</li>
-					<li>Nelson Marlborough Institute of Technology (NMIT), Nelson & Marlborough</li>
+					<li>University of Canterbury, Christchurch.</li>
+					<li>Lincoln University, Lincoln, Canterbury.</li>
+					<li>UNITEC Institute of Technology, Auckland.</li>
+					<li>Manukau Institute of Technology, Auckland.</li>
+					<li>Christchurch Polytechnic Institute of Technology (CPIT), Christchurch.</li>
+					<li>Whitireia New Zealand, Wellington, Auckland.</li>
+					<li>Waikato Institute of Technology (WINTEC), Hamilton.</li>
+					<li>Wellington Institute of Technology (WelTec), Wellington.</li>
+					<li>Southern Institute of Technology, Invercargill.</li>
+					<li>Otago Polytechnic, Dunedin & Auckland.</li>
+					<li>Western Institute of Technology at Taranaki (WITT), New Plymouth.</li>
+					<li>Nelson Marlborough Institute of Technology (NMIT), Nelson & Marlborough campuses.</li>
+					<li>Waiariki Institute of Technology, Rotorua.</li>
+					<li>North Tech, Auckland.</li>
+					<li>Taylors College, Auckland.</li>
+					<li>UUNZ Institute of Business, Auckland.</li>
 				</ul>
 			</div>
 			<div class="col-xs-6">
 				<ul>
-					<li>Waiariki Institute of Technology, Rotorua</li>
-					<li>North Tech, Auckland </li>
-					<li>Taylors College, Auckland</li>
-					<li>UUNZ Institute of Business, Auckland</li>
-					<li>Auckland Institute of Studies, Auckland </li>
-					<li>North Shore International Academy, Auckland </li>
-					<li>New Zealand School of Education (NZSE), Auckland </li>
-					<li>Pacific International Hotel Management School, (New Plymouth)</li>
-					<li>Lifeway College, Warkworth </li>
-					<li>Royal Business School, Auckland & Christchurch</li>
-					<li>Auckland Wise Institute. AWI International Education Group, Auckland</li>
-					<li>National Tertiary Education Consortium (NTEC), Auckland & Christchurch</li>
+					<li>Auckland Institute of Studies, Auckland.</li>
+					<li>New Zealand School of Education (NZSE), Auckland.</li>
+					<li>North Shore International Academy, Auckland.</li>
+					<li>Pacific International Hotel Management School, (New Plymouth).</li>
+					<li>Lifeway College, Warkworth.</li>
+					<li>Royal Business School, Auckland & Christchurch.</li>
+					<li>Auckland Wise Institute. AWI International Education Group, Auckland.</li>
+					<li>Queens Academic Group (QAC), Auckland.</li>
+					<li>National Tertiary Education Consortium (NTEC), Auckland & Christchurch.</li>
+					<li>Le Cordon Bleu, Wellington.</li>
+					<li>Computer Power Plus, Auckland.</li>
+					<li>Cornell Institute of Business & Technology, Auckland.</li>
+					<li>International Academy of New Zealand, Auckland.</li>
+					<li>International College of New Zealand, Auckland.</li>
+					<li>EDENZ College</li>
 				</ul>
 			</div>
 		</div>

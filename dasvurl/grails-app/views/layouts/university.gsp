@@ -12,7 +12,8 @@
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
     <title>Das VURL - Links</title>
     <!--Latest css of materialize theme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
@@ -29,7 +30,6 @@
     <script type="application/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- java script plugin for scroll -->
     <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <g:layoutHead/>
 	<style>
 	.mouse {
 		display: block;
@@ -64,7 +64,7 @@
 		width: 13px;
 		height: 70px;
 		opacity: 1;
-		left: 5px;
+		left: -25px;
 		bottom: -115px;
 	}
 
@@ -149,7 +149,7 @@
 	.head .content .container {
 		vertical-align: middle;
 		text-align: center;
-		padding-top: 30vh
+		padding-top: 20vh
 	}
 
 	.head .content .container h1{
@@ -177,6 +177,7 @@
 		word-spacing: 4px;
 	}
 	</style>
+	<g:layoutHead/>
 </head>
 <body>
 <nav class="navbar navbar-black navbar-fixed-top navme null-box-shadow" style=" box-shadow: 0px 3px 10px #000;" role="navigation">
@@ -203,5 +204,6 @@
 <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.10.0/jquery.bpopup.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<g:external dir="js" file="btnscroll.js"/>
 </body>
 </html>

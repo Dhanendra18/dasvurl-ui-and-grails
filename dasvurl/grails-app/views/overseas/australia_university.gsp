@@ -36,7 +36,7 @@
 			width: 13px;
 			height: 70px;
 			opacity: 1;
-			left: 5px;
+			left: -25px;
 			bottom: -115px;
 		}
 
@@ -115,7 +115,7 @@
 		.head .content .container {
 			vertical-align: middle;
 			text-align: center;
-			padding-top: 30vh
+			padding-top: 15vh
 		}
 
 		.head .content .container h1{
@@ -163,7 +163,7 @@
 					<div class="mouse">
 						<span></span>
 					</div>
-					<a href="#main" class="page-scroll arrow"> <img src="../images/down-arrow.png" alt=""> </a>
+					<a href="#main" class="page-scroll arrow"> <img src="../images/downArrowWhite.png" width="100px" height="100px" alt=""> </a>
 				</div>
 			</div>
 		</div>

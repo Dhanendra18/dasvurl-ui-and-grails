@@ -27,6 +27,8 @@ class OverseasController {
 
     def singapore_university() {}
 
+    def germany_university() {}
+
     def uk_university() {}
 
     def usa_university() {}

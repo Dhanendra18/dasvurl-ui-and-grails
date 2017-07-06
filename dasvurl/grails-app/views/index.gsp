@@ -1,12 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<head lang="en-US" prefix="og: http://ogp.me/ns#">
 	<meta name="description" content="Das Vurl Education is a rapidly flourishing and focused unit in the domain of Global Educational Consultancy services">
-	<meta name="keywords" content="Dasvurl, das, vurl, education, studies, foreign studies, global education, business, mba, mca, b-tech, russia, german">
+	<meta name="keywords" content="Dasvurl, das, vurl, education, studies, foreign studies, global education, business, mba, mca, b-tech, russia, german, visitor visa, work visa, visa, foreign education">
 	<title>Das VURL</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<meta charset="UTF-8">
+	<meta name="abstract" content="Dasvurl provides consultation for foreign education and also provides work and visitor visa">
+	<meta name="author" content="DasVurl">
+	<meta name="copyright" content="DasVurl">
+	<meta name="distribution" content="global">
+	<meta name="language" content="english">
 	<!--Latest css of materialize theme-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"/>
 
@@ -87,7 +94,7 @@
 		}
 
 		#slider img {
-			height: 750px !important;
+			height: 95vh !important;
 		}
 
 		.nivo-caption {
@@ -257,9 +264,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-black">
 								<div class="text-content-wrapper">
-									<div class="text-content fontregular">
+									<div class="text-content fontmedium">
 										<h1 class="title1 wow animated bounceInLeft fontsemi" style="font-variant: small-caps;" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN EUROPE</h1>
-										<p class="sub-title wow fadeInUp hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="2900ms" data-wow-delay=".5s">Europe is home to the highest number of migrants of all global regions at 70.6 million people <br>As a continent, the economy of Europe is currently the largest on Earth and it is the richest region as measured by assets under management with over $32.7 trillion compared to North America's $27.1 trillion in 2008. In 2009 Europe remained the wealthiest region.</p>
+										<p class="sub-title wow fadeInUp animated rollIn fontSize16" data-wow-duration="2900ms" data-wow-delay=".5s">Europe is home to the highest number of migrants of all global regions at 70.6 million people <br>As a continent, the economy of Europe is currently the largest on Earth and it is the richest region as measured by assets under management with over $32.7 trillion compared to North America's $27.1 trillion in 2008. In 2009 Europe remained the wealthiest region.</p>
 									</div>
 								</div>
 							</div>
@@ -273,9 +280,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-simBlack">
 								<div class="text-content-wrapper">
-									<div class="text-content slide-2 fontregular">
+									<div class="text-content slide-2 fontmedium">
 										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN USA</h1>
-										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s"> America is a melting pot of people from all over the world. Most Americans are very hospitable, friendly, kind, generous and accepting of foreigners. In general, the people are funny, gregarious, innovative, and eager to learn. These are traits that many international students adopt and take home with them</p>
+										<p class="sub-title wow rotateInDownLeft animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s"> America is a melting pot of people from all over the world. Most Americans are very hospitable, friendly, kind, generous and accepting of foreigners. In general, the people are funny, gregarious, innovative, and eager to learn. These are traits that many international students adopt and take home with them</p>
 									</div>
 								</div>
 							</div>
@@ -289,9 +296,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-simBlack">
 								<div class="text-content-wrapper">
-									<div class="text-content slide-2 fontregular">
+									<div class="text-content slide-2 fontmedium">
 										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN CANADA</h1>
-										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Canada is one of the world’s most popular destinations for international students, offering a diverse variety of experiences and opportunities in a country known for its vast expanses, multicultural cities and natural beauty. Every year, 180,000 international students choose to study in Canada, a country fast becoming India’s favourite study hub. Studying in Canada also brings with it many other benefits. Canadian university campuses are upgraded with the latest technology and modern amenities, quality sports facilities, art galleries, and public concert halls. Students will have incredible opportunities to meet like-minded peers and gain valuable international student experience.</p>
+										<p class="sub-title wow rotateInDownLeft animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Canada is one of the world’s most popular destinations for international students, offering a diverse variety of experiences and opportunities in a country known for its vast expanses, multicultural cities and natural beauty. Every year, 180,000 international students choose to study in Canada, a country fast becoming India’s favourite study hub. Studying in Canada also brings with it many other benefits. Canadian university campuses are upgraded with the latest technology and modern amenities, quality sports facilities, art galleries, and public concert halls. Students will have incredible opportunities to meet like-minded peers and gain valuable international student experience.</p>
 									</div>
 								</div>
 							</div>
@@ -305,9 +312,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-simBlue">
 								<div class="text-content-wrapper">
-									<div class="text-content slide-2 fontregular">
+									<div class="text-content slide-2 fontmedium">
 										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN GERMANY</h1>
-										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Germany officially the Federal Republic of Germany is in Western Europe with Denmark bordering it to the North, Poland and the Czech Republic to the East, Austria to the Southeast, Switzerland to the Southwest, France, Luxembourg and Belgium lie to the West and the Netherlands to the Northwest<br>Germany has the world's fourth-largest economy. As a global leader in several industrial and technological sectors
+										<p class="sub-title wow rotateInDownLeft animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Germany officially the Federal Republic of Germany is in Western Europe with Denmark bordering it to the North, Poland and the Czech Republic to the East, Austria to the Southeast, Switzerland to the Southwest, France, Luxembourg and Belgium lie to the West and the Netherlands to the Northwest<br>Germany has the world's fourth-largest economy. As a global leader in several industrial and technological sectors
 										</p>
 									</div>
 								</div>
@@ -322,9 +329,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-simGreen">
 								<div class="text-content-wrapper">
-									<div class="text-content slide-2 fontregular">
+									<div class="text-content slide-2 fontmedium">
 										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN RUSSIA</h1>
-										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Russia has an upper-middle income mixed economy[176] with enormous natural resources, particularly oil and natural gas. It has the 12th largest economy in the world by nominal GDP and the 6th largest by purchasing power parity (PPP). Since the turn of the 21st century, higher domestic consumption <br>
+										<p class="sub-title wow rotateInDownLeft animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">Russia has an upper-middle income mixed economy[176] with enormous natural resources, particularly oil and natural gas. It has the 12th largest economy in the world by nominal GDP and the 6th largest by purchasing power parity (PPP). Since the turn of the 21st century, higher domestic consumption <br>
 											Russia has an upper-middle income mixed economy[176] with enormous natural resources, particularly oil and natural gas. It has the 12th largest economy in the world by nominal GDP and the 6th largest by purchasing power parity (PPP). Since the turn of the 21st century, higher domestic consumption</p>
 									</div>
 								</div>
@@ -339,9 +346,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-red">
 								<div class="text-content-wrapper">
-									<div class="text-content slide-2 fontregular">
+									<div class="text-content slide-2 fontmedium">
 										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN NEW ZEALAND</h1>
-										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">New Zealand has a high-income economy with a nominal gross domestic product (GDP) per capita of US$36,254. The currency is the New Zealand dollar, informally known as the "Kiwi dollar<br>New Zealand was ranked 13th in the 2016 Human Development Index and third in the 2016 Index of Economic Freedom<br>New Zealand is heavily dependent on international trade, particularly in agricultural products.</p>
+										<p class="sub-title wow rotateInDownLef animated rotateInUpLeft fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">New Zealand has a high-income economy with a nominal gross domestic product (GDP) per capita of US$36,254. The currency is the New Zealand dollar, informally known as the "Kiwi dollar<br>New Zealand was ranked 13th in the 2016 Human Development Index and third in the 2016 Index of Economic Freedom<br>New Zealand is heavily dependent on international trade, particularly in agricultural products.</p>
 									</div>
 								</div>
 							</div>
@@ -355,9 +362,9 @@
 						<div class="row">
 							<div class="col-md-5 cr-simBlack" >
 								<div class="text-content-wrapper">
-									<div class="text-content slide-2 fontregular">
+									<div class="text-content slide-2 fontmedium">
 										<h1 class="title1 wow animated  bounceInLeft fontsemi" data-wow-duration="1000ms" data-wow-delay="0s">STUDY IN AUSTRALIA</h1>
-										<p class="sub-title wow rotateInDownLeft hidden-sm hidden-xs animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">​Australia is an energetic and exciting country providing an unmatched platform to students looking for international education and has the third highest number of foreign students in the world behind only the UK & US. Preferring Australia to study lays out unique and delightful opportunities and experiences, and a whole different outlook of the world, not to mention substantial and progressive world-class education programs.
+										<p class="sub-title wow rotateInDownLeft animated rollIn fontSize16" data-wow-duration="1800ms" data-wow-delay="0s">​Australia is an energetic and exciting country providing an unmatched platform to students looking for international education and has the third highest number of foreign students in the world behind only the UK & US. Preferring Australia to study lays out unique and delightful opportunities and experiences, and a whole different outlook of the world, not to mention substantial and progressive world-class education programs.
 										<br>
 											Australia has enabling and enlightened education process with a reputation for brilliance and provides globally-recognized courses and qualifications, a relaxed, enjoyable and secured lifestyle.
 										</p>
@@ -427,7 +434,7 @@
 <!--========================================================================
 				New component for
 ==========================================================================-->
-<section  class="scrollbtn" style="margin-top: 11%; padding: 0;background-color: #fff700">
+<section  class="scrollbtn" style="padding: 0;background-color: #fff700">
 	<div id="id-studyDestinations" class="center fontSize20 fontsemi mast" style="padding: 60px 0 80px 0; line-height: 0;"> STUDY DESTINATIONS</div>
 </section>
 <section >
@@ -461,9 +468,9 @@
 		</div>
 		<div class="col-xs-3" style="padding: 0; overflow: hidden">
 			<div class="ui-background" style="background-image: url('images/block-4.jpg')">
-				<g:link controller="overseas" action="singapore_university" name="">
+				<g:link controller="overseas" action="germany_university" name="">
 					<div class="ui-background-content">
-						SINGAPORE
+						GERMANY
 					</div>
 				</g:link>
 			</div>
@@ -945,7 +952,7 @@
 		$("#countryOption4").html(getCountryOptions(countryOptions));
 	});
 	function getCountryOptions (countryOptions) {
-		var countryName = ["USA","UK","Australia","Canada","Germany","Poland","France","Switzerland","Singapore","New Zealand","Ireland","Cyprus","Malaysia","Italy","Dubai","Sweden","Spain","Lithuani"];
+		var countryName = ["USA","UK","Australia","Canada","Russia","Denmark","Czech Republic","Malta","Germany","Poland","France","Switzerland","Singapore","New Zealand","Ireland","Cyprus","Malaysia","Italy","Dubai","Sweden","Spain","Lithuania"];
 		for(var i in countryName) {
 			countryOptions += '<option value="'+countryName[i]+'">'+countryName[i]+'</option>';
 		}
@@ -959,7 +966,7 @@
 	$(document).ready(function(){
 		$('#slider').nivoSlider({
 			animSpeed: 200,
-			pauseTime: 5000
+			pauseTime: 3000
 		});
 		$('#countryOption4').material_select();
 	});
