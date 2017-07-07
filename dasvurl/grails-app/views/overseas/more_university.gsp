@@ -30,7 +30,7 @@
 		</div>
 	</div>
 </header>
-<div class="university-bg-name fontregular">
+<div class="university-bg-name fonmantregular">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -156,31 +156,6 @@
 					<li>Dublin Business School, Dublin</li>
 					<li>University of Limerick, Limerick</li>
 					<li>Dublin City University, Dublin</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<h3 style=" text-shadow: 1px 1px 7px #1f1f1f;">Germany Universities and Colleges</h3>
-			</div>
-		</div>
-		<div class="row" id="custom-gen">
-			<div class="col-xs-12">
-				<ul>
-					<li>TU München</li>
-					<li>RWTH Aachen</li>
-					<li>KIT Karlsruhe</li>
-					<li>TU Darmstadt</li>
-					<li>TU Stuttgart</li>
-					<li>TU Berlin</li>
-					<li>TU Braunschweig</li>
-					<li>TU Dortmund</li>
-					<li>TU Dresden</li>
-					<li>TU Hannover</li>
-					<li>Heidelberg University*</li>
-					<li>Schiller International University</li>
-					<li>Hochschule Bremen ‐ University of Applied Sciences</li>
-					<li>IUBH</li>
 				</ul>
 			</div>
 		</div>
